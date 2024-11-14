@@ -1,4 +1,3 @@
-content
 content/*
 !content/_index.md
 !content/_index.zh-cn.md
