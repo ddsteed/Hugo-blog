@@ -1,4 +1,5 @@
 content/*
+!content/about
 !content/_index.md
 !content/_index.zh-cn.md
 
