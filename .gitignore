@@ -8,4 +8,5 @@ layouts
 public
 resources
 themes
-ltximg
+content-org/ltximg
+static/ltximg
