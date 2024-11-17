@@ -296,7 +296,7 @@ CLOSED: [2023-04-28 Fri 19:58]
 很多人常常觉得物理学家很高傲，实际上，在伟大的事实面前，最谦虚的就是物理学家了。我没有见过其他任何学科的人，如此地为自己骄傲，但又如此地尊重事实。现实生活中的人，为了面子或者利益，罔顾事实，胡搅蛮缠，更是屡见不鲜。这也是我如此钟爱物理学的原因，一旦陷入物理学的“爱河”，终生不能自拔。
 
 
-* ✔ DONE 《阅读的方法》-用自己的话表达思想                  :reading:@读书:
+* ✔ DONE 《阅读的方法》-------用自己的话表达思想            :reading:@读书:
 CLOSED: [2023-04-02 Sun 09:58]
 :PROPERTIES:
 :EXPORT_FILE_NAME: writing-own-words
@@ -493,7 +493,7 @@ CLOSED: [2023-01-19 Thu 11:37]
 <iframe src="//player.bilibili.com/player.html?aid=773882017&bvid=BV1g14y1772s&cid=857502036&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" width="80%" height="400"> </iframe>
 #+end_export
 
-* ✔ DONE 使用 Org-Mode+ox-hugo+github page 创建个人 Blog   :tech:@技术:
+* ✔ DONE 如何创建个人 Blog                                     :tech:@技术:
 CLOSED: [2023-01-15 Sun 21:19] SCHEDULED: <2023-01-14 Sat>
 :PROPERTIES:
 :EXPORT_FILE_NAME: org-hugo-blog
