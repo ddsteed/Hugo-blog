@@ -7,9 +7,9 @@ introductionWidget:
   description: |
     一事无成的读书人
 
-    - 🚀 读书
-    - 📝 走神
-    - 💡 听雨
+    - 📖 读书
+    - 💤 走神
+    - 🌧️ 听雨
 # avatar: /hugo-theme-jane/image/blank-profile.png
 # avatar: ./static/img/avatar.jpg
   showSocial: false
