@@ -1,0 +1,12 @@
+#+hugo_base_dir: ../
+#+hugo_section: /post/
+#+options: author:nil
+#+options: ^:nil
+
+* ✔ DONE 如何与世界相处                         :misc:@感悟:
+CLOSED: [2018-03-01 Thu 09:40]
+:PROPERTIES:
+:EXPORT_FILE_NAME: how-to-live-with-world
+:END:
+
+#+INCLUDE: "~/Documents/RDS/NOTES/Org/Roam/articles/如何与世界相处.org"

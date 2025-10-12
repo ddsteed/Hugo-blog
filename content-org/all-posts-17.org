@@ -1,0 +1,20 @@
+#+hugo_base_dir: ../
+#+hugo_section: /post/
+#+options: author:nil
+#+options: ^:nil
+
+* ✔ DONE 构建笔记系统                           :study:@学习:
+CLOSED: [2017-11-29 Thu 09:53]
+:PROPERTIES:
+:EXPORT_FILE_NAME: create-notes
+:END:
+
+#+INCLUDE: "~/Documents/RDS/NOTES/Org/Roam/articles/构建笔记系统.org"
+
+* ✔ DONE 学习的途径                             :study:@学习:
+CLOSED: [2017-07-22 Sat 10:01]
+:PROPERTIES:
+:EXPORT_FILE_NAME: study-road
+:END:
+
+#+INCLUDE: "~/Documents/RDS/NOTES/Org/Roam/articles/学习的途径.org"
