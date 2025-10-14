@@ -89,74 +89,63 @@ CLOSED: [2025-10-12 Sun 09:10]
 =elpy= 不仅仅是 python 的文档调用，它包含了更多的 python 环境设置（后面我会讲到其他的应用），这里只是显示了它的文档显示功能。
 
 ** 语法检查
-python 代码是否符合语法，我们可以用专门的检查工具来判断。最常用的有 =flycheck= 和 =flymake= 两种。我倾向于用 =flycheck= ，
+python 代码是否符合语法，我们可以用专门的检查工具来判断。最常用的有 =flycheck= 和
+=flymake= 两种。我倾向于用 +flycheck++ ，还是用 =flymake= 吧，Emacs 30 之后，就完全内
+置了，对 =ruff= 的支持也非常好。
 #+begin_src emacs-lisp
-  (use-package flycheck
+  (use-package flymake
     :ensure t
-    ;; 全局启用 flycheck
-    :hook (python-mode . flycheck-mode)
-    :init (global-flycheck-mode)
-  )
+    :custom ((flymake-start-on-flymake-mode nil)
+             (flymake-no-changes-timeout nil)
+             (setq flymake-show-diagnostics-at-end-of-line t)
+             (flymake-start-on-save-buffer t)))
 #+end_src
 如果发现代码里有红色的波浪线显示，就表示发现了语法错误，请尽快修改。
 
 *** 更好的语法检查
-=flycheck= 默认调用了 =flake8= 或者其他工具来进行语法检查，我们可以把这些工具换成最新最快的工具---- =ruff= 。
+=flymake= 默认调用了 =flake8= 或者其他工具来进行语法检查，我们可以把这些工具换成最新最快的工具---- =ruff= 。
 #+begin_src emacs-lisp
-  (use-package flycheck
-    :ensure t
-    ;; 全局启用 flycheck
-    :hook (python-mode . flycheck-mode)
-    :init (global-flycheck-mode)
+  ;; 通过 use-package 安装 flymake-ruff
+  (use-package flymake-ruff
+    :ensure t                
+    :hook ((python-mode    . flymake-ruff-load)      ; 传统 python-mode
+           (python-ts-mode . flymake-ruff-load))     ; Tree-sitter 版
     :config
-    ;; 设置 ruff 为 Python 的默认检查器。这样 flycheck 就会优先使用 ruff，而不是 flake8 或 pylint
-    (setq-default flycheck-checker 'python-ruff)
-    (setq flycheck-display-errors-delay 0.3)
-    (setq flycheck-check-syntax-automatically '(save mode-enabled))
+    (setq flymake-ruff-program-args '("--quiet" "--output-format=concise"))
+    (setq flymake-show-diagnostics-at-end-of-line t) ; 行尾显示
+    (setq flymake-no-changes-timeout nil)            ; 实时检查
+  )
+#+end_src
+
+*** 单独的检查函数
+还可以单独定义一个检查函数，方便查看。
+#+begin_src emacs-lisp
+  ;; 定义ruff-check 修复命令
+  (reformatter-define ruff-check
+    :program "ruff"
+    :args '("check" "--fix" "-")
+    :lighter " RuffCheck"
   )
 
-  ;;️ 定义一个新的 Flycheck 检查器
-  (flycheck-define-checker python-ruff
-    "A Python syntax checker using Ruff."
-    :command ("ruff" "check" "--output-format" "json" source) ; 采用 JSON 输出，便于解析
-    :error-parser
-    (lambda (output _checker _buffer)
-      ;; 将 Ruff 的 JSON 解析为 Flycheck 错误结构
-      (let ((json (json-parse-string output :object-type 'alist)))
-        (mapcan (lambda (diag)
-                  (let* ((code (alist-get 'code diag))
-                         (msg  (alist-get 'message diag))
-                         (path (alist-get 'filename diag))
-                         (line (alist-get 'line diag))
-                         (col  (alist-get 'column diag))
-                         (severity (alist-get 'severity diag))
-                         (level (pcase severity
-                                  ("error"   'error)
-                                  ("warning" 'warning)
-                                  (_         'info))))
-                    (list (flycheck-error-new
-                           :buffer (current-buffer)
-                           :filename path
-                           :line line
-                           :column col
-                           :message (format "%s [%s]" msg code)
-                           :level level))))
-                (alist-get 'diagnostics json))))
-    :error-filter
-    (lambda (errors) (flycheck-sanitize-errors errors))
-    :modes (python-mode)
-    :next-checkers ((warning . python-pylint))) ; 若想在 Ruff 之后再跑 pylint，可自行调整
+  ; 单独再定义一个检查函数
+  (defun ruff-check ()
+    (interactive)
+    (let ((current-file (buffer-file-name)))
+      (if current-file
+          (async-shell-command
+           (format "ruff check --select ALL %s" (shell-quote-argument current-file))
+          )
+      )
+    )
+  )
 
-  ;; 启用 ruff 检查器
-  (add-to-list 'flycheck-checkers 'python-ruff)
-
-  ;; 启用该检查器（让它在 Python 缓冲区自动生效）
+  ;; 在python mode中，保存时自动运行ruff-format
   (add-hook 'python-mode-hook
             (lambda ()
-              (flycheck-select-checker 'python-ruff)
-              (flycheck-mode 1)))
-
+              (add-hook 'before-save-hook #'ruff-format-region nil t))
+  )
 #+end_src
+
 =ruff= 需要单独安装，用 =pip= 或者 =brew= 都可以，只要系统的命令行可以找到它就行。
 
 ** 代码跳转
@@ -186,7 +175,11 @@ elpy-goto-definition= 或者 =M-x elpy-goto-definition-other-window= （在新�
           (error (elpy-rgrep-symbol
                      (concat "\\(def\\|class\\)\s" (thing-at-point 'symbol) "(")))))
 
-    (define-key elpy-mode-map (kbd "C-c d")     'elpy-goto-definition-or-rgrep)
+  (define-key elpy-mode-map (kbd "C-c .")     'elpy-goto-definition)
+  (define-key elpy-mode-map (kbd "C-c d")     'elpy-goto-definition-or-rgrep)
+  (define-key elpy-mode-map (kbd "C-x C-.")   'xref-find-definitions)
+  (define-key elpy-mode-map (kbd "C-x C-/")   'xref-find-references)
+  (define-key elpy-mode-map (kbd "C-x C-,")   'xref-pop-marker-stack)
 #+end_src
 当按下 =C-c d= or =M-x elpy-goto-definition-or-rgrep= 时，就会把所有相关的 class 和 def 定义文件都找到。
 
@@ -289,22 +282,18 @@ Emacs 里最流行的 LSP 客户端有三个：
            (python-mode . hs-minor-mode)
            (python-mode . (lambda () (set-fill-column 88))))
     :config
-    ;; 告诉 eglot 不要管理 flymake
-    (setq eglot-managed-flymake nil)
-
     ;; 用basedpyright替换默认pylsp
     ;; 它会提供补全、跳转定义等功能，但诊断信息交给 flycheck
     (add-to-list 'eglot-server-programs
                  '(python-mode     . ("basedpyright-langserver" "--stdio"))
     )
-
-    ;; --- 关键：让 Eglot 不要接管 Flymake，为 Flycheck 腾出空间 ---
-    ;; 这样 Eglot 和 Flycheck 就不会打架了
-    (setq eglot-stay-out-of '(flymake))
-
-    ;; 关闭 pyright linting
+    ;; 关闭 pyright 的 linting，由 ruff 处理
     (setq eglot-workspace-configuration
-          '((:python (:analysis (:lintingMode "off")))))
+          '((:python (:analysis (:typeCheckingMode . "basic")
+                                (:lintingMode . "off")
+                                (:reportMissingImports . true)))))
+    (setq eglot-ignored-server-capabilities
+        '(:diagnosticProvider))    ; 只让 Flymake 报告 lint
 
     ;; 日志级别（调试时用 'debug'，日常用 'warning'）
     (setq eglot-log-level 'warning)
@@ -328,36 +317,17 @@ Emacs 里最流行的 LSP 客户端有三个：
 #+end_src
 可以看出，eglot 帮助 Emacs 对接了很多外部服务： =basedpyrigh, elpy, flyspell=,
 ......。它接受 =basedpyright= 等处理 python 代码后发来的信息，然后交给相应的工具去
-处理，eglot 再最后统一显示出来。比如，我们可以在调用 =flycheck= 进行语法检查，
+处理， =eglot= 再最后统一显示出来。比如，我们可以在调用 =flymake= 进行语法检查，
 #+begin_src emacs-lisp
-  (use-package flycheck-eglot
-    :ensure t
-    :after (flycheck eglot)
-    :config
-    (global-flycheck-eglot-mode 1))
-
+  (add-hook 'eglot-managed-mode-hook #'flymake-ruff-load)   
 #+end_src
 
 ** 代码格式化
 很多人写 python 代码，都不是很规范。由于 python 对格式有比较强的要求，不像 C/C++ 语言是自由格式。所以，我们可以用专门的工具来规范化代码。这里，仍然可以用 =ruff= 来完成此功能。
 #+begin_src emacs-lisp
-  (defun my/ruff-format-buffer ()
-    "使用 ruff 对当前 buffer 进行格式化（等价于 `ruff format`)."
-    (interactive)
-    (when (eq major-mode 'python-mode)
-      (let ((tmp (make-temp-file "ruff-format-" nil ".py")))
-        (write-region nil nil tmp nil 'silent)
-        (call-process "ruff" nil nil nil "format" "--quiet" tmp)
-        (replace-buffer-contents (find-file-noselect tmp))
-        (delete-file tmp)
-        (message "Ruff 格式化完成"))))
-
-  ;; 保存时自动格式化（可自行决定是否开启）
-  (add-hook 'before-save-hook #'my/ruff-format-buffer)
-
   (use-package ruff-format
     :ensure t
-    :defer t
+    :after (flymake ruff)
   )
 
   (use-package reformatter
@@ -369,22 +339,26 @@ Emacs 里最流行的 LSP 客户端有三个：
     ;; 定义ruff-format格式化命令
     (reformatter-define ruff-format
       :program "ruff"
-      :args '("format" "-")
+      :args '("format" "--stdin-filename", buffer-file-name "-")
       :lighter " UrffFmt"
     )
-    ;; 定义ruff-check 修复命令
-    (reformatter-define ruff-check
-      :program "ruff"
-      :args '("check" "--fix" "-")
-      :lighter " RuffCheck"
-    )
-    ;; 在python mode中，保存时自动运行ruff-format
-    (add-hook 'python-mode-hook
-              (lambda ()
-                (add-hook 'before-save-hook #'ruff-format-region nil t)))
   )
 
+  (defcustom ruff-format-import-command "ruff"
+    "Ruff command to use for formatting."
+    :type 'string
+    :group 'ruff-format-import)
+
+  ;;;###autoload (autoload 'ruff-format-import-buffer "ruff-format-import" nil t)
+  ;;;###autoload (autoload 'ruff-format-import-region "ruff-format-import" nil t)
+  ;;;###autoload (autoload 'ruff-format-import-on-save-mode "ruff-format-import" nil t)
+  (reformatter-define ruff-format-import
+    :program ruff-format-import-command
+    :args (list "check" "--fix" "--select=I" "--stdin-filename" (or (buffer-file-name) input-file))
+    :lighter " RuffFmt"
+    :group 'ruff-format-import)
 #+end_src
+
 文件保存时，代码会自动被格式化。
 
 至此，我们已经打造了一个漂亮好用的 Python IDE。Enjoy it.
