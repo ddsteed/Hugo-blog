@@ -1,5 +1,4 @@
 baseURL = "/"
-#languageCode = "zh-cn"
 title = "点点马的蚂蚁窝"
 enableRobotsTXT = true
 enableEmoji = true
@@ -13,13 +12,6 @@ googleAnalytics = ""      # UA-XXXXXXXX-X
 copyright = ""            # default: author.name ↓        # 默认为下面配置的 author.name ↓
 enableGitInfo = true      # use git commit log to generate lastmod record # 可根据 Git 中的提交生成最近更新记录。
 uglyURLs = true           # more info: https://gohugo.io/content-management/urls/#ugly-urls
-
-# language support # en / zh-cn / other... translations present in i18n/
-#defaultContentLanguage = "zh-cn"           # Default language to use
-
-#[author]
-#  name = "rds"            # essential                     # 必需
-#  url = "/about"          # optional                      # 可选
 
 [sitemap]                 # essential                     # 必需
   changefreq = "weekly"
@@ -52,11 +44,6 @@ uglyURLs = true           # more info: https://gohugo.io/content-management/urls
   identifier = "about"
   pageref = "/about/index-zh"
 
-#[[menu.main]]
-# name = "外部链接"
-# weight = 50
-# pageref = "/link/"
-
 [params]
   debug = false             # If true, load `eruda.min.js`. See https://github.com/liriliri/eruda
   since = "2012"            # Site creation time          # 站点建立时间
@@ -64,9 +51,9 @@ uglyURLs = true           # more info: https://gohugo.io/content-management/urls
   rssFullContent = true     # if false, Rss feed instead of the summary
   mainSections = ["post"]
 
-  author.name = "RDS"      # essential                     # 必需
+  author.name = "RDS"       # essential                     # 必需
   author.email = "ddsteed@gmail.com" # optional, for RSS             # 可选
-  author.url = "/about"        # optional                      # 可选
+  author.url = "/about"     # optional                      # 可选
 
   # site info (optional)                                  # 站点信息（可选，不需要的可以直接注释掉）
   logoTitle = "点点马的蚂蚁窝"        # default: the title value    # 默认值: 上面设置的 title 值
@@ -75,10 +62,6 @@ uglyURLs = true           # more info: https://gohugo.io/content-management/urls
 
   # paginate of archives, tags and categories             # 归档、标签、分类每页显示的文章数目，建议修改为一个较大的值
   archive-paginate = 10
-
-  # paginate style, default use numbered pagination links
-  # if true, use original "Previous" and "Next" links.
-  # paginateOriginalStyle = true
 
   # The date format to use; for a list of valid formats, see https://gohugo.io/functions/format/
   dateFormatToUse = "2006-01-02"
@@ -93,14 +76,13 @@ uglyURLs = true           # more info: https://gohugo.io/content-management/urls
 
   # Optional custom wallpaper image URL. Can be a remote image or local /static/img/wallpaper.jpg (make sure it has a small filesize for quick site painting)
   wallpaper = "/static/img/wallpaper.jpg"
-# wallpaper = "https://followingmyfeet.com/wp-content/uploads/2018/02/825_2229-HDR.jpg"
 
   # 一些全局开关，你也可以在每一篇内容的 front matter 中针对单篇内容关闭或开启某些功能，在 archetypes/default.md 查看更多信息。
   # Some global options, you can also close or open something in front matter for a single post, see more information from `archetypes/default.md`.
   toc = true                                                                            # 是否开启目录
-  photoswipe = true         # see https://github.com/dimsemenov/PhotoSwipe            # 是否启用 PhotoSwipe（图片可点击）
-  bootcdn = false           # In china. @Deprecated: use [params.publicCDN]             # 是否使用 bootcdn(@Deprecated: 请使用[params.publicCDN])
-  mathjax = true           # see https://www.mathjax.org/                              # 是否使用 mathjax（数学公式）
+  photoswipe = true        # see https://github.com/dimsemenov/PhotoSwipe               # 是否启用 PhotoSwipe（图片可点击）
+  bootcdn = false          # In china. @Deprecated: use [params.publicCDN]              # 是否使用 bootcdn(@Deprecated: 请使用[params.publicCDN])
+  mathjax = true           # see https://www.mathjax.org/                               # 是否使用 mathjax（数学公式）
   katex = true             # see https://github.com/KaTeX/KaTeX
   contentCopyright = '<a rel="license noopener" href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank">CC BY-NC-ND 4.0</a>'
 
@@ -116,12 +98,6 @@ uglyURLs = true           # more info: https://gohugo.io/content-management/urls
   #   (relative to /static/css and /static/js respectively)
   customCSS = []            # if ['custom.css'], load '/static/css/custom.css' file
   customJS = []             # if ['custom.js'], load '/static/js/custom.js' file
-
-  # enable 'fork me on github', see https://blog.github.com/2008-12-19-github-ribbons/
-  # forkMeOnGithub = "https://github.com/xianmin/hugo-theme-jane"
-
-  # add custom info on the footer.   # 添加备案信息
-  # customFooter = "京 ICP 备 10000000 号-1"
 
   # Remark42 is self-hosted privacy-focused comment system, https://remark42.com
   remark42Url = "https://remark42.example.com"
@@ -230,20 +206,6 @@ uglyURLs = true           # more info: https://gohugo.io/content-management/urls
 #   t-youtube = "http://localhost:1313"
 #   u-twitch = "http://localhost:1313"
 
-# jsonfeed support
-# more information: https://github.com/xianmin/hugo-theme-jane/issues/23
-# to have json output it's necessary to uncomment this block of code and create a index.jsonfeed.json template, using hugo template specs
-# [outputs]
-#   home = ["html", "jsonfeed","rss"]
-#   page = ["html"]
-#
-# [outputFormats]
-# [outputFormats.jsonfeed]
-#   mediaType = "application/json"
-#   baseName = "feed"
-#   isPlainText = true
-
-
 # multilingual support example
 [langusges]
  [languages.en]
@@ -253,7 +215,6 @@ uglyURLs = true           # more info: https://gohugo.io/content-management/urls
  [languages.zh-cn]
    title = "点点马的蚂蚁窝"
    weight = 2
-
 
 # more information https://gohugo.io/getting-started/configuration-markup/#goldmark
 [markup]
