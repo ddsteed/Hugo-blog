@@ -22,7 +22,7 @@ CLOSED: [2024-12-06 Fri 14:53]
 #+ATTR_HTML: :width 50% :align center
 [[file:~/Documents/RDS/BLOG/hugo/static/img/hello_tree.jpg]]
 
-=
+-----
 
 小树，就是我们的心理 AI 陪伴助手，他/她会不厌其烦地与你聊天，天南海北、文艺八卦。我们训练了很多专业的心理咨询知识，融入到日常的语言聊天中，希望可以帮助到有需要的人。名字是一个朋友帮忙取的，说我们每个人，其实都需要一个树洞，来承接我们心里的话------不能也不愿意给任何其他人说的话。我们讲出去，有人倾听，然后有反馈，有交流，就很好了。
 
@@ -53,7 +53,7 @@ CLOSED: [2024-12-01 Sun 11:44]
 #+ATTR_HTML: :width 50% :align center
 [[file:~/Documents/RDS/BLOG/hugo/static/img/murongfu.jpg]]
 
-=
+-----
 
 慕容复是《天龙八部》里的一个角色，曾经与乔峰齐名，号称“北乔峰 南慕容”。他从小背负兴复大燕国的重任，为了这个所谓的“理想”，用尽了各种方法------更严格地形容，是不择手段。最后，他为了得到权力，杀害了“生死与共”的兄弟：包不同、邓百川等人，认贼作父，陷害他人......。可最后，他依然没有如愿，疯了，成了自己梦里的皇上。
 
@@ -152,7 +152,7 @@ CLOSED: [2024-11-12 Tue 19:56]
 #+ATTR_HTML: :width 60% :align center
 [[file:~/Documents/RDS/BLOG/hugo/static/img/hushi.jpg]]
 
-=
+-----
 
 民国时期文人的作品，我自小就很喜欢看。读大学的时候，第五教学楼后面，曾经有一个很小的岗亭。里面放一些图书馆里不大容易找到的书，花一角钱就可以借一本书三天。有段时间，我就几乎每周去一两次。最喜欢的就是各种民国大家的散文集。鲁迅的、周作人的、林语堂的、梁实秋的、朱自清的、郁达夫的、沈从文的、...，知名的，不知名的，我读了几十种。但记忆中，胡适的散文集就没有读到。那时，官方的认定里，胡适似乎还属于“反动的资产阶级”文人之列。
 
@@ -189,7 +189,7 @@ CLOSED: [2024-11-12 Tue 19:56]
 #+ATTR_HTML: :width 60% :align center
 [[file:~/Documents/RDS/BLOG/hugo/static/img/hushi1.jpg]]
 
-=
+-----
 
 我很喜欢胡适的这几篇日记，很喜欢。
 #+begin_quote
@@ -217,6 +217,8 @@ CLOSED: [2024-09-15 Sun 17:55]
 #+ATTR_HTML: :width 60% :align center
 [[file:~/Documents/RDS/BLOG/hugo/static/img/zhangweiying.jpg]]
 
+-----
+
 我是有些精英意识的，历史和社会的发展，虽然普罗大众是主体，但引领者却需要超脱现实，至少在理念上要高于世俗。而历史的每一次重大转折，其实也是这样超前的理念在社会上普及、沉淀、发酵、爆发的结果。只是这提出理念的先行者们，大多早已逝去，看不到他们理念的成功。
 
 张维迎，很少被当红的领导者列为“国师”。但看惯了那些所谓的“国师”们的表演，反而更欣赏这位西北汉子的直率和坦荡。我想，这样的人，才是真正的知识分子，才可以提出真正的观点，以及实施理念的力量。虽然，书里也能读到很多的无奈，让人不时掩卷长叹。
@@ -226,6 +228,8 @@ CLOSED: [2024-09-15 Sun 17:55]
 #+ATTR_ORG: :width 500
 #+ATTR_HTML: :width 60% :align center
 [[file:~/Documents/RDS/BLOG/hugo/static/img/idea_power.jpg]]
+
+-----
 
 * ✔ DONE 《中国历代政治得失》                           :reading:@读书:
 CLOSED: [2024-07-09 Tue 13:52]
@@ -246,11 +250,14 @@ CLOSED: [2024-07-09 Tue 13:52]
 #+ATTR_HTML: :width 60% :align center
 [[file:~/Documents/RDS/BLOG/hugo/static/img/politics_qm.jpg]]
 
+-----
 
 p.s. 我其实有很多钱穆先生的书，以下就是我的收藏。有时候读一本好书，胜过十本、百本一般的书籍。我慢慢学习先生的书吧。
 
 #+ATTR_HTML: :width 60% :align center
 [[file:~/Documents/RDS/BLOG/hugo/static/img/qianmu_books.png]]
+
+-----
 
 * ✔ DONE 大学的逻辑                                       :education:@教育:
 CLOSED: [2024-07-07 Sun 19:33]
@@ -280,12 +287,18 @@ CLOSED: [2024-07-07 Sun 19:33]
 #+ATTR_HTML: :width 60% :align center
 [[file:~/Documents/RDS/BLOG/hugo/static/img/adv_edu_t.jpg]]
 
+-----
+
 #+ATTR_HTML: :width 60% :align center
 [[file:~/Documents/RDS/BLOG/hugo/static/img/adv_edu_2.jpg]]
+
+-----
 
 张维迎先生是我非常尊敬的一名学者，他的著作，《大学的逻辑》，我看了三遍。我觉得这么多年，他可以坚持自己的理念，还不断发展自己的思想。有风骨、有智慧。大学的逻辑，值得高校教育工作者反思和学习。
 #+ATTR_HTML: :width 60% :align center
 [[file:~/Documents/RDS/BLOG/hugo/static/img/adv_edu_3.jpg]]
+
+-----
 
 * ✔ DONE 学习“分岔”的乐趣                                       :study:@学习:
 CLOSED: [2024-04-14 Sun 16:03]
