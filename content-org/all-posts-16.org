@@ -39,6 +39,8 @@ CLOSED: [2016-07-25 Mon 18:10]
 #+attr_html: :width 400px
 [[../static/img/stanford.jpg]]
 
+-----
+
 * ✔ DONE 理论和计算                            :misc:@研究:
 CLOSED: [2016-07-24 Sun 19:51]
 :PROPERTIES:
