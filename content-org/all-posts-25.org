@@ -6,6 +6,18 @@
 #+STARTUP: inlineimages
 #+ATTR_ORG: :width 500
 
+* ✔ DONE 夜来幽梦                                                :misc:@感悟:
+CLOSED: [2025-12-08 Mon 11:34]
+:PROPERTIES:
+:EXPORT_FILE_NAME: jiang_cheng_zi_xiao_li
+:END:
+
+#+ATTR_ORG: :width 500
+#+ATTR_HTML: :width 60% :align center
+[[file:~/Documents/RDS/BLOG/hugo/static/img/jiang_cheng_zi_xiao_li.jpg]]
+
+----
+
 * ✔ DONE 一程                                                    :misc:@感悟:
 CLOSED: [2025-12-04 Thu 17:19]
 :PROPERTIES:
