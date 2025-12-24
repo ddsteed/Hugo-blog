@@ -6,6 +6,23 @@
 #+STARTUP: inlineimages
 #+ATTR_ORG: :width 500
 
+* ✔ DONE 夜来幽梦                                                :misc:@感悟:
+CLOSED: [2025-12-24 Wed 15:30]
+:PROPERTIES:
+:EXPORT_FILE_NAME: ye_lai_you_meng 
+:END:
+
+#+ATTR_ORG: :width 500
+#+ATTR_HTML: :width 60% :align center
+[[file:~/Documents/RDS/BLOG/hugo/static/img/xiang_jian_shi_nan.jpg]]
+
+----
+#+ATTR_ORG: :width 500
+#+ATTR_HTML: :width 60% :align center
+[[file:~/Documents/RDS/BLOG/hugo/static/img/wang_jin_tian_ya_lu.jpg]]
+
+----
+
 * ✔ DONE 好友的故事------竹子                                    :misc:@杂谈:
 CLOSED: [2025-12-13 Sat 14:31]
 :PROPERTIES:
@@ -39,7 +56,7 @@ CLOSED: [2025-12-13 Sat 14:31]
 
 我为学术界又将失去一名优秀的工作者而感到遗憾和悲伤，但竹子经历打击仍然坚强地站起来的状态，让我又觉得高兴和敬佩。这些年来，她一个人走南闯北，甚至异国他乡，风雨无惧，实在是我的榜样啊。突然想起 20 年前，在课堂上勇敢地站起来回答问题的竹子，确实当得起，“临危不惧，有勇有谋。”
 
-* 夜来幽梦                                                       :misc:@感悟:
+* 夜来幽梦 1                                                      :misc:@感悟:
 :PROPERTIES:
 :EXPORT_FILE_NAME: jiang_cheng_zi_xiao_li
 :END:
