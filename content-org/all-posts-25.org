@@ -52,8 +52,8 @@ CLOSED: [2025-12-27 Sat 17:05]
 
 我逐渐变成了一个保守主义者，狐狸，也成了我的头像。嗯，这只戴着围巾的狐狸，将会是我一生的标识吧。
 
-#+ATTR_ORG: :width 80
-#+ATTR_HTML: :width 20% :align center
+#+ATTR_ORG: :width 40
+#+ATTR_HTML: :width 10% :align center
 #+begin_center
  [[file:~/Documents/RDS/BLOG/hugo/static/img/fox.png]] 
 

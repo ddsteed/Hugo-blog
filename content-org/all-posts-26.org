@@ -174,10 +174,33 @@
 
 *大学教育的价值，不在于把答案讲得更满，而在于让一个人面对未知时仍有方向感。*
 
-* 拨琴弦的人：智能体 AI 时代，教育应该把孩子带向哪里？ :startup:education:@教育:@创业:
+* ✔ DONE 无题（二）                                              :misc:@感悟:
+CLOSED: [2026-01-23 Fri 16:08]
+:PROPERTIES:
+:EXPORT_FILE_NAME: yan_shu_wuti
+:END:
+
+#+ATTR_ORG: :width 500
+#+ATTR_HTML: :width 60% :align center
+
+[[file:~/Documents/RDS/BLOG/hugo/static/img/yan_shu_wanxisha.jpg]]
+
+----
+
+#+ATTR_ORG: :width 500
+#+ATTR_HTML: :width 60% :align center
+
+[[file:~/Documents/RDS/BLOG/hugo/static/img/zhao_yun_1.jpg]]
+
+----
+
+* ✔ DONE 拨琴弦的人：智能体 AI 时代，教育应该把孩子带向哪里？ :startup:education:@教育:@创业:
+CLOSED: [2026-01-23 Fri 10:03]
 :PROPERTIES:
 :EXPORT_FILE_NAME: bo_qin_xian
 :END:
+
+公众号：F-Ai 工作室 https://mp.weixin.qq.com/s/vZo2dtVuNNY0KHb7l7-TXA
 
 #+ATTR_ORG: :width 300
 #+ATTR_HTML: :width 40% :align center
@@ -551,6 +574,8 @@ CLOSED: [2026-01-16 Fri 10:23]
 :PROPERTIES:
 :EXPORT_FILE_NAME: F-Ai-studio 
 :END:
+
+公众号：F-Ai 工作室 https://mp.weixin.qq.com/s/nXrLYodD0-8JobmkpCaTuw
 
 #+ATTR_ORG: :width 300
 #+ATTR_HTML: :width 40% :align center
