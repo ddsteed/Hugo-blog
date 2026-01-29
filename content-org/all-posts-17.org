@@ -3,18 +3,17 @@
 #+options: author:nil
 #+options: ^:nil
 
-* ✔ DONE 构建笔记系统                           :study:@学习:
-CLOSED: [2017-11-29 Thu 09:53]
-:PROPERTIES:
-:EXPORT_FILE_NAME: create-notes
-:END:
-
-#+INCLUDE: "~/Documents/RDS/NOTES/Org/Roam/articles/构建笔记系统.org"
-
-* ✔ DONE 学习的途径                             :study:@学习:
+* ✔ DONE 学习的途径                                             :study:@学习:
 CLOSED: [2017-07-22 Sat 10:01]
 :PROPERTIES:
-:EXPORT_FILE_NAME: study-road
+:EXPORT_FILE_NAME: 20170722-study-road
 :END:
 
-#+INCLUDE: "~/Documents/RDS/NOTES/Org/Roam/articles/学习的途径.org"
+** 唯一有效的四种方法
+理解和真正掌握某种知识，是极其重要的。现实中，我们常常收藏了某个知识，或者暂时记忆背诵了某个内容，就自以为明白和掌握了，这是非常肤浅的。若想掌握某项知识，并能在今后的工作生活中灵活运用，正确的学习途径就必不可少：
+
+- 同时运用多种方式学习和记忆：包括视听结合、手写机打，总之就是尽可能调动一切接收信息的能力；
+- 及时复习：遗忘曲线不可盲从，但必须得有间隔性地复习；
+- 用自己的语言复述或者写作下来，切不可照抄；
+- 将所学习的内容加入到自己已有的知识网状结构中，使之成为网络中的一个节点，与原有的知识形成关联。
+

@@ -6,7 +6,7 @@
 * ✔ DONE 梅西“封王”，纪念一周年                                  :misc:@感悟:
 CLOSED: [2023-12-20 Wed 11:11]
 :PROPERTIES:
-:EXPORT_FILE_NAME: messi-jinian
+:EXPORT_FILE_NAME: 20231220-messi-jinian
 :END:
 距离阿根廷世界杯夺冠，刚刚一年。网上阿根廷的粉丝、梅西的粉丝热闹起来，到处都是回忆和开心的帖子。连梅西自己也在 ins 上连发两条，十几张照片。可见梅西心里也是久久不能忘怀的。更有财力雄厚的粉丝，继续在上海外滩包下大屏，滚动播放夺冠的镜头。于是，去年世界杯的各种场景，尤其决赛的画面，又浮现在脑海里，仿佛没有过去一年，而是一天。很多人在感慨，去年，我们“阳”了，梅西也“羊”了。（梅西去年正式被国际足联称为“Greatest of All Times”，简称 GOAT。）
 
@@ -59,7 +59,7 @@ CLOSED: [2023-12-20 Wed 11:11]
 * ✔ DONE “殉道者”有什么意义                                    :misc:@杂谈:
 CLOSED: [2023-09-29 Fri 07:35]
 :PROPERTIES:
-:EXPORT_FILE_NAME: oppenheimer
+:EXPORT_FILE_NAME: 20230929-oppenheimer
 :END:
 诺兰导演的《奥本海默》，在国内外的反响差别很大。在北美的票房超过 3 亿美元，但是在中国，很多人评价说故事沉闷乏味，没有情节的剧烈冲突，在电影院几乎睡着。
 
@@ -105,7 +105,8 @@ signifying nothing.
 
 奥本海默可以选择反击，可以用无与伦比的聪明才智让自己功成名就。可是，他选择了牺牲自己，通过让自己在那些愚蠢的“审查者”面前受尽屈辱的方式，传递自己的观点：我们盗取了“火”，该如何正确使用它？实际上，诺兰的电影，正是这本获得普利策奖的著作改编而来-----“American Prometheus”。普罗大众，知晓了奥本海默的思想，尽管并没有真正理解他牺牲的方式。
 
-#+ATTR_HTML: :width 50% :align center
+#+ATTR_ORG: :width 400
+#+ATTR_HTML: :width 40% :align center
 [[file:~/Documents/RDS/BLOG/hugo/static/img/opp-prometheus.png]]
 
 -----
@@ -116,12 +117,12 @@ signifying nothing.
 * ✔ DONE 《芯片战争》                                   :reading:@读书:
 CLOSED: [2023-08-01 Tue 13:47]
 :PROPERTIES:
-:EXPORT_FILE_NAME: chipwar
+:EXPORT_FILE_NAME: 20230801-chipwar
 :END:
 最近，我花了将近三个月的时间阅读了一本去年刚出的新书 《Chip War: The Fight for the World's Most Critical Techonolgy》。这大概算是过去几年，耗费我最多时间的一本非专业书籍了。当然，部分原因是英文版的书，我读起来比中文版的要慢很多；部分原因是过去三个月头脑不是很清醒，读书速度大大变慢 😝
 
-#+ATTR_ORG: :width 500
-#+ATTR_HTML: :width 50% :align center
+#+ATTR_ORG: :width 400
+#+ATTR_HTML: :width 40% :align center
 [[file:~/Documents/RDS/BLOG/hugo/static/img/chipwar.jpg]]
 
 -----
@@ -151,7 +152,7 @@ CLOSED: [2023-08-01 Tue 13:47]
 * ✔ DONE 那些稀奇古怪的发音                                      :misc:@杂谈:
 CLOSED: [2023-07-18 Tue 11:33]
 :PROPERTIES:
-:EXPORT_FILE_NAME: pronounce
+:EXPORT_FILE_NAME: 20230718-pronounce
 :END:
 
 我有个癖好，喜欢对外文中那些稀奇古怪的词，研究它们的正确发音。大概是因为我有强迫症，所以我完全无法忍受一个词被错误地念来念去。如果是人名，念错了，我更要疯掉。我的名字就从小被人喊错，每次听到被喊“Feng Ying”的时候，我都不愿意答应 😤
@@ -207,7 +208,7 @@ e^{i\ pi} + 1  = 0
 * ✔ DONE 13 年后的“重逢”                                        :misc:@杂谈:
 CLOSED: [2023-07-02 Sun 11:04]
 :PROPERTIES:
-:EXPORT_FILE_NAME: luguhu
+:EXPORT_FILE_NAME: 20230702-luguhu
 :END:
 
 女儿暑期要去深圳实习，于是闹着安排了一次西昌和泸沽湖的自驾游。上一次来泸沽湖是 2010 年 1 月，当时刚去西华大学，年终的时候学院有传统，大家自费集体出去玩一次。那次选的是泸沽湖，而我对出去旅游这件事毫无经验，连准备什么都不知道，因此冬季的泸沽湖气温是多少，都是到了之后才有感觉。结果就是----我不得不借同事的衣服来御寒 😅
@@ -222,7 +223,8 @@ CLOSED: [2023-07-02 Sun 11:04]
 十年一觉西华梦，白首方晓万事新。
 #+end_quote
 
-#+ATTR_HTML: :width 50% :align center
+#+ATTR_ORG: :width 400
+#+ATTR_HTML: :width 40% :align center
 [[file:~/Documents/RDS/BLOG/hugo/static/img/luguhu.jpg]]
 
 -----
@@ -230,7 +232,7 @@ CLOSED: [2023-07-02 Sun 11:04]
 * ✔ DONE "hjkl"和鼠标的斗争                     :misc:@杂谈:
 CLOSED: [2023-05-27 Sat 17:43]
 :PROPERTIES:
-:EXPORT_FILE_NAME: hjkl-vs-mouse
+:EXPORT_FILE_NAME: 20230527-hjkl-vs-mouse
 :END:
 程序员的世界里，有两派截然不同的风格：一是老旧的“键盘侠”，喜欢手不离开键盘，操纵一切；与之相反的是“鼠标点点点”，所有的东西都尽量用图形界面，用鼠标来操控方向，指点江山。
 
@@ -264,7 +266,7 @@ hjkl，嗯，好土的方式，却是我最爱的方式。
 * ✔ DONE old fashion man                                         :misc:@杂谈:
 CLOSED: [2023-05-07 Sun 18:45]
 :PROPERTIES:
-:EXPORT_FILE_NAME: old-fashion-man
+:EXPORT_FILE_NAME: 20230507-old-fashion-man
 :END:
 
 #+ATTR_HTML: :width 50% :align center
@@ -296,13 +298,15 @@ Linux 的版本越来越多，RedHat 逐渐取代了 Slackware，然后是 SuSE�
 * ✔ DONE 《Not Even Wrong》                                 :reading:@读书:
 CLOSED: [2023-04-28 Fri 19:58]
 :PROPERTIES:
-:EXPORT_FILE_NAME: not-even-wrong
+:EXPORT_FILE_NAME: 20230428-not-even-wrong
 :END:
 
 《Not Even Wrong》是一本科普书，关于弦理论的来龙去脉，以及为什么这个高大上的理论会“失败”的调侃。我很喜欢这本书，一是它通过超弦这个理论的曲折发展历程，再次阐明了为什么物理学之所以是科学的道理；二是它还略带幽默和自嘲的文笔，特别是书名，来自于伟大的物理学家 Pauli 的名言：这连错误都算不上。(英文：It is not only not right, it is not even wrong. 德语原版：Das ist nicht nur nicht richtig, es ist nicht einmal falsch!)
 
 作者自称是科普书，但随便找出一页，让大家看看，长什么样子：
-#+ATTR_HTML: :width 50% :align center
+
+#+ATTR_ORG: :width 400
+#+ATTR_HTML: :width 40% :align center
 [[file:~/Documents/RDS/BLOG/hugo/static/img/not_even_wrong_qm.jpg]]
 
 -----
@@ -325,13 +329,15 @@ CLOSED: [2023-04-28 Fri 19:58]
 * ✔ DONE 《阅读的方法》-------用自己的话表达思想            :reading:@读书:
 CLOSED: [2023-04-02 Sun 09:58]
 :PROPERTIES:
-:EXPORT_FILE_NAME: writing-own-words
+:EXPORT_FILE_NAME: 20230402-writing-own-words
 :END:
 
 得到的联合创始人罗振宇写了一本书《阅读的方法》，本意是像劝导更多的人喜爱读书、发现读书的乐趣，甚至于找到知识的用途。他大力推崇陶渊明的读书心得：“好读书，不求甚解；每有会意，便欣然忘食。”万维钢也推荐了这本书，并补充了司马迁的读书见解：精益求精，应收尽收。
 
 罗振宇是一个读书非常多也非常快的人，据他自己说他每天用 34 寸的大显示器打开电子书，每次扫过三千字，很快读完三万字的书......。因此，这本书大量引用了他觉得很好很有用的其他人书里的内容，看起来的风格就像这样：
-#+ATTR_HTML: :width 50% :align center
+
+#+ATTR_ORG: :width 400
+#+ATTR_HTML: :width 40% :align center
 [[file:~/Documents/RDS/BLOG/hugo/static/img/luo_read_2.jpg]]
 
 -----
@@ -349,7 +355,8 @@ CLOSED: [2023-04-02 Sun 09:58]
 
 所以，虽然我觉得罗振宇的这本《阅读的方法》从内容上来说还算可以，但我也没有动力推荐给朋友看。反而我们自己需要引以为戒：阅读、理解、用自己的话讲述。
 
-#+ATTR_HTML: :width 30% :align center
+#+ATTR_ORG: :width 300
+#+ATTR_HTML: :width 40% :align center
 [[file:~/Documents/RDS/BLOG/hugo/static/img/luo_read.jpg]]
 
 -----
@@ -357,7 +364,7 @@ CLOSED: [2023-04-02 Sun 09:58]
 * ✔ DONE 文档中插入图形                                             :tech:@技术:
 CLOSED: [2023-02-02 Thu 11:35]
 :PROPERTIES:
-:EXPORT_FILE_NAME: insert-figures-in-doc
+:EXPORT_FILE_NAME: 20230202-insert-figures-in-doc
 :END:
 
 ** 传统的文字-图形融合
@@ -456,7 +463,7 @@ CLOSED: [2023-02-02 Thu 11:35]
 * ✔ DONE 读书的步骤                             :study:@学习:
 CLOSED: [2023-01-27 Fri 10:38]
 :PROPERTIES:
-:EXPORT_FILE_NAME: reading-steps
+:EXPORT_FILE_NAME: 20230127-reading-steps
 :END:
       
 书有两种，一是“文艺”书，一是“学术”书。当然，还有一类“书”不在上述二者之列，我称之为“废书”，读也可，不读亦可，没有好处，只有坏处：👉浪费时间。
@@ -480,7 +487,7 @@ CLOSED: [2023-01-27 Fri 10:38]
 * ✔ DONE 价值                                  :startup:@创业:
 CLOSED: [2023-01-25 Wed 12:18]
 :PROPERTIES:
-:EXPORT_FILE_NAME: human-value
+:EXPORT_FILE_NAME: 20230125-human-value
 :END:
 
 人的价值体现为，这个世界由于你的存在*变得更好*, 而不是变得更差。
@@ -509,7 +516,7 @@ CLOSED: [2023-01-25 Wed 12:18]
 * ✔ DONE empathy vs. sympathy                 :misc:@感悟:
 CLOSED: [2023-01-19 Thu 11:37]
 :PROPERTIES:
-:EXPORT_FILE_NAME: sympathy-vs-empathy
+:EXPORT_FILE_NAME: 20230119-sympathy-vs-empathy
 :END:
 
 - empathy :: 同理心
@@ -526,11 +533,133 @@ CLOSED: [2023-01-19 Thu 11:37]
 * ✔ DONE 如何创建个人 Blog                                     :tech:@技术:
 CLOSED: [2023-01-15 Sun 21:19] SCHEDULED: <2023-01-14 Sat>
 :PROPERTIES:
-:EXPORT_FILE_NAME: org-hugo-blog
+:EXPORT_FILE_NAME: 20230115-org-hugo-blog
 :END:
- 
-#+INCLUDE: "~/Documents/RDS/NOTES/Org/Roam/articles/org-mode-hugo-to-blog.org"
+ 这里有三个概念首先需要理清：
 
+1. 用 org-mode 模式写文章，并将 org 格式的文章转换为 markdown 格式，以便 hugo 可以识别；
+2. 使用 hugo 建立静态网页；
+3. 将本地静态网页发布到互联网上。
+   
 
-* Footnotes
+** org-mode 写文档
+
+org-mode 是一种标记模式，把文档的内容和格式分开，这样所有的文档都是文本模式。org-mode 模式已经被很多编辑器支持了，但还是 Emacs 支持得最好。因此，请参考 [[https://orgmode.org][org mode]] 网站，学习如何使用 org-mode 模式。
+
+** hugo 制作网页
+=hugo= 是一个静态网站生成器。所谓网站，就是有逻辑关系的各 html 网页组成的集合。html 本质上也是一种标记语言，呈现的样式用特殊的标记来指明。由于组成网站的每个 html 网页的样式基本是相同的，因此，对于网站来说，更好的方式是把样式统一在一起。这些样式说明文件以 css 语言最为流行。
+
+*** 快速建立网站
+[[https://gohugo.io/getting-started/quick-start/][hugo quickstart]] 介绍了如何使用 hugo 快速建立一个网站，非常实用。这里我将模仿使用的命令记录如下：
+
+#+begin_src shell
+hugo new site quickstart
+cd quickstart
+git init
+git submodule add https://github.com/theNewDynamic/gohugo-theme-ananke themes/ananke
+echo "theme = 'ananke'" >> config.toml
+hugo server
+#+end_src
+
+进入建立好的 quickstart 目录，检查 hugo 大致的目录结构如下：
+#+begin_example
+├── archetypes  
+├── assets
+├── config.toml
+├── content
+├── data
+├── layouts
+├── public
+├── resources
+├── static
+└── themes
+#+end_example
+其中，
+- config.toml 文件为基本设置文件，网站样式都可以在这里指定。
+- themes 下包含多种不同的样式模版，可以到网上寻找喜欢的模版并改造。[fn:theme]
+- content/post 目录下是原始的文章内容，hugo 只认 markdwon 格式的。
+- public 目录下所有的内容可以打包发布出去。
+
+*** 本地浏览网站
+在 hugo 网站目录下执行：
+#+begin_src shell
+hugo server -D
+#+end_src
+然后打开浏览器，输入网址：http://127.0.0.1:1313 。则可以浏览网站所有内容。
+
+*** 发布网站内容
+在 hugo 网站目录下执行：
+#+begin_src shell
+hugo
+#+end_src
+则在 public 目录下会生成所有静态网站所需的全部文档，把这个目录下的所有内容拷贝到支持的域名中即可。
+
+** ox-hugo
+org-mode 写成的 =.org= 文档，可以直接输出成 =.md= 格式。然后拷贝到 hugo 网站的 content/post 目录下，用 hugo 进行管理，发布成静态网页。但这样的方式显得很“愚笨”，也不利于 org 的统一管理，尤其是想直接把 org-roam 建立的个人笔记系统中的文章发布在博客上。这时，我们可以采用 ox-hugo 宏包来方便处理。
+
+1. 在 emacs 的设置文件中加入：
+   #+begin_src emacs-lisp
+     (use-package ox-hugo
+       :ensure t   
+       :pin melpa 
+       :after ox)
+   #+end_src
+
+2. 在 hugo 网站下建立目录
+    #+begin_src shell
+    mkdir content-org
+    #+end_src
+
+3. 在该目录下建立文件--- all-posts.org，其表头内容如下：
+    #+begin_example
+    #+hugo_base_dir: ../
+    #+hugo_section: ./post/
+    #+end_example
+    这里，
+    - HUGO_BASE_DIR :: 这里是博客的根目录，因为我的 =org= 文件放在博客根目录下的 content-org，所以这里博客的根目录就是 “../” ，也就是本目录的上一层目录
+    - HUGO_SECTION :: 生成的 =markdown= 文件的位置，比如 "./post/" 就会将 =markdown= 文件生成在博客根目录下的 "content/post/"
+
+    然后在里面按照 org-mode 的格式添加博客文章，比如：
+    #+begin_example
+       *  DONE 使用 Org-Mode+ox-hugo+github page 创建个人 Blog       :tech:@技术:
+         CLOSED: [2023-01-14 Sat 16:36] SCHEDULED: <2023-01-14 Sat>
+         :PROPERTIES:
+         :EXPORT_FILE_NAME: org-hugo-blog
+         :END:
+    #+end_example
+    即，每一篇博客文章都作为 all-posts.org 文件里的一级标题，且必须包含如下三行：
+    #+begin_example
+         :PROPERTIES:
+         :EXPORT_FILE_NAME: filename
+         :END:
+    #+end_example
+    状态为 DONE 的文章，才会被正式发布出去。如果是 TODO，则在本地预览时，也可看到。当然，还可以添加 tag 和 category。这样设置以后的文档出现在网站的不同分类中。
+
+4. 每当更新完一篇博客文章后，都在 all-posts.org 文件里执行：
+    #+begin_src emacs-lisp
+      C-c C-e
+      H
+      A
+    #+end_src
+
+** 发布到 github 静态网站上
+如果有域名，则可以将 public 目录下的所有内容拷贝上去即可。github 网站提供了一个免费的个人 blog 方法。
+1. 在 github 上建立 yourname.github.io 仓库。（注意：必须是你在 github 上的账号名作为 yourname。）
+2。 在 public 目录下建立 git 仓库：
+#+begin_src shell
+  git init
+  git remote add github git@github.com:yourname/yourname.github.io.git
+#+end_src
+以后每次博客更新后，都按照 git 的方式提交就好了。
+#+begin_src shell
+  git add .
+  git commit -m "test"
+  git push -f github master
+#+end_src
+
+ =github.io= 经常被屏蔽，可以尝试在阿里云上申请个人域名，再用域名解析的方式将 =github.io= 绑定。
+
+** Footnotes
+
+[fn:theme] 采用他人的主题，大多数只需要修改 =config.toml= 文件即可。但若想完全改造成自己希望的样式，还是需要深入到目录内部。因此，一旦选定了某个 theme，好好地定制一下，不要随便更新。
 

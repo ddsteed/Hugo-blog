@@ -6,7 +6,7 @@
 * ✔ DONE 大学教育                              :education:@教育:
 CLOSED: [2016-07-25 Mon 18:10]
 :PROPERTIES:
-:EXPORT_FILE_NAME: advanced-education
+:EXPORT_FILE_NAME: 20160725-advanced-education
 :END:
 在高校读书工作直到现在，已经二十多年了。经常有人问起的一个问题是：高校教师究竟应该以教书为主还是做科研为主？刚开始我以为这样的问题是不用回答的，因为现代大学不论中外，都有三个职责：培养人才、科学研究、服务社会，而前两个工作也是广义的服务社会。既然有三个功能，又怎能只偏向其中一个呢？
 
@@ -44,7 +44,7 @@ CLOSED: [2016-07-25 Mon 18:10]
 * ✔ DONE 理论和计算                            :misc:@研究:
 CLOSED: [2016-07-24 Sun 19:51]
 :PROPERTIES:
-:EXPORT_FILE_NAME: theory-and-computing
+:EXPORT_FILE_NAME: 20160724-theory-and-computing
 :END:
 
 终于完成了这个理论和程序，剩下的大量繁琐计算就交给计算集群吧。 

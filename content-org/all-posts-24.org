@@ -9,7 +9,7 @@
 * ✔ DONE Hello, 小树                                        :startup:@创业:
 CLOSED: [2024-12-06 Fri 14:53]
 :PROPERTIES:
-:EXPORT_FILE_NAME: hello_tree
+:EXPORT_FILE_NAME: 20241206-hello_tree
 :END:
 
 我曾经很长一段时间，没有方向。我不知道要做什么，但又对眼前的事情毫无兴趣。不论是在大学里当老师、做管理，还是离开之后创办企业，基本上都是被动地应付。我不知道什么是人生的意义，也不知道什么是工作的意义。我就这样，漫无目的地在人世间游荡着。
@@ -18,8 +18,8 @@ CLOSED: [2024-12-06 Fri 14:53]
 
 然而，我辜负了父亲的期望。这四年来，商海里浮沉，成功的经验几乎没有，失败的教训数不胜数。直到最近，我才想明白了，我可以做什么。其实，不需要高大上的技术和产品，只要能真正解决一些人的需求就好。于是，我们努力地把以前的技术---“动态智能知识图谱”和大语言模型结合起来，用全语音的方式进行聊天。今天，我们正式地推出了一个心理咨询 AI 助手------“树洞聊天屋-echo”。
 
-#+ATTR_ORG: :width 500
-#+ATTR_HTML: :width 50% :align center
+#+ATTR_ORG: :width 400
+#+ATTR_HTML: :width 40% :align center
 [[file:~/Documents/RDS/BLOG/hugo/static/img/hello_tree.jpg]]
 
 -----
@@ -42,15 +42,15 @@ Hello，小树，希望你能帮助我，完成这个心愿。
 * ✔ DONE 什么是成功                                            :misc:@感悟:
 CLOSED: [2024-12-01 Sun 11:44]
 :PROPERTIES:
-:EXPORT_FILE_NAME: what-is-success
+:EXPORT_FILE_NAME: 20241201-what-is-success
 :END:
 
 我戒了朋友圈，也不怎么看短视频。今早有人发了一个小视频给我看，原来是为《天龙八部》里的慕容复“翻案”的。说我们不能嘲笑慕容复，他只是没有成功而已。
 
 我忍不住就在视频的留言里回复了：
 
-#+ATTR_ORG: :width 500
-#+ATTR_HTML: :width 50% :align center
+#+ATTR_ORG: :width 400
+#+ATTR_HTML: :width 40% :align center
 [[file:~/Documents/RDS/BLOG/hugo/static/img/murongfu.jpg]]
 
 -----
@@ -80,7 +80,7 @@ CLOSED: [2024-12-01 Sun 11:44]
 * ✔ DONE 好友的故事------小宋                                  :misc:@杂谈:
 CLOSED: [2024-11-23 Sat 12:27]
 :PROPERTIES:
-:EXPORT_FILE_NAME: song-xin-yan
+:EXPORT_FILE_NAME: 20241123-song-xin-yan
 :END:
 小宋是我大学的同学，比我年长几岁。因为他复读了一年，高考的成绩也很好。我有次问他，为啥高考那么高成绩，还来这里读化学？他说，不知道啊，或许就是因为一个姑娘吧。
 
@@ -109,7 +109,7 @@ CLOSED: [2024-11-23 Sat 12:27]
 * ✔ DONE 好友的故事------陶                      :misc:@杂谈:
 CLOSED: [2024-11-16 Sat 12:13]
 :PROPERTIES:
-:EXPORT_FILE_NAME: chen-tao
+:EXPORT_FILE_NAME: 20241116-chen-tao
 :END:
 少时好友，陶，来成都出差，约我见一面。自从博士毕业，已经二十多年没有见到他了，异常欣喜。除了稍微发胖外，陶几乎没有变化，连头发都是乌黑的。他开玩笑说，已经躺平 20 多年了，不动脑筋，自然不老。
 
@@ -144,12 +144,12 @@ CLOSED: [2024-11-16 Sat 12:13]
 * ✔ DONE 《胡适文集》------温和的力量                       :reading:@读书:
 CLOSED: [2024-11-12 Tue 19:56]
 :PROPERTIES:
-:EXPORT_FILE_NAME: hushi
+:EXPORT_FILE_NAME: 20241112-hushi
 :END:
 这段时间，心绪不宁，开车与他人的车相撞，读书也看不下去。每本书，拿起来翻两页，完全不知所云。合上，再打开一本，还是如此。直到翻开这本文集，突然感觉到了一种力量，不是铿锵有力的那种，反而是一种流水一样的温和。而这样的温和，却让自己能稍稍平静一些。
 
-#+ATTR_ORG: :width 500
-#+ATTR_HTML: :width 60% :align center
+#+ATTR_ORG: :width 400
+#+ATTR_HTML: :width 40% :align center
 [[file:~/Documents/RDS/BLOG/hugo/static/img/hushi.jpg]]
 
 -----
@@ -203,7 +203,7 @@ CLOSED: [2024-11-12 Tue 19:56]
 * ✔ DONE 《理念的力量》                                     :reading:@读书:
 CLOSED: [2024-09-15 Sun 17:55]
 :PROPERTIES:
-:EXPORT_FILE_NAME: idea_power
+:EXPORT_FILE_NAME: 20240915-idea_power
 :END:
 我知道张维迎先生的名字，大概是 20 多年前，我在梳理中国的经济改革历程时，发现很多地方提到著名的“莫干山会议”。而张维迎作为一个年轻人，提出“双轨制”改革的理念。经过后来的起起落落，历经更多的是是非非争辩，中国的改革，大致走出了全面计划经济的桎梏。张维迎的作用，虽然很多人批评争功，但基本起了非常重要的正面作用。
 
@@ -213,7 +213,7 @@ CLOSED: [2024-09-15 Sun 17:55]
 
 于是，我收集了张维迎的所有著作，《大学的逻辑》，我读了不下三遍。这次旅行的途中，我把《理念的力量》一书，认真读完。虽然里面的观念和道理，很多我早已知晓，但从张维迎的字里行间里，我仍然感受到了他的殷殷期望之情、拳拳赤子之心。这本书出版已经十年，书里的很多预测，很多已得到验证。不幸的是，大多都是反面的应证------以负面的结果反衬张维迎的观念之对。
 
-#+ATTR_ORG: :width 500
+#+ATTR_ORG: :width 400
 #+ATTR_HTML: :width 60% :align center
 [[file:~/Documents/RDS/BLOG/hugo/static/img/zhangweiying.jpg]]
 
@@ -225,8 +225,8 @@ CLOSED: [2024-09-15 Sun 17:55]
 
 为之感叹。
 
-#+ATTR_ORG: :width 500
-#+ATTR_HTML: :width 60% :align center
+#+ATTR_ORG: :width 400
+#+ATTR_HTML: :width 40% :align center
 [[file:~/Documents/RDS/BLOG/hugo/static/img/idea_power.jpg]]
 
 -----
@@ -234,7 +234,7 @@ CLOSED: [2024-09-15 Sun 17:55]
 * ✔ DONE 《中国历代政治得失》                           :reading:@读书:
 CLOSED: [2024-07-09 Tue 13:52]
 :PROPERTIES:
-:EXPORT_FILE_NAME: politics_qs
+:EXPORT_FILE_NAME: 20240709-politics_qs
 :END:
 钱穆先生的《中国历代政治得失》一书，断断续续看了两个多月，终于看完了。年轻时多次听说过钱穆的大名，但对于他的书，总提不起兴致，好像觉得是一位老古董，絮絮叨叨地把中国古代的事，翻来覆去地唠叨好几遍。十年前，高晓松极力推荐他的《晚学盲言》，我买来之后，翻了几页，也就束之高阁了。
 
@@ -246,15 +246,15 @@ CLOSED: [2024-07-09 Tue 13:52]
 
 书后有钱穆先生的生平简要，其中有一句： =“卅四岁妻殁、儿殇、兄亡连遭三丧”= 。不禁掩卷长叹，要何等的人，才能承受如此大的变故而依然砥砺前行？钱穆先生活到了 96 岁，86 岁时患眼疾，“不能见字，不能读书”，只好口述，夫人记录，而后口诵耳听，一字一句修改订定，《晚学盲言》终稿时已 92 岁高龄。我想，钱穆先生本人，也是我称之为“民族脊梁”的一个代表了。《晚学盲言》一书，重新翻出来敬读。
 
-#+ATTR_ORG: :width 500
-#+ATTR_HTML: :width 60% :align center
+#+ATTR_ORG: :width 400
+#+ATTR_HTML: :width 40% :align center
 [[file:~/Documents/RDS/BLOG/hugo/static/img/politics_qm.jpg]]
 
 -----
 
 p.s. 我其实有很多钱穆先生的书，以下就是我的收藏。有时候读一本好书，胜过十本、百本一般的书籍。我慢慢学习先生的书吧。
 
-#+ATTR_HTML: :width 60% :align center
+#+ATTR_HTML: :width 40% :align center
 [[file:~/Documents/RDS/BLOG/hugo/static/img/qianmu_books.png]]
 
 -----
@@ -262,7 +262,7 @@ p.s. 我其实有很多钱穆先生的书，以下就是我的收藏。有时候
 * ✔ DONE 大学的逻辑                                       :education:@教育:
 CLOSED: [2024-07-07 Sun 19:33]
 :PROPERTIES:
-:EXPORT_FILE_NAME: what-is-advanced-education
+:EXPORT_FILE_NAME: 20240707-what-is-advanced-education
 :END:
 在高等教育的认识问题上，我经历了好几个阶段，现在的想法和最开始的认识，甚至可以用反转来形容。
 
@@ -283,19 +283,19 @@ CLOSED: [2024-07-07 Sun 19:33]
 
 这两天我重新翻看了十年前买的两本书，想起当时的困惑，不禁勾起了一些感慨。这几天，我和一所职业院校的师生交流，更加引起了反思。每次看到那些学生求知的眼神，我都无法正视自己的内心。
 
-#+ATTR_ORG: :width 500
-#+ATTR_HTML: :width 60% :align center
+#+ATTR_ORG: :width 400
+#+ATTR_HTML: :width 40% :align center
 [[file:~/Documents/RDS/BLOG/hugo/static/img/adv_edu_t.jpg]]
 
 -----
 
-#+ATTR_HTML: :width 60% :align center
+#+ATTR_HTML: :width 40% :align center
 [[file:~/Documents/RDS/BLOG/hugo/static/img/adv_edu_2.jpg]]
 
 -----
 
 张维迎先生是我非常尊敬的一名学者，他的著作，《大学的逻辑》，我看了三遍。我觉得这么多年，他可以坚持自己的理念，还不断发展自己的思想。有风骨、有智慧。大学的逻辑，值得高校教育工作者反思和学习。
-#+ATTR_HTML: :width 60% :align center
+#+ATTR_HTML: :width 40% :align center
 [[file:~/Documents/RDS/BLOG/hugo/static/img/adv_edu_3.jpg]]
 
 -----
@@ -303,7 +303,7 @@ CLOSED: [2024-07-07 Sun 19:33]
 * ✔ DONE 学习“分岔”的乐趣                                       :study:@学习:
 CLOSED: [2024-04-14 Sun 16:03]
 :PROPERTIES:
-:EXPORT_FILE_NAME: study-multiple
+:EXPORT_FILE_NAME: 20240414-study-multiple
 :END:
 我学习的习惯非常不好，常常会在学习一个知识的时候，偏离主航道，花费很多时间在偏路上。等蓦然回头时，才发现时间已经被“浪费”了很多。
 

@@ -6,7 +6,7 @@
 * ✔ DONE 人生不如意事                           :misc:@感悟:
 CLOSED: [2015-07-05 Sun 23:21]
 :PROPERTIES:
-:EXPORT_FILE_NAME: bu-ru-yi-shi
+:EXPORT_FILE_NAME: 20150705-bu-ru-yi-shi
 :END:
 
 今天凌晨，爬起来看美洲杯决赛。虽然我很累很困，但因为有梅西，有阿根廷，仍然坚持，在黑暗中捧着 iPad 观看。
@@ -37,7 +37,7 @@ CLOSED: [2015-07-05 Sun 23:21]
 * ✔ DONE 研究生招生                             :education:@教育:
 CLOSED: [2014-03-23 Sun 23:31]
 :PROPERTIES:
-:EXPORT_FILE_NAME: grad-zhaoseng
+:EXPORT_FILE_NAME: 20140323-grad-zhaoseng
 :END:
 又要到每年一度的研究生复试的时候了。在我们这样的学校，复试其实不是在选拔更优秀的学生，而大多是在调剂考别的学校分数不够或挑剩下的。因此，绝大多数考生对物理和化学的兴趣极低，只是为了读研究生而读，或者不想面对复杂的社会，不敢去找工作。
 
