@@ -6,6 +6,32 @@
 #+STARTUP: inlineimages
 #+ATTR_ORG: :width 500
 
+* ✔ DONE 怀旧                                                    :misc:@感悟:
+CLOSED: [2026-02-09 Mon 16:39]
+:PROPERTIES:
+:EXPORT_FILE_NAME: 20260209-huaijiu
+:END:
+
+#+ATTR_ORG: :width 500
+#+ATTR_HTML: :width 60% :align center
+
+[[file:~/Documents/RDS/BLOG/hugo/static/img/huai_jiu_fan_zhong_yan.jpg]]
+
+----
+
+* ✔ DONE 什么才是真正的专注                   :startup:education:@教育:@创业:
+CLOSED: [2026-02-08 Sun 11:25]
+:PROPERTIES:
+:EXPORT_FILE_NAME: 20260208-zhuanzhu
+:END:
+
+*公众号* ：F-Ai 工作室
+
+[[https://mp.weixin.qq.com/s/or6M_uFuH9JD-jzmh-55ig][为什么“乖巧”不等于“专注”？为什么坏习惯像黑洞一样难以逃逸？]]
+
+-----
+这是另一个 F 老师的文章，标准的物理博士。深奥的理论，准确的教育实践。
+
 * ✔ DONE 大学最该教的事                       :startup:education:@教育:@创业:
 CLOSED: [2026-02-01 Sun 10:24]
 :PROPERTIES:
