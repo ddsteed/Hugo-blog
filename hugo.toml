@@ -51,9 +51,9 @@ uglyURLs = true           # more info: https://gohugo.io/content-management/urls
   rssFullContent = true     # if false, Rss feed instead of the summary
   mainSections = ["post"]
 
-  author.name = "RDS"       # essential                     # 必需
-  author.email = "ddsteed@gmail.com" # optional, for RSS             # 可选
-  author.url = "/about"     # optional                      # 可选
+  # author.name = "RDS"       # essential                     # 必需
+  # author.email = "ddsteed@gmail.com" # optional, for RSS             # 可选
+  # author.url = "/about"     # optional                      # 可选
 
   # site info (optional)                                  # 站点信息（可选，不需要的可以直接注释掉）
   logoTitle = "点点马的蚂蚁窝"        # default: the title value    # 默认值: 上面设置的 title 值
@@ -102,6 +102,11 @@ uglyURLs = true           # more info: https://gohugo.io/content-management/urls
   # Remark42 is self-hosted privacy-focused comment system, https://remark42.com
   remark42Url = "https://remark42.example.com"
   remark42SiteId = "remark"
+
+  [params.author]
+  name = "RDS"       # essential                     # 必需
+  email = "ddsteed@gmail.com" # optional, for RSS             # 可选
+  url = "/about"     # optional                      # 可选
 
   [params.commentCount.remark42] # enable "comment count" feature for remark42, requires moreMeta param to be enabled as well
     enable = true
