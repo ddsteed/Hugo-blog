@@ -1,5 +1,5 @@
 baseURL = "/"
-title = "点点马的蚂蚁窝"
+title = "点点马的逍遥港"
 enableRobotsTXT = true
 enableEmoji = true
 theme = "jane"
@@ -56,7 +56,7 @@ uglyURLs = true           # more info: https://gohugo.io/content-management/urls
   # author.url = "/about"     # optional                      # 可选
 
   # site info (optional)                                  # 站点信息（可选，不需要的可以直接注释掉）
-  logoTitle = "点点马的蚂蚁窝"        # default: the title value    # 默认值: 上面设置的 title 值
+  logoTitle = "点点马的逍遥港"        # default: the title value    # 默认值: 上面设置的 title 值
   keywords = ["rds", "blog"]
   description = "冯灏，无所事事的创业者 | 这里是点点马的博客。"
 
@@ -218,7 +218,7 @@ uglyURLs = true           # more info: https://gohugo.io/content-management/urls
    title = "ddsteed's personal blog"
    weight = 1
  [languages.zh-cn]
-   title = "点点马的蚂蚁窝"
+   title = "点点马的逍遥港"
    weight = 2
 
 # more information https://gohugo.io/getting-started/configuration-markup/#goldmark
