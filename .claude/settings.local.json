@@ -131,7 +131,9 @@
       "Bash(/Users/fengh/Documents/RDS/BLOG/hugo.stack/layouts/partials/sidebar/left.html:*)",
       "Bash(grep -r \"Prev\\\\|Next\\\\|上一篇\\\\|下一篇\" . --include=*.html)",
       "Bash(find . -path */layouts/* -name *.html -type f)",
-      "Bash(find layouts:*)"
+      "Bash(find layouts:*)",
+      "Bash(ls:*)",
+      "Bash(/Users/fengh/Documents/RDS/BLOG/hugo.stack/theme-switch.sh)"
     ]
   }
 }
