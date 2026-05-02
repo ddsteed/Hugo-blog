@@ -1,0 +1,5 @@
+[article]
+    back            = "返回"
+    tableOfContents = "目录导航"
+    relatedContent  = "相关文章"
+    lastUpdatedOn   = "最后更新于"

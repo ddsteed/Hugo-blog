@@ -13,8 +13,7 @@ body {
   line-height: var(--line-height-normal);
   font-family: var(--font-family-base);
   color: var(--text-primary);
-  background-color: var(--bg-secondary);
-  background-image: radial-gradient(ellipse at top left, rgba(15, 27, 61, .03), transparent 60%);
+  background-color: var(--bg-primary);
 }
 
 /* 链接颜色 */
@@ -31,31 +30,12 @@ a {
    首页文章列表样式
    ------------------------------------------------------------------------------ */
 
-/* 文章标题 — 深蓝主色（浅色模式） */
-.article-list--compact .article-title,
-.article-list--tile .article-title,
-.article-list .article-title,
-.article-list article .article-title {
+/* 文章标题字体大小 */
+.article-list--compact .article-title {
   font-size: var(--article-title-size);
   font-family: var(--font-family-heading);
   font-weight: 600;
   line-height: var(--line-height-tight);
-  color: var(--primary-hover) !important;
-}
-
-/* 标题内的链接 */
-.article-list--compact .article-title a,
-.article-list--tile .article-title a,
-.article-list .article-title a,
-.article-list article .article-title a {
-  color: var(--primary-hover) !important;
-}
-
-.article-list--compact .article-title a:hover,
-.article-list--tile .article-title a:hover,
-.article-list .article-title a:hover,
-.article-list article .article-title a:hover {
-  opacity: 0.75;
 }
 
 /* 文章摘要预览 - 最多显示三行 */
@@ -87,16 +67,14 @@ a {
 .article-list article {
   margin-bottom: var(--spacing-lg);
   padding: var(--spacing-md);
-  border-radius: 12px;
-  background-color: var(--bg-primary);
+  border-radius: var(--radius-lg);
+  background-color: var(--bg-secondary);
   border: 1px solid var(--border-color);
-  box-shadow: 0 1px 3px rgba(15, 27, 61, .08);
-  transition: box-shadow var(--transition-base), transform var(--transition-base);
+  transition: box-shadow var(--transition-base);
 }
 
 .article-list article:hover {
-  box-shadow: 0 4px 12px rgba(15, 27, 61, .12);
-  transform: translateY(-2px);
+  box-shadow: var(--shadow-md);
 }
 
 /* 文章元数据（日期、阅读时间等） */
@@ -126,67 +104,9 @@ a {
 /* 侧边栏容器 */
 .sidebar {
   width: var(--sidebar-width);
-  background-color: var(--bg-primary);
+  background-color: var(--bg-secondary);
   padding: var(--spacing-lg);
   box-sizing: border-box;
-  border-right: 1px solid var(--border-color);
-  border-radius: 12px;
-  box-shadow: 0 1px 3px rgba(15, 27, 61, .06);
-}
-
-/* 左侧边栏 — 深蓝主色背景（浅色模式） */
-.left-sidebar {
-  background-color: var(--primary-color) !important;
-  border-radius: 12px;
-  box-shadow: 2px 0 12px rgba(15, 27, 61, .15);
-
-   .site-name a {
-    color: #ffffff !important;
-   }
-
-   .site-description {
-    color: rgba(255, 255, 255, .75) !important;
-   }
-
-   .site-name a,
-   .site-description,
-   .menu a,
-   .social-links a,
-   #dark-mode-toggle,
-   #i18n-switch {
-    color: rgba(255, 255, 255, .85) !important;
-    transition: color var(--transition-fast), background-color var(--transition-fast);
-   }
-
-   .menu a:hover,
-   .menu li.current a {
-    color: #ffffff !important;
-    background-color: rgba(255, 255, 255, .1) !important;
-    border-radius: 8px;
-   }
-
-   .social-links a:hover {
-    color: #ffffff !important;
-   }
-
-   #dark-mode-toggle:hover {
-    background-color: rgba(255, 255, 255, .1) !important;
-    border-radius: 8px;
-   }
-
-   #i18n-switch select {
-    color: rgba(255, 255, 255, .85) !important;
-   }
-
-   .hamburger-inner,
-   .hamburger-inner::before,
-   .hamburger-inner::after {
-    background-color: #ffffff !important;
-   }
-
-   .site-avatar .emoji {
-    background-color: rgba(255, 255, 255, .15) !important;
-   }
 }
 
 /* 侧边栏 Logo - 通过 CSS 添加 */
@@ -423,15 +343,14 @@ a {
 
 /* 分类卡片悬停效果 */
 .article-list--tile article {
-  border-radius: 12px;
+  border-radius: var(--radius-lg);
   overflow: hidden;
   transition: transform var(--transition-base), box-shadow var(--transition-base);
-  box-shadow: 0 1px 3px rgba(15, 27, 61, .08);
 }
 
 .article-list--tile article:hover {
   transform: translateY(var(--card-hover-offset));
-  box-shadow: 0 8px 24px rgba(15, 27, 61, .15);
+  box-shadow: var(--shadow-lg);
 }
 
 /* 卡片标题覆盖层 */
@@ -445,40 +364,37 @@ a {
    按钮和交互元素
    ------------------------------------------------------------------------------ */
 
-/* 主按钮样式 — 8px 圆角 */
+/* 主按钮样式 */
 .btn-primary {
-  background: linear-gradient(135deg, var(--primary-color), var(--primary-hover));
+  background-color: var(--primary-color);
   color: white;
   padding: var(--spacing-sm) var(--spacing-lg);
-  border-radius: 8px;
+  border-radius: var(--radius-md);
   border: none;
   font-weight: 600;
   cursor: pointer;
-  transition: all var(--transition-fast);
-  box-shadow: 0 2px 8px rgba(15, 27, 61, .15);
+  transition: background-color var(--transition-fast);
 
   &:hover {
-    box-shadow: 0 4px 16px rgba(15, 27, 61, .25);
-    transform: translateY(-1px);
+    background-color: var(--primary-hover);
   }
 }
 
-/* 标签样式 — 20px 圆角胶囊形 */
+/* 标签样式 */
 .tag {
   display: inline-block;
   padding: var(--spacing-xs) var(--spacing-sm);
   background-color: var(--bg-tertiary);
-  border-radius: 20px;
+  border-radius: var(--radius-md);
   font-size: var(--font-size-sm);
   color: var(--text-secondary);
   border: 1px solid var(--border-color);
   transition: all var(--transition-fast);
 
   &:hover {
-    background: linear-gradient(135deg, var(--primary-color), var(--primary-hover));
+    background-color: var(--primary-color);
     color: white;
     border-color: var(--primary-color);
-    box-shadow: 0 2px 8px rgba(15, 27, 61, .2);
   }
 }
 
@@ -513,11 +429,11 @@ a {
 
 .article-category a:hover,
 .category-link:hover {
-  background: linear-gradient(135deg, var(--accent-color), var(--accent-hover)) !important;
+  background-color: var(--accent-color) !important;
   color: white !important;
-  border-color: var(--accent-color) !important;
+  border-color: var(--accent-color);
   transform: translateY(-1px);
-  box-shadow: 0 4px 12px rgba(15, 27, 61, .2);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
 /* 标签链接样式 */
@@ -547,11 +463,11 @@ a {
 
 .article-tags a:hover,
 .tag-link:hover {
-  background: linear-gradient(135deg, var(--accent-color), var(--accent-hover)) !important;
+  background-color: var(--accent-color) !important;
   color: white !important;
-  border-color: var(--accent-color) !important;
+  border-color: var(--accent-color);
   transform: translateY(-1px);
-  box-shadow: 0 4px 12px rgba(15, 27, 61, .2);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
 /* 图标样式 */
@@ -584,74 +500,19 @@ a {
   color: var(--text-secondary);
   border: 1px solid var(--border-color);
   padding: 6px 14px;
-  border-radius: 20px;
+  border-radius: var(--radius-md);
   transition: all var(--transition-fast);
 
   &:hover {
-    background: linear-gradient(135deg, var(--primary-color), var(--primary-hover));
+    background-color: var(--primary-color);
     color: white;
     border-color: var(--primary-color);
     transform: scale(1.05);
-    box-shadow: 0 4px 12px rgba(15, 27, 61, .2);
   }
 }
 
-/* ------------------------------------------------------------------------------
-   搜索框 / 分页 / 小部件 — 深蓝极简风格（浅色模式）
-   ------------------------------------------------------------------------------ */
-
-.search-input {
-  border-radius: 8px;
-  background-color: var(--bg-primary);
-  border: 1px solid var(--border-color) !important;
-  color: var(--text-primary) !important;
-  transition: border-color var(--transition-fast), box-shadow var(--transition-fast);
-
-    &:focus {
-    border-color: var(--primary-color);
-    box-shadow: 0 0 0 3px rgba(15, 27, 61, .08);
-    outline: none;
-    }
-}
-
-.widget {
-  background-color: var(--bg-primary) !important;
-  border-radius: 12px;
-  box-shadow: 0 1px 3px rgba(15, 27, 61, .06);
-}
-
-.widget-title {
-  color: var(--text-primary) !important;
-}
-
-/* 分页组件 */
-.pagination .page-link {
-  border-radius: 8px !important;
-  background-color: var(--bg-primary);
-  border: 1px solid var(--border-color);
-  color: var(--text-secondary);
-  transition: all var(--transition-fast);
-}
-
-.pagination .page-link:hover {
-  background-color: var(--bg-secondary);
-  border-color: var(--primary-color);
-  color: var(--primary-color);
-}
-
-.pagination .page-link.current {
-  background: linear-gradient(135deg, var(--primary-color), var(--primary-hover));
-  color: white;
-  border-color: var(--primary-color);
-  box-shadow: 0 2px 8px rgba(15, 27, 61, .2);
-}
-
 /* 暗色模式适配 - 完整版（使用 data-scheme 属性） */
-:root[data-scheme="dark"] {
-    /* 深蓝极简 · 深色模式卡片背景 */
-    --card-background: #1a2332;
-    --card-background-selected: rgba(255, 255, 255, .08);
-    --card-text-color-main: #e2e8f0;
+html[data-scheme="dark"] {
   /* 全局基础样式覆盖 */
   body {
     background-color: var(--dark-bg-primary);
@@ -694,7 +555,6 @@ a {
   }
 
   /* 文章标题 - 使用更亮的颜色确保可读性 */
-   .article-title a,
   .article-title,
   .article-content h1,
   .article-content h2,
@@ -702,7 +562,7 @@ a {
   .article-content h4,
   .article-content h5,
   .article-content h6 {
-    color: #f0f4ff !important;   /* 极浅冷白，深蓝背景上对比度最高 */
+    color: #f8fafc !important;  /* 接近白色但更柔和 */
   }
 
   .article-content h2 {
@@ -982,7 +842,7 @@ a {
 }
 
 /* 暗色模式 */
-:root[data-scheme="dark"] {
+html[data-scheme="dark"] {
   .article-navigation {
     border-top-color: var(--dark-border-color) !important;
   }
@@ -1033,7 +893,7 @@ a {
   color: var(--text-secondary);
   border: 1px solid var(--border-color);
   padding: 6px 14px;
-  border-radius: 8px;
+  border-radius: var(--radius-md);
   font-size: 1.4rem;
   font-weight: 500;
   transition: all var(--transition-fast);
@@ -1156,12 +1016,7 @@ a {
 }
 
 /* 暗色模式 */
-:root[data-scheme="dark"] {
-    // 修复正文背景灰色问题
-    --card-background: #1a2332;
-    --card-background-selected: rgba(255, 255, 255, .08);
-    --card-text-color-main: #e2e8f0;
-
+html[data-scheme="dark"] {
   .article-tip {
     background-color: var(--dark-bg-secondary) !important;
     border-color: var(--dark-border-color) !important;

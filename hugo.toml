@@ -221,13 +221,13 @@ defaultContentLanguage = "zh-cn"
   # ==================== 颜色系统 ====================
   [params.style.colors]
     # 主色（链接、按钮等）
-    primary = "#3b82f6"
-    primaryHover = "#2563eb"
-    primaryLight = "#93c5fd"
+    primary = "#0f1b3d"
+    primaryHover = "#1a2b5e"
+    primaryLight = "#3d5a9e"
 
     # 强调色
-    accent = "#8b5cf6"
-    accentHover = "#7c3aed"
+    accent = "#0f1b3d"
+    accentHover = "#1a2b5e"
 
     # 状态色
     success = "#10b981"
@@ -237,17 +237,17 @@ defaultContentLanguage = "zh-cn"
 
     # 背景色（浅色模式）
     bgPrimary = "#ffffff"
-    bgSecondary = "#f8fafc"
-    bgTertiary = "#f1f5f9"
+    bgSecondary = "#f4f7fe"
+    bgTertiary = "#eef2fa"
 
     # 文本色（浅色模式）
-    textPrimary = "#1e293b"
-    textSecondary = "#64748b"
-    textMuted = "#94a3b8"
+    textPrimary = "#0f1b3d"
+    textSecondary = "#4a5a7a"
+    textMuted = "#8a95a8"
 
     # 边框和分割线
-    border = "#e2e8f0"
-    divider = "#cbd5e1"
+    border = "#d8e0f0"
+    divider = "#c8d2e8"
 
     # 暗色模式颜色
     darkBgPrimary = "#0f172a"

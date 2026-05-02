@@ -3,7 +3,10 @@ content/*
 !content/_index.md
 !content/_index.zh-cn.md
 
+.playwright-mcp
+
 archetypes
+bin
 data
 layouts
 public

@@ -133,7 +133,25 @@
       "Bash(find . -path */layouts/* -name *.html -type f)",
       "Bash(find layouts:*)",
       "Bash(ls:*)",
-      "Bash(/Users/fengh/Documents/RDS/BLOG/hugo.stack/theme-switch.sh)"
+      "Bash(/Users/fengh/Documents/RDS/BLOG/hugo.stack/theme-switch.sh)",
+      "Bash(hugo --minify)",
+      "Bash(find public:*)",
+      "Bash(grep -A 30 \"@media.*max-width.*768px\" resources/_gen/assets/scss/style.*.css)",
+      "Bash(grep -o \"\\\\.pagination.*not.*current\" public/scss/style.min.*.css)",
+      "Bash(hugo --quiet)",
+      "mcp__plugin_playwright_playwright__browser_navigate",
+      "mcp__plugin_playwright_playwright__browser_evaluate",
+      "mcp__plugin_playwright_playwright__browser_take_screenshot",
+      "Bash(python3 *)",
+      "mcp__plugin_playwright_playwright__browser_click",
+      "Bash(lsof -ti:1313)",
+      "Bash(curl -s http://localhost:1313/css/custom.scss)",
+      "Bash(curl -s http://localhost:1313/css/style.css)",
+      "Bash(curl -s http://localhost:1313/scss/style.min.*.css)",
+      "Bash(curl -s \"http://localhost:1313/scss/style.min.*.css\")",
+      "Bash(curl -s \"http://localhost:1313/scss/style.min.css\")",
+      "Bash(curl -s \"http://localhost:1313/\")",
+      "mcp__plugin_playwright_playwright__browser_snapshot"
     ]
   }
 }
