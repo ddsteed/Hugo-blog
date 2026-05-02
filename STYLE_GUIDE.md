@@ -1,256 +1,165 @@
 # Hugo Stack 主题自定义样式配置指南
 
 > 本文档详细说明了博客对 Stack 主题的所有自定义样式改动
-> 最后更新：2026-03-26
+> 最后更新：2026-05-02
 
 ---
 
-## 📁 自定义文件清单
+## 配置系统架构
 
 ```
-hugo.stack/
-├── layouts/                          # 模板覆盖
-│   ├── archives.html                 # 自定义归档页面
-│   ├── single.html                   # 自定义文章页面
-│   └── partials/
-│       ├── head/
-│       │   └── custom.html           # CSS 变量注入
-│       ├── widget/
-│       │   └── archives.html         # 自定义归档小部件
-│       ├── article-list/
-│       │   └── default.html          # 自定义文章列表（含摘要）
-│       └── article/components/
-│           ├── details.html          # 自定义文章元数据（字数、阅读时间）
-│           ├── tags.html             # 自定义标签显示
-│           └── navigation.html       # 自定义文章导航（上一篇/下一篇）
-│
-├── assets/
-│   └── scss/
-│       └── custom.scss               # 自定义样式（使用 CSS 变量）
-│
-└── hugo.toml                         # 主配置文件（含 [params.style]）
-```
-
----
-
-## 🎨 配置系统架构
-
-```
-┌─────────────────────────────────────────────────────────────┐
-│                      hugo.toml                              │
-│                    [params.style]                           │
-│         (颜色、字体、间距、圆角、阴影、过渡)                  │
-└────────────────────────┬────────────────────────────────────┘
-                         │
-                         ▼
-┌─────────────────────────────────────────────────────────────┐
-│           layouts/partials/head/custom.html                 │
-│              (读取 hugo.toml → 生成 CSS 变量)                 │
-└────────────────────────┬────────────────────────────────────┘
-                         │
-                         ▼
-┌─────────────────────────────────────────────────────────────┐
-│              assets/scss/custom.scss                        │
-│           (使用 CSS 变量定义所有样式)                         │
-└─────────────────────────────────────────────────────────────┘
+┌──────────────────────────────────────────────────────────────────┐
+│                      hugo.toml                                   │
+│                     [params.style]                               │
+│          (颜色、字体、间距、圆角、阴影、过渡)                        │
+└────────────────────────────┬─────────────────────────────────────┘
+                             │
+                             ▼
+┌──────────────────────────────────────────────────────────────────┐
+│         layouts/partials/head/custom.html                          │
+│              (读取 hugo.toml → 生成 CSS 变量)                        │
+└────────────────────────────┬─────────────────────────────────────┘
+                             │
+                             ▼
+┌──────────────────────────────────────────────────────────────────┐
+│               assets/scss/custom.scss                              │
+│            (使用 CSS 变量定义所有样式)                                │
+└──────────────────────────────────────────────────────────────────┘
 ```
 
 **核心思想**：所有样式参数集中在 `hugo.toml` 配置，CSS 通过变量使用这些参数。
 
 ---
 
-## 📋 功能模块详细说明
+## 文件清单
 
-### 1. 可移植样式系统
-
-#### 1.1 配置文件：`hugo.toml`
-
-**新增 `[params.style]` 配置节**（第 202-303 行）：
-
-```toml
-[params.style]
-  # 布局尺寸
-  sidebarWidth = "320px"
-  headerHeight = "64px"
-  articleMaxWidth = "720px"
-
-  # 组件尺寸
-  sidebarAvatarSize = "160px"
-  articleTitleSize = "1.4rem"
-  articleBodySize = "1.1rem"
-
-  # 颜色系统
-  [params.style.colors]
-    primary = "#3b82f6"           # 主色
-    accent = "#8b5cf6"            # 强调色
-    bgPrimary = "#ffffff"         # 背景色
-    textPrimary = "#1e293b"       # 文字色
-    # ... 更多颜色
-
-  # 字体系统
-  [params.style.fonts]
-    base = "'-apple-system', ..."
-    heading = "'-apple-system', ..."
-    mono = "'JetBrains Mono', ..."
-
-  # 间距系统
-  [params.style.spacing]
-    xs = "0.5rem"
-    sm = "0.75rem"
-    md = "1rem"
-    # ... 更多间距
-
-  # 效果（圆角、阴影、过渡）
-  [params.style.effects]
-    radiusMd = "8px"
-    shadowMd = "0 4px 6px rgba(0, 0, 0, 0.07)"
-    transitionFast = "150ms ease"
 ```
-
-#### 1.2 CSS 变量注入：`layouts/partials/head/custom.html`
-
-**功能**：从 `hugo.toml` 读取配置，生成 CSS 变量
-
-**关键实现**：
-```html
-<style>
-:root {
-  --primary-color: {{ $colors.primary | default "#3b82f6" }};
-  --bg-primary: {{ $colors.bgPrimary | default "#ffffff" }};
-  --font-family-base: {{ $fonts.base | default "..." }};
-  --spacing-md: {{ $spacing.md | default "1rem" }};
-  /* ... 所有 CSS 变量 */
-}
-
-/* 暗色模式变量 */
---dark-bg-primary: {{ $colors.darkBgPrimary | default "#0f172a" }};
---dark-text-primary: {{ $colors.darkTextPrimary | default "#f1f5f9" }};
-</style>
+hugo.stack/
+├── hugo.toml                           # 主配置（含 [params.style]）
+├── layouts/
+│    ├── archives.html                  # 自定义归档页
+│    ├── single.html                    # 自定义文章页
+│    └── partials/
+│        ├── head/
+│        │    ├── custom.html           # CSS 变量注入
+│        │    ├── custom-dark-forced.html
+│        │     └── custom-backup-light-normal.html
+│        ├── article/components/
+│        │    ├── details.html          # 文章元数据
+│        │    ├── navigation.html       # 上一篇/下一篇
+│        │    ├── tags.html             # 标签显示
+│        │     └── tip.html             # 赞赏组件
+│        ├── article-list/
+│         │     └── default.html         # 文章列表
+│        ├── sidebar/
+│         │     └── left.html            # 左侧边栏
+│         └── widget/
+│             ├── archives.html          # 归档小部件
+│              └── toc.html              # 目录小部件
+├── assets/
+│     └── scss/
+│          └── custom.scss              # 全部自定义样式
+└── content-org/                       # Org-mode 源文件
 ```
-
-#### 1.3 样式实现：`assets/scss/custom.scss`
-
-**功能**：使用 CSS 变量定义所有样式
-
-```scss
-body {
-  font-size: var(--font-size-base);
-  color: var(--text-primary);
-  background-color: var(--bg-primary);
-}
-
-.article-list article {
-  padding: var(--spacing-md);
-  border-radius: var(--radius-lg);
-  background-color: var(--bg-secondary);
-}
-```
-
-**移植方法**：要移植到其他主题，只需复制：
-1. `hugo.toml` 中的 `[params.style]` 配置
-2. `layouts/partials/head/custom.html`（CSS 变量注入）
-3. `assets/scss/custom.scss`（样式定义）
 
 ---
 
-### 2. 深色模式修复
+## 功能模块详细说明
 
-#### 问题原因
-Stack 主题使用 **JavaScript 切换 `data-scheme="dark"` 属性**，而非 CSS 媒体查询。
+### 1. 深蓝极简浅色模式
 
-#### 解决方案
-使用 `html[data-scheme="dark"]` 选择器：
+#### 配色方案
 
-```scss
-/* ❌ 错误 - 不起作用 */
-@media (prefers-color-scheme: dark) {
-  body { background-color: var(--dark-bg-primary); }
-}
+| 用途 | 颜色 | 说明 |
+|------|------|------|
+| 主色 | `#0f1b3d` | 深蓝（链接、按钮、标题） |
+| 悬停色 | `#1a2b5e` | 稍浅的深蓝 |
+| 背景 | `#ffffff` | 纯白 |
+| 次背景 | `#f4f7fe` | 极浅蓝 |
+| 主文本 | `#0f1b3d` | 深蓝 |
+| 次文本 | `#4a5a7a` | 中蓝灰 |
 
-/* ✅ 正确 */
-html[data-scheme="dark"] {
-  body {
-    background-color: var(--dark-bg-primary) !important;
-    color: var(--dark-text-primary) !important;
-  }
+#### 关键配置
 
-  .sidebar {
-    background-color: var(--dark-bg-secondary) !important;
-  }
-
-  /* ... 所有元素都要用 !important 覆盖 */
-}
+`hugo.toml`:
+```toml
+[params.style.colors]
+  primary = "#0f1b3d"
+  primaryHover = "#1a2b5e"
+  bgPrimary = "#ffffff"
+  bgSecondary = "#f4f7fe"
+  textPrimary = "#0f1b3d"
+  textSecondary = "#4a5a7a"
 ```
 
-#### 文件位置
-- `assets/scss/custom.scss` 第 473-658 行
+#### 样式实现
+
+`assets/scss/custom.scss`:
+- 首页文章标题使用 `var(--primary-hover)` 深蓝色
+- 卡片圆角 `var(--radius-lg)` = 12px
+- 标签圆角 `20px`
+- 按钮渐变效果
+
+---
+
+### 2. 深蓝深色模式
+
+#### 配色方案
+
+| 用途 | 颜色 | 说明 |
+|------|------|------|
+| 卡片背景 | `#1a2332` | 深蓝黑 |
+| 次背景 | `#1e293b` | 稍浅的深蓝黑 |
+| 主文本 | `#e2e8f0` | 浅米白 |
+| 次文本 | `#cbd5e1` | 提亮至中灰色 |
+| 标题颜色 | `#f0f4ff` | 极浅冷白 |
+
+#### 深色模式选择器
+
+**重要**: 使用 `:root[data-scheme="dark"]` 而非 `html[data-scheme="dark"]`。`:root` 比 `html` 有更高的 specificity，能正确覆盖主题默认值。
+
+```scss
+:root[data-scheme="dark"] {
+  --card-background: #1a2332;
+  --card-background-selected: rgba(255, 255, 255, .08);
+  --card-text-color-main: #e2e8f0;
+
+  body {
+    background-color: var(--dark-bg-primary);
+    color: var(--dark-text-primary);
+  }
+}
+```
 
 ---
 
 ### 3. 文章列表优化
 
-#### 3.1 文章摘要显示
-**文件**：`layouts/partials/article-list/default.html`
+#### 文章摘要显示
 
-**改动**：添加三行文章摘要
+**文件**: `layouts/partials/article-list/default.html`
 
-```hugo
-<div class="article-preview">
-    {{ if .Params.description }}
-        {{ .Description }}
-    {{ else }}
-        {{ $summary := substr .Plain 0 90 }}
-        {{ $summary }}...
-    {{ end }}
-</div>
-```
+添加三行截断的文章摘要，优先使用 `.Description`，否则截取前 90 个字符。
 
-**样式**：`custom.scss` 第 41-64 行
-```scss
-.article-preview {
-  display: -webkit-box;
-  -webkit-line-clamp: 3;  /* 最多三行 */
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-```
+#### 文章元数据
 
-#### 3.2 文章元数据增强
-**文件**：`layouts/partials/article/components/details.html`
+**文件**: `layouts/partials/article/components/details.html`
 
-**改动**：添加字数统计
-
-```hugo
-{{ if $showWordCount }}
-    <span class="article-word-count">
-        <svg>...</svg>
-        <span>{{ $Page.WordCount }} 字</span>
-    </span>
-{{ end }}
-```
+显示字数统计和阅读时间。
 
 ---
 
-### 4. 分类和标签样式简化
+### 4. 分类和标签样式
 
-#### 改动说明
-移除默认的彩色背景，改为简洁的边框样式。
-
-#### 模板覆盖
-- **分类**：`layouts/partials/article/components/details.html`
-- **标签**：`layouts/partials/article/components/tags.html`
-
-#### 样式实现
-`custom.scss` 第 361-443 行
+移除默认的彩色背景，改为简洁边框样式：
 
 ```scss
 .article-category a,
 .category-link {
   background-color: transparent !important;
-  color: var(--text-secondary) !important;
   border: 1px solid var(--border-color);
-  padding: 6px 14px;
   border-radius: var(--radius-md);
+  padding: 6px 14px;
 
   &:hover {
     background-color: var(--accent-color) !important;
@@ -261,181 +170,104 @@ html[data-scheme="dark"] {
 
 ---
 
-### 5. 侧边栏 Logo 替换
+### 5. 侧边栏 Logo
 
-#### 改动说明
-使用 CSS `::before` 伪元素添加 Logo 图片，隐藏默认的 avatar/emoji。
-
-#### 配置
-`hugo.toml` 第 96-100 行：
+使用 CSS `::before` 伪元素添加 Logo 图片，隐藏默认 avatar/emoji：
 
 ```toml
 [params.sidebar]
-  emoji = ""          # 留空以隐藏
+  emoji = ""
   subtitle = "Old Fashion Man"
   avatar = "/img/fox.png"
 ```
 
-#### 样式实现
-`custom.scss` 第 110-134 行：
+---
 
-```scss
-.sidebar header::before {
-  content: "";
-  display: block;
-  width: 80px;
-  height: 80px;
-  margin: 0 auto var(--spacing-md);
-  background-image: url('/img/fox.png');
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-}
+### 6. 归档页面
 
-.sidebar .site-avatar {
-  display: none !important;
-}
-```
+自定义归档页 `layouts/archives.html`：
+- 分类卡片在顶部展示
+- 时间线按年份分组
+- 移除分类卡片图片
 
 ---
 
-### 6. 归档页面简化
+### 7. 归档小部件
 
-#### 改动说明
-移除分类卡片显示，改为简单的链接列表。
-
-#### 文件
-`layouts/archives.html`
-
-#### 对比
-```hugo
-<!-- 原主题：卡片式 -->
-<div class="article-list--tile">
-    {{ range $terms }}
-        {{ partial "article-list/tile" . }}
-    {{ end }}
-</div>
-
-<!-- 自定义：链接式 -->
-<div class="category-list-simple">
-    {{ range $terms }}
-    <a href="{{ .RelPermalink }}" class="category-link-simple">
-        {{ .Title }}
-    </a>
-    {{ end }}
-</div>
-```
-
-#### 样式
-`custom.scss` 第 797-830 行
-
----
-
-### 7. 归档小部件优化
-
-#### 改动说明
-移除年份数量限制，添加滚动条。
-
-#### 配置
-`hugo.toml` 第 131 行：
-```toml
-# 原来：{ type = "archives", params = { limit = 10 } }
-# 现在：{ type = "archives" }  # 无限制
-```
-
-#### 模板
-`layouts/partials/widget/archives.html`
-- 移除了 `limit` 限制逻辑
-- 移除了"更多"链接
-
-#### 样式
-`custom.scss` 第 157-190 行
-```scss
-.widget-archive--list {
-  max-height: 400px;
-  overflow-y: auto;
-  /* 自定义滚动条 */
-}
-```
+- 移除年份数量限制
+- 添加滚动条
+- 移除"更多"链接
 
 ---
 
 ### 8. 文章导航
 
-#### 改动说明
-移除块状相关文章，添加简洁的上一篇/下一篇导航。
+移除块状相关文章，改为简洁的上一篇/下一篇导航：
 
-#### 文件
-`layouts/partials/article/components/navigation.html`
-
-#### 实现
-```hugo
-{{ $prev := .PrevInSection }}
-{{ $next := .NextInSection }}
-
+```html
 <div class="nav-container">
-    {{ with $prev }}
-    <div class="nav-item nav-prev">
-        <span class="nav-label">上一篇</span>
-        <a href="{{ .RelPermalink }}">{{ .Title }}</a>
-    </div>
-    {{ end }}
-    {{ with $next }}
-    <div class="nav-item nav-next">
-        <span class="nav-label">下一篇</span>
-        <a href="{{ .RelPermalink }}">{{ .Title }}</a>
-    </div>
-    {{ end }}
+  <div class="nav-item nav-prev">
+    <span class="nav-label">上一篇</span>
+    <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+  </div>
+  <div class="nav-item nav-next">
+    <span class="nav-label">下一篇</span>
+    <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+  </div>
 </div>
 ```
 
-#### 样式
-`custom.scss` 第 714-794 行
-
 ---
 
-### 9. 文章页面覆盖
+### 9. 正文图片自适应
 
-#### 文件
-`layouts/single.html`
-
-#### 改动
-```hugo
-{{/* 移除：*/}}
-{{ partial "article/components/related-content" . }}
-
-{{/* 添加：*/}}
-{{ partial "article/components/navigation" . }}
+```scss
+.article-content img {
+  width: 100% !important;
+  height: auto !important;
+  max-width: 100% !important;
+}
 ```
 
+使正文内图片宽度自动适配容器，不再固定 `400px`。
+
 ---
 
-## 🔄 与原主题的对比
+### 10. 赞赏组件
+
+自定义赞赏组件 `layouts/partials/article/components/tip.html`：
+- 点击展开/收起微信/支付宝二维码
+- 暗色模式适配
+
+---
+
+## 与原主题对比
 
 | 功能 | 原主题 | 自定义 |
 |------|--------|--------|
 | 样式配置 | 修改 SCSS 文件 | `hugo.toml` 集中配置 |
+| 配色 | 默认蓝灰 | 深蓝极简（浅色/深色） |
+| 深色模式 CSS | `@media` 查询 | `:root[data-scheme="dark"]` |
 | 分类/标签 | 彩色背景块 | 简洁边框样式 |
 | 文章摘要 | 无 | 三行截断 |
 | 字数统计 | 无 | 显示 |
-| 侧边栏头像 | emoji + avatar | CSS Logo 图片 |
 | 归档页面分类 | 卡片式（带图片） | 链接式（无图片） |
 | 归档小部件 | 限制 5-10 年 | 无限制 + 滚动 |
 | 文章底部导航 | 相关文章卡片 | 上一篇/下一篇链接 |
-| 深色模式 CSS | `@media` 查询 | `data-scheme` 属性 |
+| 正文图片 | 固定宽度 | 自适应 `100%` |
 
 ---
 
-## 📝 快速配置检查清单
+## 快速配置检查清单
 
 ### 颜色主题
 - [ ] 主色：`[params.style.colors.primary]`
-- [ ] 强调色：`[params.style.colors.accent]`
 - [ ] 背景色：`[params.style.colors.bgPrimary]`
-- [ ] 暗色模式：`[params.style.colors.darkBgPrimary]`
+- [ ] 暗色模式：`[params.style.colors.darkBgSecondary]`
+- [ ] 标题颜色：`:root[data-scheme="dark"] .article-title`
 
 ### 字体排版
-- [ ] 正文字号：`[params.style.fonts.base]` + `[params.articleTitleSize]`
+- [ ] 正文字号：`[params.style.fonts.base]` + `[params.articleBodySize]`
 - [ ] 行高：`[params.style.fonts.lineHeightNormal]`
 - [ ] 等宽字体：`[params.style.fonts.mono]`
 
@@ -451,22 +283,7 @@ html[data-scheme="dark"] {
 
 ---
 
-## 🚀 移植到新主题
-
-只需复制这 3 个文件/配置：
-
-1. **hugo.toml** - 复制 `[params.style]` 整个配置节
-2. **layouts/partials/head/custom.html** - CSS 变量注入
-3. **assets/scss/custom.scss** - 样式定义（可根据需要裁剪）
-
-然后在新主题中引用：
-```hugo
-{{ partial "head/custom.html" . }}
-```
-
----
-
-## 🛠️ 调试技巧
+## 调试技巧
 
 ### 1. 检查 CSS 变量是否加载
 ```javascript
@@ -488,11 +305,18 @@ hugo server -D --disableFastRender
 
 ---
 
-## 📚 相关技能
+## 移植到新主题
 
-- **hugo-stack-dark-mode** - 深色模式 CSS 修复详解
-- **hugo-portable-style-config** - 可移植样式配置系统
-- **hugo-stack-customization** - Stack 主题高级定制
+只需复制这 3 个文件/配置：
+
+1. **hugo.toml** — 复制 `[params.style]` 整个配置节
+2. **layouts/partials/head/custom.html** — CSS 变量注入
+3. **assets/scss/custom.scss** — 样式定义（可根据需要裁剪）
+
+然后在新主题中引用：
+```hugo
+{{ partial "head/custom.html" . }}
+```
 
 ---
 

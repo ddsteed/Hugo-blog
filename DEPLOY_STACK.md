@@ -1,137 +1,111 @@
-# Hugo Theme Stack 部署指南
+# Hugo Stack 部署指南
 
-## 状态：✓ 配置完成
+## 当前状态
 
----
+- **主题**: Stack Theme (v3) + 深蓝极简定制
+- **配置方式**: 单文件 `hugo.toml`
+- **颜色模式**: 自动跟随系统 + 手动切换
+- **深色模式 CSS 选择器**: `:root[data-scheme="dark"]`
 
-## 当前配置结构
+## 项目结构
 
 ```
-hugo/
-├── config/_default/          # Stack 主题配置（新建）
-│   ├── hugo.toml            # 基础配置 + 菜单
-│   ├── params.toml          # 主题参数
-│   ├── languages.toml       # 语言设置
-│   ├── markup.toml          # Markdown 渲染
-│   └── social.toml          # 社交媒体
-├── content/                  # 内容文件
-│   ├── _index.md            # 首页（已更新）
-│   ├── about/_index.md      # 关于页（已修复）
-│   ├── post/                # 文章目录
-│   ├── archive/             # 归档页
-│   ├── tags/                # 标签页
-│   └── categories/          # 分类页
-└── layouts.jane-backup/     # 旧主题 layout 备份
+hugo.stack/
+├── hugo.toml                    # 主配置文件（含 [params.style] 全部样式参数）
+├── CLAUDE.md                    # Claude Code 项目指导
+├── README.md                    # 项目概述
+├── assets/scss/
+│    └── custom.scss             # 全部自定义样式（深蓝极简）
+├── layouts/
+│    ├── archives.html           # 自定义归档页
+│    ├── single.html             # 自定义文章页
+│    └── partials/
+│        ├── head/
+│        │    ├── custom.html              # CSS 变量注入
+│        │    ├── custom-dark-forced.html  # 强制深色模式备份
+│        │    └── custom-backup-light-normal.html  # 自动切换备份
+│        ├── article/components/
+│        │    ├── details.html
+│        │    ├── navigation.html
+│        │    ├── tags.html
+│        │    └── tip.html
+│        ├── article-list/
+│        │    └── default.html
+│        ├── sidebar/
+│        │    └── left.html
+│        └── widget/
+│            ├── archives.html
+│            └── toc.html
+├── config/                      # 模块化配置（备用）
+├── content/                     # Markdown 内容
+├── content-org/                 # Org-mode 源文件
+└── static/                      # 静态资源
 ```
 
----
-
-## 启动预览
+## 本地开发
 
 ```bash
+# 启动开发服务器（含草稿）
 hugo server -D
+
+# 构建生产版本
+hugo --minify
 ```
 
-访问 http://localhost:1313
+输出目录: `public/`
 
----
+## 主题配置
 
-## 主题预览效果
+### 浅色模式
+- 主色: `#0f1b3d`（深蓝）
+- 背景: `#f4f7fe`（极浅蓝）
+- 圆角: 12px 卡片, 20px 标签, 8px 按钮
 
-Stack 主题提供了现代化的卡片式布局：
+### 深色模式
+- 卡片背景: `#1a2332`（深蓝黑）
+- 标题颜色: `#f0f4ff`（极浅冷白）
 
-- **左侧边栏**：显示头像、昵称、社交链接
-- **中间区域**：文章卡片列表
-- **右侧小部件**：搜索、归档、分类、标签云
+### 自动切换
+- 跟随系统深浅模式
+- 网站内提供手动切换按钮
 
----
-
-## 配置调整
-
-### 修改头像
-
-编辑 `config/_default/params.toml`：
-
-```toml
-[sidebar]
-  avatar = "img/你的头像.png"
-  emoji = "🦊"
-  subtitle = "你的个人简介"
-```
-
-### 修改小部件
-
-编辑 `config/_default/params.toml` 中的 `[widgets]` 部分：
-
-```toml
-[widgets]
-  homepage = [
-    { type = "search" },
-    { type = "archives", params = { limit = 10 } },
-    { type = "categories", params = { limit = 10 } },
-    { type = "tag-cloud", params = { limit = 20 } },
-  ]
-```
-
-### 添加社交链接
-
-编辑 `config/_default/social.toml`：
-
-```toml
-[[social]]
-  identifier = "twitter"
-  name = "Twitter"
-  url = "https://twitter.com/你的用户名"
-  [social.params]
-    icon = "brand-twitter"
-```
-
----
-
-## 回滚到 PaperMod
-
-如果需要回滚：
-
-```bash
-# 恢复配置
-cp hugo.toml.papermod hugo.toml
-rm -rf config/
-
-# 恢复 layouts
-mv layouts.jane-backup/* layouts/
-rm -rf layouts.jane-backup
-
-# 恢复首页
-cp content/_index.zh-cn.md.bak content/_index.md
-```
-
----
-
-## 构建生产版本
+## 部署步骤
 
 ```bash
 # 清理旧输出
 rm -rf public/
 
-# 构建网站
+# 构建生产版本
 hugo --minify
 
-# 输出在 public/ 目录
+# 部署 public/ 目录到服务器
 ```
 
----
+## 样式定制
+
+所有样式通过 `hugo.toml` 的 `[params.style]` 配置，无需修改 SCSS：
+
+```toml
+[params.style]
+  sidebarWidth = "320px"
+  articleMaxWidth = "720px"
+  [params.style.colors]
+    primary = "#0f1b3d"
+    bgPrimary = "#ffffff"
+    darkBgSecondary = "#1a2332"
+```
+
+如需修改，编辑 `assets/scss/custom.scss` 即可。
 
 ## 注意事项
 
-1. **搜索功能**：Stack 主题内置搜索，无需额外配置
-2. **深色模式**：自动切换，用户可手动控制
-3. **代码高亮**：使用 catppuccin-macchiato 风格
-4. **响应式**：完美适配移动设备
-
----
+1. **深色模式**: 使用 `:root[data-scheme="dark"]` 选择器（非 `html`）
+2. **代码高亮**: catppuccin-macchiato 风格
+3. **搜索**: 内置 Fuse.js 搜索
+4. **响应式**: 自动适配移动端
+5. **RSS**: 已启用 `rssFullContent`
 
 ## 资源链接
 
 - [Stack 主题文档](https://stack.jimmycai.com/)
-- [GitHub 仓库](https://github.com/CaiJimmy/hugo-theme-stack)
-- [配置参考](https://demo.stack.cai.im/)
+- [GitHub 仓库](https://github.com/CaiMoney/hugo-theme-stack)
