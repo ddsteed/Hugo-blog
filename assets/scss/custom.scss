@@ -323,6 +323,13 @@ a {
   margin-bottom: var(--spacing-md);
 }
 
+/* 正文图片宽度自适应，与正文内容对齐 */
+.article-content img {
+  width: 100% !important;
+  height: auto !important;
+  max-width: 100% !important;
+}
+
 /* 列表样式 */
 .article-content ul,
 .article-content ol {
