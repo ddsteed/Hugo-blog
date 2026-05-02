@@ -152,7 +152,8 @@
       "Bash(curl -s \"http://localhost:1313/scss/style.min.css\")",
       "Bash(curl -s \"http://localhost:1313/\")",
       "mcp__plugin_playwright_playwright__browser_snapshot",
-      "Bash(curl -s \"http://localhost:1313/about/\")"
+      "Bash(curl -s \"http://localhost:1313/about/\")",
+      "mcp__plugin_playwright_playwright__browser_resize"
     ]
   }
 }

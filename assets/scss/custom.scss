@@ -178,6 +178,7 @@ a {
     color: rgba(255, 255, 255, .85) !important;
    }
 
+
    .hamburger-inner,
    .hamburger-inner::before,
    .hamburger-inner::after {
@@ -864,7 +865,44 @@ a {
 
   .sidebar {
     padding: var(--spacing-md);
+    background-color: var(--primary-color) !important;
   }
+
+       /* 移动端菜单文字颜色 - 深蓝背景上白色文字 */
+       .sidebar .menu a {
+    color: rgba(255, 255, 255, .85) !important;
+       }
+
+       .sidebar .menu a:hover,
+       .sidebar .menu li.current a {
+    color: #ffffff !important;
+    background-color: rgba(15, 27, 61, .08) !important;
+       }
+
+       .sidebar .social-links a {
+    color: rgba(255, 255, 255, .85) !important;
+       }
+
+       #dark-mode-toggle {
+    color: rgba(255, 255, 255, .85) !important;
+       }
+
+       #i18n-switch select {
+    color: rgba(255, 255, 255, .85) !important;
+       }
+
+     /* 汉堡菜单下拉面板 — 浅色模式下深蓝背景 + 白色文字 */
+     #main-menu.show {
+        background-color: var(--primary-color) !important;
+
+        li a {
+            color: rgba(255, 255, 255, .85) !important;
+
+             &:hover {
+                color: #ffffff !important;
+             }
+         }
+     }
 
   /* 分页组件移动端优化 - 简洁布局，适配小屏幕 */
   .pagination {
