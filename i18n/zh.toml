@@ -3,3 +3,7 @@
     tableOfContents = "目录导航"
     relatedContent  = "相关文章"
     lastUpdatedOn   = "最后更新于"
+
+[home]
+    recentPosts     = "最近的文章"
+    viewAllPosts    = "查看全部文章"
