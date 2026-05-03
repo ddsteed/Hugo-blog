@@ -1,0 +1,14 @@
+/* KaTeX Math Styles - 仅在需要数学公式时加载 */
+.katex-display {
+  margin: var(--spacing-md) 0;
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+
+.katex {
+  font-size: 1.1em;
+}
+
+.katex-display > .katex {
+  text-align: left;
+}
