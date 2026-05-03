@@ -7,3 +7,7 @@
 [home]
     recentPosts     = "最近的文章"
     viewAllPosts    = "查看全部文章"
+
+[widget]
+    [widget.archives]
+        title = "归档"
