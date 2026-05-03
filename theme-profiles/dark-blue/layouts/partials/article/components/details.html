@@ -1,0 +1,96 @@
+{{- $IsList := .IsList -}}
+{{- $Page := .Page -}}
+<div class="article-details">
+    {{ if $Page.Params.categories }}
+    <header class="article-category">
+        {{ range ($Page.GetTerms "categories") }}
+            <a href="{{ .RelPermalink }}" class="category-link">
+                <span class="category-icon">📁</span>
+                {{ .LinkTitle }}
+            </a>
+        {{ end }}
+    </header>
+    {{ end }}
+
+    <div class="article-title-wrapper">
+        <h2 class="article-title">
+            <a href="{{ $Page.RelPermalink }}">
+                {{- $Page.Title -}}
+            </a>
+        </h2>
+
+        {{ with $Page.Params.description }}
+        <h3 class="article-subtitle">
+            {{ . }}
+        </h3>
+        {{ end }}
+    </div>
+
+    {{ $showReadingTime := $Page.Params.readingTime | default ($Page.Site.Params.article.readingTime) }}
+    {{ $showDate := not $Page.Date.IsZero }}
+    {{ $showWordCount := $Page.Site.Params.article.wordcount }}
+    {{ $showTime := or $showDate $showReadingTime $showWordCount }}
+    {{ $showTranslations := $Page.IsTranslated }}
+    {{ $showTags := and $Page.Site.Params.Article.List.ShowTags ($Page.GetTerms "tags") $IsList }}
+
+    {{ if or $showTime $showTranslations $showTags }}
+    <footer class="article-meta">
+        {{ if $showTime }}
+            <div class="inline-meta">
+                {{ if $showDate }}
+                    {{ partial "helper/icon" "date" }}
+                    <time class="article-time--published" datetime='{{ $Page.Date.Format "2006-01-02T15:04:05Z07:00" }}'>
+                        {{- $Page.Date | time.Format $Page.Site.Params.dateFormat.published -}}
+                    </time>
+                {{ end }}
+
+                {{ if or $showWordCount $showReadingTime }}
+                    <span class="meta-separator">·</span>
+                {{ end }}
+
+                {{ if $showWordCount }}
+                    <span class="article-word-count">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-hash" width="14" height="14" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                            <path d="M5 9m0 0a3 3 0 0 1 3 -3h8a3 3 0 0 1 3 3" />
+                            <path d="M5 15m0 0a3 3 0 0 0 3 3h8a3 3 0 0 0 3 -3" />
+                            <path d="M3.5 9h17" />
+                            <path d="M3.5 15h17" />
+                        </svg>
+                        <span>{{ $Page.WordCount }} 字</span>
+                    </span>
+                {{ end }}
+
+                {{ if $showReadingTime }}
+                    <span class="meta-separator">·</span>
+                    <span class="article-time--reading">
+                        {{ partial "helper/icon" "clock" }}
+                        <time>{{ $Page.ReadingTime }} 分钟</time>
+                    </span>
+                {{ end }}
+            </div>
+        {{ end }}
+
+        {{ if $showTranslations }}
+            <div class="inline-meta">
+                {{ partial "helper/icon" "language" }}
+                {{ range $Page.Translations }}
+                    <a href="{{ .RelPermalink }}" class="link">{{ .Language.LanguageName }}</a>
+                {{ end }}
+            </div>
+        {{ end }}
+
+        {{ if $showTags }}
+            <div class="article-tags inline-meta">
+                {{ partial "helper/icon" "tag" }}
+                {{ range ($Page.GetTerms "tags") }}
+                    <a href="{{ .RelPermalink }}" class="tag-link">
+                        <span class="tag-icon">🏷️</span>
+                        {{ .LinkTitle }}
+                    </a>
+                {{ end }}
+            </div>
+        {{ end }}
+    </footer>
+    {{ end }}
+</div>

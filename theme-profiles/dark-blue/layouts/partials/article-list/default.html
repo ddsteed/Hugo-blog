@@ -1,0 +1,23 @@
+{{ $image := partial "helper/image" (dict "Image" .Params.image "Resources" .Resources "Context" .) }}
+<article class="{{ if $image }}has-image{{ end }}">
+    {{ partial "article/components/header" (dict "Page" . "IsList" true) }}
+
+    {{/* 文章摘要预览 - 最多显示三行 */}}
+    {{ with .Params.description }}
+    <div class="article-preview">
+        {{ . }}
+    </div>
+    {{ else }}
+    {{/* 使用 .Plain 生成摘要，限制长度约 90 个字符 */}}
+    {{ $content := .Plain }}
+    {{ if ne $content "" }}
+    {{ $summary := substr $content 0 90 }}
+    {{ if gt (len $content) 90 }}
+    {{ $summary = printf "%s..." $summary }}
+    {{ end }}
+    <div class="article-preview">
+        {{ $summary }}
+    </div>
+    {{ end }}
+    {{ end }}
+</article>

@@ -1,0 +1,79 @@
+{{ define "main" }}
+<div class="article-layout">
+    <article class="article">
+        <header class="article-header">
+            <h1 class="article-title">{{ .Title }}</h1>
+            <div class="article-meta">
+                <time datetime="{{ .Date.Format "2006-01-02" }}">
+                    {{ .Date.Format "2006年1月2日" }}
+                </time>
+                {{ if .Site.Params.article.readingTime }}
+                <span class="article-reading-time">{{ .ReadingTime }} 分钟阅读</span>
+                {{ end }}
+                {{ if .Site.Params.article.wordcount }}
+                <span class="article-wordcount">{{ .WordCount }} 字</span>
+                {{ end }}
+                {{ with .Params.categories }}
+                <div class="article-categories">
+                    {{ range . }}
+                    <span class="category">{{ . }}</span>
+                    {{ end }}
+                </div>
+                {{ end }}
+            </div>
+        </header>
+
+        <div class="article-content">
+            {{ .Content }}
+        </div>
+
+        {{ if .Site.Params.article.tip.enabled }}
+        <div class="article-tip">
+            <button class="tip-toggle" id="tip-toggle">
+                <span class="tip-icon">☕</span>
+                <span class="tip-text">赞赏</span>
+            </button>
+            <div class="tip-qr-codes" id="tip-qr-codes" style="display: none;">
+                <p class="tip-caption">If you like it, buy me a coffee</p>
+                <div class="tip-qr-item">
+                    <img src="{{ .Site.Params.article.tip.wechat | relURL }}" alt="WeChat" class="tip-image">
+                    <span class="tip-label">微信</span>
+                </div>
+                <div class="tip-qr-item">
+                    <img src="{{ .Site.Params.article.tip.alipay | relURL }}" alt="Alipay" class="tip-image">
+                    <span class="tip-label">支付宝</span>
+                </div>
+            </div>
+        </div>
+        {{ end }}
+
+        <nav class="article-nav">
+            {{ with .PrevInSection }}
+            <a class="nav-prev" href="{{ .RelPermalink }}">
+                <span class="nav-label">上一篇</span>
+                <span class="nav-title">{{ .Title }}</span>
+            </a>
+            {{ end }}
+            {{ with .NextInSection }}
+            <a class="nav-next" href="{{ .RelPermalink }}">
+                <span class="nav-label">下一篇</span>
+                <span class="nav-title">{{ .Title }}</span>
+            </a>
+            {{ end }}
+        </nav>
+    </article>
+
+    {{ $toc := .TableOfContents }}
+    {{ if and .Site.Params.article.toc (findRE "<li" $toc) }}
+    <aside class="article-toc" id="article-toc">
+        <button class="toc-toggle" id="toc-toggle" aria-label="Toggle TOC">
+            <span class="toc-icon">≡</span>
+        </button>
+        <div class="toc-content" id="toc-content">
+            <h3 class="toc-title">目录</h3>
+            {{ .TableOfContents }}
+        </div>
+    </aside>
+    {{ end }}
+</div>
+{{ end }}

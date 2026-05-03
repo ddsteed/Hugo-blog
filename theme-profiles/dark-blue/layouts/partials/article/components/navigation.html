@@ -1,0 +1,26 @@
+{{/* ==============================================================================
+   文章导航 - 上一篇/下一篇
+   ============================================================================== */}}
+
+{{ $prev := .PrevInSection }}
+{{ $next := .NextInSection }}
+
+{{ if or $prev $next }}
+<aside class="article-navigation">
+    <div class="nav-container">
+        {{ with $prev }}
+        <div class="nav-item nav-prev">
+            <span class="nav-label">上一篇</span>
+            <a href="{{ .RelPermalink }}" class="nav-link">{{ .Title }}</a>
+        </div>
+        {{ end }}
+
+        {{ with $next }}
+        <div class="nav-item nav-next">
+            <span class="nav-label">下一篇</span>
+            <a href="{{ .RelPermalink }}" class="nav-link">{{ .Title }}</a>
+        </div>
+        {{ end }}
+    </div>
+</aside>
+{{ end }}

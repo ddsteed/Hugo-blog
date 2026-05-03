@@ -1,0 +1,113 @@
+{{/* 按需加载 KaTeX 脚本：仅在全局配置启用或页面设置 math: true 时加载 */}}
+{{ $shouldLoadMath := or .Site.Params.article.math .Params.math }}
+{{ if $shouldLoadMath }}
+<script src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js" defer></script>
+<script src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js" defer></script>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  renderMathInElement(document.body, {
+    delimiters: [
+      {left: '$$', right: '$$', display: true},
+      {left: '\\[', right: '\\]', display: true},
+      {left: '$', right: '$', display: false},
+      {left: '\\(', right: '\\)', display: false}
+    ],
+    throwOnError: false
+  });
+});
+</script>
+{{ end }}
+
+{{/* 导航和交互脚本 */}}
+<script>
+(function() {
+  const hamburger = document.getElementById('hamburger-btn');
+  const menu = document.getElementById('nav-menu');
+
+  if (hamburger && menu) {
+    hamburger.addEventListener('click', function() {
+      hamburger.classList.toggle('active');
+      menu.classList.toggle('active');
+    });
+
+    // Close menu when clicking outside
+    document.addEventListener('click', function(e) {
+      if (!hamburger.contains(e.target) && !menu.contains(e.target)) {
+        hamburger.classList.remove('active');
+        menu.classList.remove('active');
+      }
+    });
+
+    // Close menu on link click
+    menu.querySelectorAll('a').forEach(function(link) {
+      link.addEventListener('click', function() {
+        hamburger.classList.remove('active');
+        menu.classList.remove('active');
+      });
+    });
+  }
+
+  // Tip toggle
+  const tipToggle = document.getElementById('tip-toggle');
+  const tipQrCodes = document.getElementById('tip-qr-codes');
+
+  if (tipToggle && tipQrCodes) {
+    tipToggle.addEventListener('click', function() {
+      const isHidden = tipQrCodes.style.display === 'none';
+      tipQrCodes.style.display = isHidden ? 'flex' : 'none';
+      tipToggle.querySelector('.tip-text').textContent = isHidden ? '收起' : '赞赏';
+    });
+  }
+
+  // TOC toggle
+  const tocToggle = document.getElementById('toc-toggle');
+  const tocContent = document.getElementById('toc-content');
+
+  if (tocToggle && tocContent) {
+    // On medium screens, start collapsed
+    if (window.innerWidth <= 1200) {
+      tocToggle.classList.add('collapsed');
+      tocContent.classList.add('hidden');
+    }
+
+    tocToggle.addEventListener('click', function() {
+      tocToggle.classList.toggle('collapsed');
+      tocContent.classList.toggle('hidden');
+    });
+
+    // Handle window resize
+    window.addEventListener('resize', function() {
+      if (window.innerWidth <= 1200 && !tocToggle.classList.contains('collapsed')) {
+        // Transitioning to medium screen: collapse if not already
+        tocToggle.classList.add('collapsed');
+        tocContent.classList.add('hidden');
+      } else if (window.innerWidth > 1200 && tocToggle.classList.contains('collapsed')) {
+        // Transitioning to large screen: expand if collapsed
+        tocToggle.classList.remove('collapsed');
+        tocContent.classList.remove('hidden');
+      }
+    });
+  }
+
+  // Smart navbar hide/show on scroll
+  let lastScrollTop = 0;
+  const siteNav = document.querySelector('.site-nav');
+  const navHeight = 60; // Match --nav-height
+
+  if (siteNav) {
+    window.addEventListener('scroll', function() {
+      const currentScrollTop = window.pageYOffset || document.documentElement.scrollTop;
+
+      if (currentScrollTop > lastScrollTop && currentScrollTop > navHeight) {
+        // Scrolling down - hide navbar
+        siteNav.classList.add('nav-hidden');
+      } else {
+        // Scrolling up - show navbar
+        siteNav.classList.remove('nav-hidden');
+      }
+
+      lastScrollTop = currentScrollTop;
+    }, { passive: true });
+  }
+})();
+</script>

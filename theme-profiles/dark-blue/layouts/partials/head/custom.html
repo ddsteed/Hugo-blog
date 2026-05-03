@@ -1,0 +1,130 @@
+{{/* ==============================================================================
+   备份文件：原始浅色主题样式（按系统主题自动切换）
+   使用方法：将此文件内容复制到 custom.html，然后删除 custom-dark-forced.html
+   ============================================================================== */}}
+
+{{/* 默认值（当 hugo.toml 中未配置时使用） */}}
+{{ $style := site.Params.style }}
+{{ $colors := $style.colors | default dict }}
+{{ $fonts := $style.fonts | default dict }}
+{{ $spacing := $style.spacing | default dict }}
+{{ $effects := $style.effects | default dict }}
+
+<style>
+:root {
+  /* ==================== 颜色系统 ==================== */
+  --primary-color: {{ $colors.primary | default "#3b82f6" }};
+  --primary-hover: {{ $colors.primaryHover | default "#2563eb" }};
+  --primary-light: {{ $colors.primaryLight | default "#93c5fd" }};
+
+  --accent-color: {{ $colors.accent | default "#8b5cf6" }};
+  --accent-hover: {{ $colors.accentHover | default "#7c3aed" }};
+
+  --success-color: {{ $colors.success | default "#10b981" }};
+  --warning-color: {{ $colors.warning | default "#f59e0b" }};
+  --error-color: {{ $colors.error | default "#ef4444" }};
+  --info-color: {{ $colors.info | default "#06b6d4" }};
+
+  --bg-primary: {{ $colors.bgPrimary | default "#ffffff" }};
+  --bg-secondary: {{ $colors.bgSecondary | default "#f8fafc" }};
+  --bg-tertiary: {{ $colors.bgTertiary | default "#f1f5f9" }};
+
+  --text-primary: {{ $colors.textPrimary | default "#1e293b" }};
+  --text-secondary: {{ $colors.textSecondary | default "#64748b" }};
+  --text-muted: {{ $colors.textMuted | default "#94a3b8" }};
+
+  --border-color: {{ $colors.border | default "#e2e8f0" }};
+  --divider-color: {{ $colors.divider | default "#cbd5e1" }};
+
+  /* ==================== 字体系统 ==================== */
+  --font-family-base: {{ $fonts.base | default "'-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'Helvetica', 'Arial', sans-serif" }};
+  --font-family-heading: {{ $fonts.heading | default "'-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'Helvetica', 'Arial', sans-serif" }};
+  --font-family-mono: {{ $fonts.mono | default "'JetBrains Mono', 'Fira Code', 'Consolas', 'Monaco', monospace" }};
+
+  --font-size-xs: {{ $fonts.xs | default "0.75rem" }};
+  --font-size-sm: {{ $fonts.sm | default "0.875rem" }};
+  --font-size-base: {{ $fonts.base | default "1rem" }};
+  --font-size-lg: {{ $fonts.lg | default "1.125rem" }};
+  --font-size-xl: {{ $fonts.xl | default "1.25rem" }};
+  --font-size-2xl: {{ index $fonts "2xl" | default "1.5rem" }};
+  --font-size-3xl: {{ index $fonts "3xl" | default "1.875rem" }};
+  --font-size-4xl: {{ index $fonts "4xl" | default "2.25rem" }};
+
+  --line-height-tight: {{ $fonts.lineHeightTight | default "1.25" }};
+  --line-height-normal: {{ $fonts.lineHeightNormal | default "1.6" }};
+  --line-height-relaxed: {{ $fonts.lineHeightRelaxed | default "1.8" }};
+
+  /* ==================== 间距系统 ==================== */
+  --spacing-xs: {{ $spacing.xs | default "0.5rem" }};
+  --spacing-sm: {{ $spacing.sm | default "0.75rem" }};
+  --spacing-md: {{ $spacing.md | default "1rem" }};
+  --spacing-lg: {{ $spacing.lg | default "1.5rem" }};
+  --spacing-xl: {{ $spacing.xl | default "2rem" }};
+  --spacing-2xl: {{ index $spacing "2xl" | default "3rem" }};
+  --spacing-3xl: {{ index $spacing "3xl" | default "4rem" }};
+
+  /* ==================== 圆角系统 ==================== */
+  --radius-sm: {{ $effects.radiusSm | default "4px" }};
+  --radius-md: {{ $effects.radiusMd | default "8px" }};
+  --radius-lg: {{ $effects.radiusLg | default "12px" }};
+  --radius-xl: {{ $effects.radiusXl | default "16px" }};
+  --radius-full: {{ $effects.radiusFull | default "9999px" }};
+
+  /* ==================== 阴影系统 ==================== */
+  --shadow-sm: {{ $effects.shadowSm | default "0 1px 2px rgba(0, 0, 0, 0.05)" }};
+  --shadow-md: {{ $effects.shadowMd | default "0 4px 6px rgba(0, 0, 0, 0.07)" }};
+  --shadow-lg: {{ $effects.shadowLg | default "0 10px 15px rgba(0, 0, 0, 0.1)" }};
+  --shadow-xl: {{ $effects.shadowXl | default "0 20px 25px rgba(0, 0, 0, 0.15)" }};
+
+  /* ==================== 过渡动画 ==================== */
+  --transition-fast: {{ $effects.transitionFast | default "150ms ease" }};
+  --transition-base: {{ $effects.transitionBase | default "250ms ease" }};
+  --transition-slow: {{ $effects.transitionSlow | default "350ms ease" }};
+
+  /* ==================== 组件特定 ==================== */
+  --sidebar-width: {{ $style.sidebarWidth | default "320px" }};
+  --header-height: {{ $style.headerHeight | default "64px" }};
+  --article-max-width: {{ $style.articleMaxWidth | default "720px" }};
+
+  --sidebar-avatar-size: {{ $style.sidebarAvatarSize | default "160px" }};
+  --article-title-size: {{ $style.articleTitleSize | default "1.4rem" }};
+  --article-body-size: {{ $style.articleBodySize | default "1.1rem" }};
+
+  --card-image-height: {{ $style.cardImageHeight | default "200px" }};
+  --card-hover-offset: {{ $style.cardHoverOffset | default "-4px" }};
+
+  /* ==================== 暗色模式 ==================== */
+  --dark-bg-primary: {{ $colors.darkBgPrimary | default "#0f172a" }};
+  --dark-bg-secondary: {{ $colors.darkBgSecondary | default "#1e293b" }};
+  --dark-bg-tertiary: {{ $colors.darkBgTertiary | default "#334155" }};
+  --dark-text-primary: {{ $colors.darkTextPrimary | default "#f1f5f9" }};
+  --dark-text-secondary: {{ $colors.darkTextSecondary | default "#94a3b8" }};
+  --dark-text-muted: {{ $colors.darkTextMuted | default "#64748b" }};
+  --dark-border-color: {{ $colors.darkBorder | default "#334155" }};
+}
+
+/* ============================================================
+   系统深色模式时强制深色（仅系统深色时生效）
+   ============================================================ */
+@media (prefers-color-scheme: dark) {
+  :root,
+  html[data-scheme="light"],
+  html[data-scheme="dark"] {
+    --bg-primary: var(--dark-bg-primary);
+    --bg-secondary: var(--dark-bg-secondary);
+    --text-primary: var(--dark-text-primary);
+    --text-secondary: var(--dark-text-secondary);
+    --border-color: var(--dark-border-color);
+  }
+}
+
+/* ============================================================
+   自定义美化样式（不影响主题切换）
+   ============================================================ */
+
+/* 侧边栏内边距 */
+.sidebar {
+  padding: var(--spacing-lg);
+  box-sizing: border-box;
+}
+</style>

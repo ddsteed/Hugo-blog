@@ -1,0 +1,28 @@
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }} | {{ .Site.Title }}{{ end }}</title>
+<meta name="description" content="{{ with .Description }}{{ . }}{{ else }}{{ .Site.Params.description }}{{ end }}">
+<link rel="icon" href="{{ .Site.Params.favicon | relURL }}">
+
+{{/* 优化：使用自托管字体，无需外部请求 */}}
+{{ $fontsCSS := resources.Get "css/fonts.css" }}
+{{ with $fontsCSS }}
+{{ $fontsStyle := . | resources.Minify | resources.Fingerprint }}
+<link rel="stylesheet" href="{{ $fontsStyle.RelPermalink }}">
+{{ end }}
+
+{{/* 优化：CSS 使用 Hugo pipes，支持压缩和指纹 */}}
+{{ $mainCSS := resources.Get "css/main.css" }}
+{{ with $mainCSS }}
+{{ $style := . | resources.Minify | resources.Fingerprint }}
+<link rel="stylesheet" href="{{ $style.RelPermalink }}">
+{{ end }}
+
+{{/* 按需加载 KaTeX：仅在全局配置启用或页面设置 math: true 时加载 */}}
+{{ $shouldLoadMath := or .Site.Params.article.math .Params.math }}
+{{ if $shouldLoadMath }}
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
+{{ $katexCSS := resources.Get "css/katex.css" }}
+{{ $katexStyle := $katexCSS | resources.Minify | resources.Fingerprint }}
+<link rel="stylesheet" href="{{ $katexStyle.RelPermalink }}">
+{{ end }}

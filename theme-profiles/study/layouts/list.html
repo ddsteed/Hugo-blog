@@ -1,0 +1,54 @@
+{{ define "main" }}
+<div class="list-page">
+    <header class="list-header">
+        <h1 class="section-title">{{ .Title }}</h1>
+        {{ with .Params.description }}
+        <p class="section-description">{{ . }}</p>
+        {{ end }}
+    </header>
+
+    {{ if .IsHome }}
+    {{/* Homepage */}}
+    <div class="posts-list">
+        {{ range .Paginator.Pages }}
+        <article class="post-preview">
+            <a href="{{ .RelPermalink }}" class="post-link">
+                <h2 class="post-title">{{ .Title }}</h2>
+                <time class="post-date" datetime="{{ .Date.Format "2006-01-02" }}">
+                    {{ .Date.Format "2006年1月2日" }}
+                </time>
+            </a>
+        </article>
+        {{ end }}
+    </div>
+
+    {{ partial "helper/paginator.html" . }}
+    {{ else if eq .Kind "taxonomy" }}
+    {{/* Taxonomy list page (e.g., /tags/, /categories/) */}}
+    <div class="taxonomy-list">
+        {{ range .Pages }}
+        <article class="taxonomy-item">
+            <a href="{{ .RelPermalink }}" class="taxonomy-link">
+                <h2 class="taxonomy-title">{{ .Title }}</h2>
+                <span class="taxonomy-count">{{ len .Pages }} 篇文章</span>
+            </a>
+        </article>
+        {{ end }}
+    </div>
+    {{ else }}
+    {{/* Taxonomy term page (e.g., /tags/thinking/, /categories/education/) or section pages */}}
+    <div class="posts-list">
+        {{ range .Pages }}
+        <article class="post-preview">
+            <a href="{{ .RelPermalink }}" class="post-link">
+                <h2 class="post-title">{{ .Title }}</h2>
+                <time class="post-date" datetime="{{ .Date.Format "2006-01-02" }}">
+                    {{ .Date.Format "2006年1月2日" }}
+                </time>
+            </a>
+        </article>
+        {{ end }}
+    </div>
+    {{ end }}
+</div>
+{{ end }}

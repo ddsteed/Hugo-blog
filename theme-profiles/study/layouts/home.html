@@ -1,0 +1,43 @@
+{{ define "main" }}
+<div class="home-layout">
+    <!-- Left Sidebar - Profile -->
+    <aside class="home-sidebar">
+        <div class="profile-card">
+            <img src="{{ .Site.Params.sidebar.avatar | relURL }}" alt="Avatar" class="profile-avatar">
+            <h2 class="profile-name">{{ .Site.Title }}</h2>
+            <p class="profile-subtitle">{{ .Site.Params.sidebar.subtitle }}</p>
+            {{ with .Site.Params.sidebar.bio }}
+            <div class="profile-bio">
+                {{ range . }}
+                <p>{{ . }}</p>
+                {{ end }}
+            </div>
+            {{ end }}
+        </div>
+    </aside>
+
+    <!-- Main Content -->
+    <div class="home-container">
+        <!-- Recent Posts -->
+        <section class="posts-list">
+            <h2 class="section-title">{{ i18n "home.recentPosts" }}</h2>
+            {{ $pages := where .Site.RegularPages "Type" "post" }}
+            {{ range first 10 $pages }}
+            <article class="post-preview">
+                <a href="{{ .RelPermalink }}" class="post-link">
+                    <h3 class="post-title">{{ .Title }}</h3>
+                    <time class="post-date" datetime="{{ .Date.Format "2006-01-02" }}">
+                        {{ .Date.Format "January 2, 2006" }}
+                    </time>
+                </a>
+            </article>
+            {{ end }}
+        </section>
+
+        <!-- Archive Link -->
+        <div class="archive-link">
+            <a href="/archive/">{{ i18n "home.viewAllPosts" }} →</a>
+        </div>
+    </div>
+</div>
+{{ end }}

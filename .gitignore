@@ -1,17 +1,17 @@
-content/*
+/content/*
 !content/about
 !content/_index.md
 !content/_index.zh-cn.md
 
 .playwright-mcp
 
-archetypes/
-bin/
-data/
-layouts/
-public/
-resources/
-themes
-content-org/ltximg
-static/ltximg
-static/fonts
+/archetypes/
+/bin/
+/data/
+/layouts/
+/public/
+/resources/
+/themes/
+/content-org/ltximg
+/static/ltximg
+/static/fonts

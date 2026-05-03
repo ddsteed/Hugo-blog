@@ -1,0 +1,37 @@
+{{/* ==============================================================================
+   打赏组件 - 微信支付 / 支付宝（点击展开）
+   ============================================================================== */}}
+
+{{ $showTip := .Site.Params.article.tip.enabled | default false }}
+{{ $wechat := .Site.Params.article.tip.wechat | default "/img/wechat.jpg" }}
+{{ $alipay := .Site.Params.article.tip.alipay | default "/img/alipay.jpg" }}
+
+{{ if $showTip }}
+<aside class="article-tip">
+    <div class="tip-header" onclick="toggleTipQrCodes(this)">
+        <span class="tip-icon">☕</span>
+        <span class="tip-title">赞赏</span>
+        <span class="tip-arrow">▼</span>
+    </div>
+    <div class="tip-qr-codes">
+        <p class="tip-description">If you like it, buy me a coffee</p>
+        <div class="tip-qr-item">
+            <img src="{{ $wechat }}" alt="WeChat Pay" loading="lazy" />
+            <span class="tip-label">微信</span>
+        </div>
+        <div class="tip-qr-item">
+            <img src="{{ $alipay }}" alt="Alipay" loading="lazy" />
+            <span class="tip-label">支付宝</span>
+        </div>
+    </div>
+</aside>
+
+<script>
+function toggleTipQrCodes(header) {
+    const qrCodes = header.nextElementSibling;
+    const arrow = header.querySelector('.tip-arrow');
+    qrCodes.classList.toggle('show');
+    arrow.classList.toggle('open');
+}
+</script>
+{{ end }}
