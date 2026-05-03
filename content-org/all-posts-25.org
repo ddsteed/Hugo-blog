@@ -100,15 +100,11 @@ CLOSED: [2025-12-27 Sat 17:05]
 嗯，这只戴着围巾的狐狸——大概会是我一生的标识吧。
 
 #+ATTR_ORG: :width 40
-#+ATTR_HTML: :width 10% :align center
-
-#+begin_center
+#+ATTR_HTML: :width 30% :align center
 [[file:~/Documents/RDS/BLOG/hugo/static/img/fox.png]] 
-#+end_center
-
-有时候我会想：所谓成长，也许不是你变得更勇敢，而是你终于承认自己并不总是勇敢；你只是学会了带着害怕继续走。像狐狸那样，不逞强，也不投降。
 
 ---
+有时候我会想：所谓成长，也许不是你变得更勇敢，而是你终于承认自己并不总是勇敢；你只是学会了带着害怕继续走。像狐狸那样，不逞强，也不投降。
 
 走出影院时，外面阳光很亮。街上人来人往，像什么都没发生过。
 
