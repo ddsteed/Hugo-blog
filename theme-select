@@ -5,8 +5,8 @@
 # 用法: ./theme-select <theme-name>
 #
 # 支持的主题:
-#   normal  - 原始样式
-#   study   - 温暖的书房 (Warm Study) 样式
+#   dark-blue - 深蓝极简样式
+#   study     - 温暖的书房 (Warm Study) 样式
 # ==============================================================================
 
 set -euo pipefail
@@ -178,7 +178,7 @@ main() {
         echo "  $0 <theme>      切换到指定主题"
         echo ""
         echo "示例:"
-        echo "  $0 normal       切换到 normal 样式"
+        echo "  $0 dark-blue    切换到深蓝极简样式"
         echo "  $0 study        切换到温暖的书房样式"
         exit 0
     fi
