@@ -5,12 +5,12 @@ content/*
 
 .playwright-mcp
 
-archetypes
-bin
-data
-layouts
-public
-resources
+archetypes/
+bin/
+data/
+layouts/
+public/
+resources/
 themes
 content-org/ltximg
 static/ltximg
