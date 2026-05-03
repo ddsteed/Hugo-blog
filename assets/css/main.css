@@ -304,8 +304,6 @@ a:hover {
 .home-sidebar {
   width: 240px;
   flex-shrink: 0;
-  position: sticky;
-  top: calc(var(--nav-height) + var(--spacing-xl));
 }
 
 .profile-card {
