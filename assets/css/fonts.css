@@ -1,0 +1,165 @@
+/* ============================================
+   自托管字体文件
+   ============================================ */
+
+/* Crimson Pro - Regular */
+@font-face {
+  font-family: 'Crimson Pro';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('/fonts/crimson-pro/crimson-pro-latin-400-normal.woff2') format('woff2');
+}
+
+/* Crimson Pro - Italic */
+@font-face {
+  font-family: 'Crimson Pro';
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: url('/fonts/crimson-pro/crimson-pro-latin-400-italic.woff2') format('woff2');
+}
+
+/* Crimson Pro - Medium (500) */
+@font-face {
+  font-family: 'Crimson Pro';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url('/fonts/crimson-pro/crimson-pro-latin-500-normal.woff2') format('woff2');
+}
+
+/* Crimson Pro - Medium Italic (500) */
+@font-face {
+  font-family: 'Crimson Pro';
+  font-style: italic;
+  font-weight: 500;
+  font-display: swap;
+  src: url('/fonts/crimson-pro/crimson-pro-latin-500-italic.woff2') format('woff2');
+}
+
+/* Crimson Pro - SemiBold (600) */
+@font-face {
+  font-family: 'Crimson Pro';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url('/fonts/crimson-pro/crimson-pro-latin-600-normal.woff2') format('woff2');
+}
+
+/* Crimson Pro - SemiBold Italic (600) */
+@font-face {
+  font-family: 'Crimson Pro';
+  font-style: italic;
+  font-weight: 600;
+  font-display: swap;
+  src: url('/fonts/crimson-pro/crimson-pro-latin-600-italic.woff2') format('woff2');
+}
+
+/* Crimson Pro - Bold (700) */
+@font-face {
+  font-family: 'Crimson Pro';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url('/fonts/crimson-pro/crimson-pro-latin-700-normal.woff2') format('woff2');
+}
+
+/* Crimson Pro - Bold Italic (700) */
+@font-face {
+  font-family: 'Crimson Pro';
+  font-style: italic;
+  font-weight: 700;
+  font-display: swap;
+  src: url('/fonts/crimson-pro/crimson-pro-latin-700-italic.woff2') format('woff2');
+}
+
+/* Inter - Regular */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('/fonts/inter/inter-latin-400-normal.woff2') format('woff2');
+}
+
+/* Inter - Regular Italic */
+@font-face {
+  font-family: 'Inter';
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: url('/fonts/inter/inter-latin-400-italic.woff2') format('woff2');
+}
+
+/* Inter - Medium (500) */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url('/fonts/inter/inter-latin-500-normal.woff2') format('woff2');
+}
+
+/* Inter - Medium Italic (500) */
+@font-face {
+  font-family: 'Inter';
+  font-style: italic;
+  font-weight: 500;
+  font-display: swap;
+  src: url('/fonts/inter/inter-latin-500-italic.woff2') format('woff2');
+}
+
+/* Inter - SemiBold (600) */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url('/fonts/inter/inter-latin-600-normal.woff2') format('woff2');
+}
+
+/* Inter - SemiBold Italic (600) */
+@font-face {
+  font-family: 'Inter';
+  font-style: italic;
+  font-weight: 600;
+  font-display: swap;
+  src: url('/fonts/inter/inter-latin-600-italic.woff2') format('woff2');
+}
+
+/* JetBrains Mono - Regular */
+@font-face {
+  font-family: 'JetBrains Mono';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('/fonts/jetbrains-mono/jetbrains-mono-latin-400-normal.woff2') format('woff2');
+}
+
+/* JetBrains Mono - Regular Italic */
+@font-face {
+  font-family: 'JetBrains Mono';
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: url('/fonts/jetbrains-mono/jetbrains-mono-latin-400-italic.woff2') format('woff2');
+}
+
+/* JetBrains Mono - Medium (500) */
+@font-face {
+  font-family: 'JetBrains Mono';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url('/fonts/jetbrains-mono/jetbrains-mono-latin-500-normal.woff2') format('woff2');
+}
+
+/* JetBrains Mono - Medium Italic (500) */
+@font-face {
+  font-family: 'JetBrains Mono';
+  font-style: italic;
+  font-weight: 500;
+  font-display: swap;
+  src: url('/fonts/jetbrains-mono/jetbrains-mono-latin-500-italic.woff2') format('woff2');
+}

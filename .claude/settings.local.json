@@ -158,7 +158,22 @@
       "Bash(curl -s -o /dev/null -w \"%{http_code}\" http://127.0.0.1:1313/)",
       "Bash(pkill -f \"hugo server\")",
       "Bash(./theme-select *)",
-      "Bash(hugo --theme=study --minify)"
+      "Bash(hugo --theme=study --minify)",
+      "Bash(curl -sL \"https://fonts.gstatic.com/s/crimsonpro/v14/q5uUsoa5MjjzA2MPJSrp.woff2\" -o crimsonpro-400.woff2)",
+      "Bash(curl -sL \"https://fonts.gstatic.com/s/crimsonpro/v14/q5uUsoa5MjjzA2MPSJrp.woff2\" -o crimsonpro-500.woff2)",
+      "Bash(curl -sL \"https://fonts.gstatic.com/s/crimsonpro/v14/q5uUsoa5MjjzA2MPTJrp.woff2\" -o crimsonpro-600.woff2)",
+      "Bash(curl -sL \"https://fonts.gstatic.com/s/crimsonpro/v14/q5uUsoa5MjjzA2MPfJrp.woff2\" -o crimsonpro-700.woff2)",
+      "Bash(npm install *)",
+      "Bash(cp -r node_modules/@fontsource/crimson-pro/files static/fonts/crimson-pro)",
+      "Bash(cp -r node_modules/@fontsource/inter/files static/fonts/inter)",
+      "Bash(cp -r node_modules/@fontsource/jetbrains-mono/files static/fonts/jetbrains-mono)",
+      "Bash(cp -r node_modules/@fontsource/crimson-pro/files .)",
+      "Bash(cp -r node_modules/@fontsource/inter/files .)",
+      "Bash(cp -r node_modules/@fontsource/jetbrains-mono/files .)",
+      "Bash(cp -r node_modules/@fontsource/crimson-pro/files/* crimson-pro/)",
+      "Bash(cp -r node_modules/@fontsource/inter/files/* inter/)",
+      "Bash(cp -r node_modules/@fontsource/jetbrains-mono/files/* jetbrains-mono/)",
+      "Bash(grep -E \"\\\\.woff2$\")"
     ]
   }
 }
