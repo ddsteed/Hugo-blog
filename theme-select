@@ -81,7 +81,7 @@ warn() {
 show_version() {
     echo "theme-select ${THEME_SELECT_VERSION}"
     echo "作者: Hao Feng (F1) <ddsteed@gmail.com>"
-    echo "主页: https://github.com/ddsteed/hugo-stack"
+    echo "主页: https://github.com/ddsteed/hugo-blog"
 }
 
 # 检查主题目录是否存在
