@@ -722,23 +722,23 @@ CLOSED: [2026-03-11 Wed 15:53]
 可我知道，它不会消失。
 
 --- 
-#+ATTR_HTML: :width 50% :align center
+#+ATTR_HTML: :width 80% :align center
 [[file:~/Documents/RDS/BLOG/hugo/static/img/c-bluesky.jpg]]
 
 --- 
-#+ATTR_HTML: :width 50% :align center
+#+ATTR_HTML: :width 80% :align center
 [[file:~/Documents/RDS/BLOG/hugo/static/img/c-cloud.jpg]] 
 
 ---
-#+ATTR_HTML: :width 50% :align center
+#+ATTR_HTML: :width 80% :align center
 [[file:~/Documents/RDS/BLOG/hugo/static/img/c-rain.jpg]]
 
 ---
-#+ATTR_HTML: :width 50% :align center
+#+ATTR_HTML: :width 80% :align center
 [[file:~/Documents/RDS/BLOG/hugo/static/img/c-snow.jpg]] 
 
 ---
-#+ATTR_HTML: :width 30% :align center
+#+ATTR_HTML: :width 50% :align center
 [[file:~/Documents/RDS/BLOG/hugo/static/img/c-siyecao.jpg]]  
 
 --- 
