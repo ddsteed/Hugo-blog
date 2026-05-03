@@ -15,7 +15,7 @@ hugo.stack/
 ├── content/                  # 共享：文章
 ├── static/                   # 共享：静态资源
 ├── theme-profiles/           # 主题配置
-│   ├── normal/               # normal 样式（完整配置）
+│   ├── dark-blue/               # dark-blue 样式（完整配置）
 │   │   ├── config.toml       # 完整配置（含 [params.style]）
 │   │   └── layouts/          # 自定义布局
 │   └── study/                # study 样式（温暖的书房）
@@ -32,7 +32,7 @@ hugo.stack/
 ### 切换主题
 
 ```bash
-./theme-select normal    # 切换到 normal 样式
+./theme-select dark-blue    # 切换到 dark-blue 样式
 ./theme-select study     # 切换到 study 样式（温暖的书房）
 ```
 
@@ -47,7 +47,7 @@ hugo.stack/
 
 ## 可用主题
 
-### normal - 原始样式
+### dark-blue - 原始样式
 
 完整的样式配置系统，包含：
 
@@ -78,8 +78,8 @@ hugo.stack/
 2. 复制并修改配置：
    ```bash
    cp theme-profiles/study/config.toml theme-profiles/mytheme/config.toml
-   # 或复制 normal 的完整配置
-   cp theme-profiles/normal/config.toml theme-profiles/mytheme/config.toml
+   # 或复制 dark-blue 的完整配置
+   cp theme-profiles/dark-blue/config.toml theme-profiles/mytheme/config.toml
    ```
 
 3. 编辑配置文件：

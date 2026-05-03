@@ -21,7 +21,7 @@ This project uses a custom theme switching system that allows quick configuratio
 ./theme-select
 
 # Switch themes
-./theme-select normal    # Full style configuration
+./theme-select dark-blue    # Full style configuration
 ./theme-select study     # Warm study (current)
 ```
 
@@ -88,7 +88,7 @@ The project uses a theme profile system:
 
 ```
 theme-profiles/
-├── normal/
+├── dark-blue/
 │   ├── config.toml    # Full configuration with [params.style]
 │   └── layouts/       # Custom layouts
 └── study/             # Current theme
@@ -121,13 +121,17 @@ The Stack theme can be overridden in `layouts/`:
 
 ```
 layouts/
-├── _partials/           # Custom partials
-│   ├── article/         # Article-related components
-│   ├── article-list/    # List rendering
-│   ├── sidebar/         # Sidebar customization
-│   └── widget/          # Widget overrides
-├── archives.html        # Custom archive page (shows categories + timeline)
-└── partials/            # Additional partials
+├── _default/              # Default layout base templates
+│      └── rss.xml
+├── archives.html           # Custom archive page (shows categories + timeline)
+├── baseof.html             # Base layout
+├── home.html               # Homepage
+├── list.html               # List page
+├── partials/               # Partial templates
+│      ├─ footer/
+│      ├─ head/
+│      └─ helper/
+└── single.html             # Article layout
 ```
 
 ### Custom Archive Page
@@ -224,4 +228,4 @@ Place images and static files in:
 
 Previously used PaperMod theme. Backup configs exist as:
 - `hugo.toml.backup` - Auto-generated backup when switching themes
-- Theme profiles preserve both normal and study configurations
+- Theme profiles preserve both dark-blue and study configurations

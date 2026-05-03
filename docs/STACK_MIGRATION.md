@@ -6,7 +6,7 @@
 - **当前样式**: study (温暖的书房)
 - **配置方式**: 单文件 `hugo.toml`（通过主题切换系统管理）
 - **内容格式**: Org-mode → ox-hugo → Markdown
-- **主题切换**: 支持 normal 和 study 两种样式
+- **主题切换**: 支持 dark-blue 和 study 两种样式
 
 ---
 
@@ -31,7 +31,7 @@ hugo --minify
 ./theme-select
 
 # 切换主题
-./theme-select normal    # 完整样式配置
+./theme-select dark-blue    # 完整样式配置
 ./theme-select study     # 温暖的书房（当前）
 ```
 
@@ -46,7 +46,7 @@ hugo --minify
 ```
 hugo.toml                    # 主配置文件（从 theme-profiles/ 复制）
 theme-profiles/              # 主题配置目录
-├── normal/
+├── dark-blue/
 │   ├── config.toml         # 完整配置（含 [params.style]）
 │   └── layouts/            # 自定义布局
 └── study/                   # 当前主题
@@ -56,7 +56,7 @@ theme-profiles/              # 主题配置目录
 
 ### 配置文件说明
 
-**normal/config.toml**:
+**dark-blue/config.toml**:
 - 完整的 [params.style] 配置系统
 - 深蓝极简配色（#0f1b3d 主色）
 - 自动深色模式 + 手动切换按钮
@@ -71,7 +71,7 @@ theme-profiles/              # 主题配置目录
 
 ## 样式系统
 
-### normal 主题样式配置
+### dark-blue 主题样式配置
 
 所有样式参数集中在 `config.toml` 的 `[params.style]` 配置节：
 
@@ -98,7 +98,7 @@ theme-profiles/              # 主题配置目录
 ### 深色模式
 
 - **选择器**: `:root[data-scheme="dark"]`
-- **normal**: 自动 + 手动切换
+- **dark-blue**: 自动 + 手动切换
 - **study**: 仅自动跟随系统
 
 ---
@@ -159,5 +159,5 @@ A: 编辑 `theme-profiles/<theme>/config.toml`，然后重新运行 `./theme-sel
 ## 资源链接
 
 - [Stack 主题文档](https://stack.jimmycai.com/)
-- [GitHub 仓库](https://github.com/CaiMoney/hugo-theme-stack)
+- [GitHub 仓库](https://github.com/CaiJimmy/hugo-theme-stack)
 - [在线演示](https://demo.stack.cai.im/)

@@ -14,7 +14,7 @@
 │                   theme-profiles/                           │
 │                  （主题配置目录）                            │
 ├─────────────────────────────────────────────────────────────┤
-│  normal/     │  study/ (当前)                               │
+│  dark-blue/     │  study/ (当前)                               │
 │  ┌─────────┐ │  ┌─────────┐                                │
 │  │完整样式 │ │  │简洁配置 │                                │
 │  │配置系统 │ │  │默认样式 │                                │
@@ -32,14 +32,14 @@
 
 ## 两种主题样式
 
-### normal - 完整样式配置
+### dark-blue - 完整样式配置
 
 **特点**：
 - 自定义样式系统，完全可控
 - 深蓝极简配色
 - 自动深色模式 + 手动切换按钮
 
-**配置文件**：`theme-profiles/normal/config.toml`
+**配置文件**：`theme-profiles/dark-blue/config.toml`
 
 **核心配置**：
 ```toml
@@ -82,8 +82,8 @@
 ## 切换主题
 
 ```bash
-# 切换到 normal（完整样式）
-./theme-select normal
+# 切换到 dark-blue（完整样式）
+./theme-select dark-blue
 
 # 切换到 study（简洁样式）
 ./theme-select study
@@ -135,7 +135,7 @@ hugo.stack/
 ├── hugo.toml                         # 主配置（自动生成）
 ├── layouts/                          # 自定义布局（自动生成）
 ├── theme-profiles/                   # 主题配置
-│   ├── normal/
+│   ├── dark-blue/
 │   │   ├── config.toml              # 完整样式配置
 │   │   └── layouts/
 │   └── study/                        # 当前主题
@@ -143,14 +143,14 @@ hugo.stack/
 │       └── layouts/
 └── assets/
     └── scss/
-        └── custom.scss              # 自定义样式（normal 使用）
+        └── custom.scss              # 自定义样式（dark-blue 使用）
 ```
 
 ---
 
 ## 配色方案
 
-### normal 浅色模式
+### dark-blue 浅色模式
 
 | 用途 | 颜色 |
 |------|------|
@@ -161,7 +161,7 @@ hugo.stack/
 | 主文本 | `#0f1b3d` |
 | 次文本 | `#4a5a7a` |
 
-### normal 深色模式
+### dark-blue 深色模式
 
 | 用途 | 颜色 |
 |------|------|
@@ -177,7 +177,7 @@ hugo.stack/
 
 ### 分类/标签
 
-简洁边框样式（normal）：
+简洁边框样式（dark-blue）：
 ```scss
 .article-category a {
   background-color: transparent;
@@ -219,14 +219,14 @@ hugo.stack/
 
 ### 切换方式
 
-- **normal**: 自动跟随系统 + 手动切换按钮
+- **dark-blue**: 自动跟随系统 + 手动切换按钮
 - **study**: 仅自动跟随系统
 
 ---
 
 ## 与原主题对比
 
-| 功能 | 原主题 | normal | study |
+| 功能 | 原主题 | dark-blue | study |
 |------|--------|--------|-------|
 | 样式配置 | 修改 SCSS | hugo.toml | 默认 |
 | 配色 | 默认蓝灰 | 深蓝极简 | 默认 |
@@ -264,7 +264,7 @@ hugo server -D --disableFastRender
 
 只需复制这些文件/配置：
 
-1. **theme-profiles/normal/config.toml** — 完整样式配置
+1. **theme-profiles/dark-blue/config.toml** — 完整样式配置
 2. **layouts/partials/head/custom.html** — CSS 变量注入
 3. **assets/scss/custom.scss** — 样式定义
 

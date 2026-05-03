@@ -19,7 +19,7 @@ hugo.stack/
 ├── CLAUDE.md                 # Claude Code 项目指导
 ├── README.md                 # 项目概述
 ├── theme-profiles/           # 主题配置目录
-│   ├── normal/              # 完整样式配置
+│   ├── dark-blue/              # 完整样式配置
 │   └── study/               # 当前主题
 ├── layouts/                  # 自定义页面模板
 ├── content/                  # Markdown 内容
@@ -52,12 +52,12 @@ hugo --minify
 - **分页**: 每页 10 篇文章
 - **主题切换**: `./theme-select study`
 
-### 备用主题 (normal)
+### 备用主题 (dark-blue)
 
 - **深色模式**: 自动 + 手动切换按钮
 - **代码高亮**: catppuccin-macchiato
 - **分页**: 每页 6 篇文章
-- **主题切换**: `./theme-select normal`
+- **主题切换**: `./theme-select dark-blue`
 
 ---
 
@@ -108,7 +108,7 @@ hugo --minify
 ./theme-select
 
 # 切换主题
-./theme-select normal    # 完整样式
+./theme-select dark-blue    # 完整样式
 ./theme-select study     # 当前主题
 ```
 
@@ -121,7 +121,7 @@ hugo --minify
 1. **配置管理**: 不要直接编辑根目录 `hugo.toml`，切换主题时会被覆盖
 2. **主题配置**: 编辑 `theme-profiles/<theme>/config.toml`
 3. **自动备份**: 每次切换主题会自动备份到 `hugo.toml.backup`
-4. **深色模式**: study 主题仅支持自动切换，normal 支持手动切换
+4. **深色模式**: study 主题仅支持自动切换，dark-blue 支持手动切换
 
 ---
 
@@ -138,6 +138,6 @@ hugo --minify
 ## 资源链接
 
 - [Stack 主题文档](https://stack.jimmycai.com/)
-- [GitHub 仓库](https://github.com/CaiMoney/hugo-theme-stack)
+- [GitHub 仓库](https://github.com/CaiJimmy/hugo-theme-stack)
 - [主题切换指南](README-THEME-SWITCH.md)
 - [样式指南](STYLE_GUIDE.md)

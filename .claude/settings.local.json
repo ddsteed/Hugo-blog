@@ -177,7 +177,11 @@
       "Bash(curl -s \"http://localhost:1313/page/search/index.json\")",
       "Bash(curl -s \"http://127.0.0.1:1313/page/search/index.json\")",
       "Bash(curl -s \"http://127.0.0.1:1313/page/search/\")",
-      "Bash(bash *)"
+      "Bash(bash *)",
+      "Bash(sed 's/$/\\\\n/')",
+      "Bash(cat)",
+      "Bash(sed -i '' '123,130d' /Users/fengh/Documents/RDS/BLOG/hugo.stack/docs/CLAUDE.md)",
+      "Bash(sed -i '' '122r /tmp/new_layouts.txt' /Users/fengh/Documents/RDS/BLOG/hugo.stack/docs/CLAUDE.md)"
     ]
   }
 }

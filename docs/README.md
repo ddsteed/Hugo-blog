@@ -1,6 +1,6 @@
 # 点点马的逍遥港
 
-个人博客，基于 [Hugo](https://gohugo.io/) + [Stack Theme](https://github.com/CaiMoney/hugo-theme-stack) 构建。
+个人博客，基于 [Hugo](https://gohugo.io/) + [Stack Theme](https://github.com/CaiJimmy/hugo-theme-stack) 构建。
 
 ---
 
@@ -23,7 +23,7 @@ hugo.stack/
 ├── CLAUDE.md                 # Claude Code 项目指导
 ├── README.md                 # 本文件
 ├── theme-profiles/           # 主题配置目录
-│   ├── normal/              # 完整样式配置
+│   ├── dark-blue/              # 完整样式配置
 │   └── study/               # 温暖的书房（当前）
 ├── layouts/                  # 自定义页面模板
 ├── content/                  # 生成的 Markdown 内容
@@ -41,14 +41,14 @@ hugo.stack/
 # 查看可用主题
 ./theme-select
 
-# 切换到 normal（完整样式配置）
-./theme-select normal
+# 切换到 dark-blue（深蓝极简样式）
+./theme-select dark-blue
 
 # 切换到 study（温暖的书房）
 ./theme-select study
 ```
 
-**normal**: 完整样式系统，深蓝极简配色，手动深色模式切换
+**dark-blue**: 完整样式系统，深蓝极简配色，手动深色模式切换
 **study**: 简洁配置，专注阅读体验，自动深色模式
 
 详见 [README-THEME-SWITCH.md](README-THEME-SWITCH.md)
