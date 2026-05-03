@@ -176,7 +176,8 @@
       "Bash(grep -E \"\\\\.woff2$\")",
       "Bash(curl -s \"http://localhost:1313/page/search/index.json\")",
       "Bash(curl -s \"http://127.0.0.1:1313/page/search/index.json\")",
-      "Bash(curl -s \"http://127.0.0.1:1313/page/search/\")"
+      "Bash(curl -s \"http://127.0.0.1:1313/page/search/\")",
+      "Bash(bash *)"
     ]
   }
 }
