@@ -8,6 +8,27 @@ Personal blog built with [Hugo](https://gohugo.io/) using the [Stack theme](http
 
 **Working Directory**: `/Users/fengh/Documents/RDS/BLOG/hugo` is a symlink to `hugo.stack/`
 
+**Current Theme**: study (温暖的书房 / Warm Study)
+
+---
+
+## Theme Switching System
+
+This project uses a custom theme switching system that allows quick configuration changes:
+
+```bash
+# View available themes
+./theme-select
+
+# Switch themes
+./theme-select normal    # Full style configuration
+./theme-select study     # Warm study (current)
+```
+
+**Important**: When making configuration changes, edit `theme-profiles/<theme>/config.toml`, then run `./theme-select <theme>` to apply. Do not edit the root `hugo.toml` directly as it will be overwritten.
+
+See [README-THEME-SWITCH.md](README-THEME-SWITCH.md) for details.
+
 ---
 
 ## Development Commands
@@ -61,23 +82,42 @@ Posts are exported from `content-org/all-posts-*.org` files. Each Org file can c
 
 ## Configuration Structure
 
-Uses modular configuration in `config/_default/`:
+### Theme Profiles
 
-| File | Purpose |
-|------|---------|
-| `hugo.toml` | Base Hugo config, menu, pagination |
-| `params.toml` | Theme parameters (sidebar, widgets, comments) |
-| `languages.toml` | Language settings (zh-cn primary) |
-| `markup.toml` | Markdown rendering, syntax highlighting |
-| `social.toml` | Social media links |
+The project uses a theme profile system:
 
-**Alternative**: Single-file config exists as `hugo.toml.stack` (backup)
+```
+theme-profiles/
+├── normal/
+│   ├── config.toml    # Full configuration with [params.style]
+│   └── layouts/       # Custom layouts
+└── study/             # Current theme
+    ├── config.toml    # Minimal configuration
+    └── layouts/       # Custom layouts
+```
+
+### Configuration Files
+
+The root `hugo.toml` is auto-generated from the active theme profile. When switching themes:
+
+1. Current config is backed up to `hugo.toml.backup`
+2. Theme profile config is copied to `hugo.toml`
+3. Theme layouts are copied to `layouts/`
+4. `.active-theme` file is updated
+
+### Current Configuration
+
+**Theme**: study
+- **Colors**: Default Stack theme
+- **Dark mode**: Auto (follows system)
+- **Code highlighting**: monokai
+- **Pagination**: 10 posts per page
 
 ---
 
 ## Theme Customization
 
-The Stack theme is overridden in `layouts/`:
+The Stack theme can be overridden in `layouts/`:
 
 ```
 layouts/
@@ -127,9 +167,9 @@ content/
 ## Theme Features
 
 - **Three-column layout**: Sidebar (left) + Content (center) + Widgets (right)
-- **Widgets**: Search, archives, categories, tag-cloud, TOC (configurable in `params.toml`)
-- **Dark mode**: Auto-switching based on system preference
-- **Syntax highlighting**: Uses `catppuccin-macchiato` style (configurable)
+- **Widgets**: Search, archives, categories, tag-cloud, TOC (configurable in theme profiles)
+- **Dark mode**: Auto-switching based on system preference (study theme)
+- **Syntax highlighting**: Configurable per theme
 - **Built-in search**: Client-side search via Fuse.js
 
 ---
@@ -158,8 +198,30 @@ Place images and static files in:
 
 ---
 
+## Making Changes
+
+### When editing configuration:
+
+1. Edit `theme-profiles/<active-theme>/config.toml`
+2. Run `./theme-select <active-theme>` to apply
+3. Test with `hugo server -D`
+
+### When editing layouts:
+
+1. Edit `theme-profiles/<active-theme>/layouts/<file>`
+2. Run `./theme-select <active-theme>` to apply
+3. Test with `hugo server -D`
+
+### When adding new content:
+
+1. Create/edit org files in `content-org/`
+2. Export via Emacs: `M-x ox-hugo-export-this-to-md`
+3. Markdown appears in `content/post/`
+
+---
+
 ## Migration Notes
 
 Previously used PaperMod theme. Backup configs exist as:
-- `hugo.toml.papermod` - Old single-file config
-- `layouts.jane-backup/` - Old layouts (if present)
+- `hugo.toml.backup` - Auto-generated backup when switching themes
+- Theme profiles preserve both normal and study configurations

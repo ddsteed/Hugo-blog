@@ -2,45 +2,32 @@
 
 ## 当前状态
 
-- **主题**: Stack Theme (v3) + 深蓝极简定制
-- **配置方式**: 单文件 `hugo.toml`
-- **颜色模式**: 自动跟随系统 + 手动切换
-- **深色模式 CSS 选择器**: `:root[data-scheme="dark"]`
+- **主题**: Stack Theme (v3)
+- **当前样式**: study (温暖的书房)
+- **配置方式**: 单文件 `hugo.toml`（通过主题切换系统管理）
+- **颜色模式**: 自动跟随系统（无手动切换按钮）
+- **代码高亮**: monokai
+
+---
 
 ## 项目结构
 
 ```
 hugo.stack/
-├── hugo.toml                    # 主配置文件（含 [params.style] 全部样式参数）
-├── CLAUDE.md                    # Claude Code 项目指导
-├── README.md                    # 项目概述
-├── assets/scss/
-│    └── custom.scss             # 全部自定义样式（深蓝极简）
-├── layouts/
-│    ├── archives.html           # 自定义归档页
-│    ├── single.html             # 自定义文章页
-│    └── partials/
-│        ├── head/
-│        │    ├── custom.html              # CSS 变量注入
-│        │    ├── custom-dark-forced.html  # 强制深色模式备份
-│        │    └── custom-backup-light-normal.html  # 自动切换备份
-│        ├── article/components/
-│        │    ├── details.html
-│        │    ├── navigation.html
-│        │    ├── tags.html
-│        │    └── tip.html
-│        ├── article-list/
-│        │    └── default.html
-│        ├── sidebar/
-│        │    └── left.html
-│        └── widget/
-│            ├── archives.html
-│            └── toc.html
-├── config/                      # 模块化配置（备用）
-├── content/                     # Markdown 内容
-├── content-org/                 # Org-mode 源文件
-└── static/                      # 静态资源
+├── theme-select              # 主题切换脚本
+├── hugo.toml                 # 主配置文件（自动生成）
+├── CLAUDE.md                 # Claude Code 项目指导
+├── README.md                 # 项目概述
+├── theme-profiles/           # 主题配置目录
+│   ├── normal/              # 完整样式配置
+│   └── study/               # 当前主题
+├── layouts/                  # 自定义页面模板
+├── content/                  # Markdown 内容
+├── content-org/              # Org-mode 源文件
+└── static/                   # 静态资源
 ```
+
+---
 
 ## 本地开发
 
@@ -54,20 +41,25 @@ hugo --minify
 
 输出目录: `public/`
 
+---
+
 ## 主题配置
 
-### 浅色模式
-- 主色: `#0f1b3d`（深蓝）
-- 背景: `#f4f7fe`（极浅蓝）
-- 圆角: 12px 卡片, 20px 标签, 8px 按钮
+### 当前主题 (study)
 
-### 深色模式
-- 卡片背景: `#1a2332`（深蓝黑）
-- 标题颜色: `#f0f4ff`（极浅冷白）
+- **深色模式**: 仅自动跟随系统
+- **代码高亮**: monokai
+- **分页**: 每页 10 篇文章
+- **主题切换**: `./theme-select study`
 
-### 自动切换
-- 跟随系统深浅模式
-- 网站内提供手动切换按钮
+### 备用主题 (normal)
+
+- **深色模式**: 自动 + 手动切换按钮
+- **代码高亮**: catppuccin-macchiato
+- **分页**: 每页 6 篇文章
+- **主题切换**: `./theme-select normal`
+
+---
 
 ## 部署步骤
 
@@ -81,31 +73,71 @@ hugo --minify
 # 部署 public/ 目录到服务器
 ```
 
-## 样式定制
+---
 
-所有样式通过 `hugo.toml` 的 `[params.style]` 配置，无需修改 SCSS：
+## 配置修改流程
 
-```toml
-[params.style]
-  sidebarWidth = "320px"
-  articleMaxWidth = "720px"
-  [params.style.colors]
-    primary = "#0f1b3d"
-    bgPrimary = "#ffffff"
-    darkBgSecondary = "#1a2332"
+1. 编辑主题配置文件：
+   ```bash
+   vim theme-profiles/study/config.toml
+   ```
+
+2. 应用配置：
+   ```bash
+   ./theme-select study
+   ```
+
+3. 测试：
+   ```bash
+   hugo server -D
+   ```
+
+4. 构建并部署：
+   ```bash
+   hugo --minify
+   ```
+
+---
+
+## 主题切换
+
+如需切换主题样式：
+
+```bash
+# 查看可用主题
+./theme-select
+
+# 切换主题
+./theme-select normal    # 完整样式
+./theme-select study     # 当前主题
 ```
 
-如需修改，编辑 `assets/scss/custom.scss` 即可。
+详见 [README-THEME-SWITCH.md](README-THEME-SWITCH.md)
+
+---
 
 ## 注意事项
 
-1. **深色模式**: 使用 `:root[data-scheme="dark"]` 选择器（非 `html`）
-2. **代码高亮**: catppuccin-macchiato 风格
-3. **搜索**: 内置 Fuse.js 搜索
-4. **响应式**: 自动适配移动端
-5. **RSS**: 已启用 `rssFullContent`
+1. **配置管理**: 不要直接编辑根目录 `hugo.toml`，切换主题时会被覆盖
+2. **主题配置**: 编辑 `theme-profiles/<theme>/config.toml`
+3. **自动备份**: 每次切换主题会自动备份到 `hugo.toml.backup`
+4. **深色模式**: study 主题仅支持自动切换，normal 支持手动切换
+
+---
+
+## 功能特性
+
+- **搜索**: 内置 Fuse.js 搜索
+- **响应式**: 自动适配移动端
+- **RSS**: 已启用 `rssFullContent`
+- **数学公式**: 支持 LaTeX（通过 goldmark passthrough）
+- **Org 编辑**: 通过 ox-hugo 从 Org-mode 导出
+
+---
 
 ## 资源链接
 
 - [Stack 主题文档](https://stack.jimmycai.com/)
 - [GitHub 仓库](https://github.com/CaiMoney/hugo-theme-stack)
+- [主题切换指南](README-THEME-SWITCH.md)
+- [样式指南](STYLE_GUIDE.md)
