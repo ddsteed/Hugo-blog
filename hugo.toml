@@ -97,6 +97,7 @@ defaultContentLanguage = "zh-cn"
     subtitle = "Old Fashion Man"
     avatar = "/img/fox.png"
     compact = false
+    bio = ["F-Ai 工作室联合创始人", "物理学博士/教授", "自由自在的鸟"]
 
   # 文章页面配置
   [params.article]

@@ -30,6 +30,7 @@
 
   /* Layout */
   --max-width: 680px;
+  --sidebar-width: 240px;
   --nav-height: 60px;
 
   /* Transitions */
@@ -219,6 +220,22 @@ a:hover {
     padding: calc(var(--nav-height) + var(--spacing-md)) var(--spacing-sm) var(--spacing-xl);
   }
 
+  /* Home layout mobile */
+  .home-layout {
+    flex-direction: column;
+    gap: var(--spacing-md);
+  }
+
+  .home-sidebar {
+    width: 100%;
+    position: static;
+    max-height: none;
+  }
+
+  .home-container {
+    width: 100%;
+  }
+
   .nav-container {
     padding: 0 var(--spacing-sm);
   }
@@ -282,8 +299,75 @@ a:hover {
 }
 
 /* Home Page */
-.home-container {
+.home-layout {
+  display: flex;
+  max-width: calc(var(--max-width) + var(--sidebar-width) + var(--spacing-lg));
+  margin: 0 auto;
+  gap: var(--spacing-lg);
   animation: fadeIn var(--transition-slow);
+}
+
+.home-sidebar {
+  width: var(--sidebar-width);
+  flex-shrink: 0;
+  position: sticky;
+  top: calc(var(--nav-height) + var(--spacing-lg));
+  height: fit-content;
+  max-height: calc(100vh - var(--nav-height) - var(--spacing-xl));
+  overflow-y: auto;
+}
+
+.profile-card {
+  background-color: var(--bg-secondary);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: var(--spacing-lg);
+  text-align: center;
+}
+
+.profile-avatar {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: var(--spacing-md);
+}
+
+.profile-name {
+  font-family: var(--font-heading);
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: var(--spacing-xs);
+  color: var(--text-primary);
+}
+
+.profile-subtitle {
+  color: var(--text-secondary);
+  font-size: 0.9375rem;
+  font-style: italic;
+  margin-bottom: var(--spacing-md);
+}
+
+.profile-bio {
+  text-align: left;
+  padding-top: var(--spacing-md);
+  border-top: 1px solid var(--border);
+}
+
+.profile-bio p {
+  font-size: 0.875rem;
+  color: var(--text-secondary);
+  line-height: 1.6;
+  margin-bottom: var(--spacing-sm);
+}
+
+.profile-bio p:last-child {
+  margin-bottom: 0;
+}
+
+.home-container {
+  width: var(--max-width);
+  flex-shrink: 0;
 }
 
 .home-hero {
