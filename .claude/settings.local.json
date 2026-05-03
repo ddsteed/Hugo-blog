@@ -184,7 +184,9 @@
       "Bash(sed -i '' '122r /tmp/new_layouts.txt' /Users/fengh/Documents/RDS/BLOG/hugo.stack/docs/CLAUDE.md)",
       "mcp__plugin_playwright_playwright__browser_console_messages",
       "mcp__plugin_playwright_playwright__browser_type",
-      "mcp__plugin_playwright_playwright__browser_close"
+      "mcp__plugin_playwright_playwright__browser_close",
+      "Bash(pkill -9 -f \"hugo server\")",
+      "Bash(curl -s http://localhost:1313/css/main.min.be4e97ef64b46da2c0bea0903f42e2bec675e2488c21a5161974e47e720dd992.css)"
     ]
   }
 }

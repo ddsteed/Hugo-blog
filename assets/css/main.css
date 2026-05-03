@@ -126,7 +126,7 @@ a:hover {
 .nav-container {
   max-width: var(--max-width);
   margin: 0 auto;
-  padding: 0 var(--spacing-md);
+  padding: 0 var(--spacing-lg);
   height: 100%;
   display: flex;
   align-items: center;
@@ -160,6 +160,7 @@ a:hover {
 .nav-menu {
   display: flex;
   gap: var(--spacing-md);
+  padding: 0 var(--spacing-lg);
 }
 
 .nav-menu a {
@@ -221,7 +222,7 @@ a:hover {
   }
 
   .nav-container {
-    padding: 0 var(--spacing-sm);
+    padding: 0 var(--spacing-md);
   }
 
   /* Home layout mobile */
@@ -256,7 +257,7 @@ a:hover {
     gap: 0;
     background-color: var(--bg-primary);
     border-bottom: 1px solid var(--border);
-    padding: var(--spacing-sm);
+    padding: 0;
     transform: translateY(-100%);
     opacity: 0;
     pointer-events: none;
