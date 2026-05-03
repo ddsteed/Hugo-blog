@@ -310,7 +310,7 @@ a:hover {
 .section-title {
   font-family: var(--font-heading);
   font-size: 1.5rem;
-  margin-bottom: var(--spacing-lg);
+  margin-bottom: 1.25rem;
   color: var(--text-primary);
 }
 
@@ -318,11 +318,11 @@ a:hover {
 .posts-list {
   display: flex;
   flex-direction: column;
-  gap: var(--spacing-lg);
+  gap: 1rem;
 }
 
 .post-preview {
-  padding-bottom: var(--spacing-md);
+  padding-bottom: 0.75rem;
   border-bottom: 1px solid var(--border);
 }
 
@@ -826,22 +826,22 @@ a:hover {
 }
 
 .list-header {
-  margin-bottom: var(--spacing-xl);
-  padding-bottom: var(--spacing-md);
+  margin-bottom: 1.5rem;
+  padding-bottom: 1rem;
   border-bottom: 1px solid var(--border);
 }
 
 .taxonomy-list {
   display: flex;
   flex-direction: column;
-  gap: var(--spacing-sm);
+  gap: 0.5rem;
 }
 
 .taxonomy-link {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: var(--spacing-md);
+  padding: 0.75rem 1rem;
   border: 1px solid var(--border);
   border-radius: 8px;
   transition: border-color var(--transition-fast);
