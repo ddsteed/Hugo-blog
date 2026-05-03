@@ -271,11 +271,6 @@ a:hover {
   .hamburger.active span:nth-child(3) {
     transform: translateY(-7px) rotate(-45deg);
   }
-
-  /* Hide TOC on mobile */
-  .article-toc {
-    display: none;
-  }
 }
 
 /* Main Content */
