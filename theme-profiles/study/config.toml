@@ -83,6 +83,14 @@ defaultContentLanguage = "zh-cn"
   rssFullContent = true
   favicon = "/favicon.ico"
 
+  # 作者信息
+  [params.author]
+    name = "Hao Feng"
+    nickname = "F1"
+    email = "ddsteed@gmail.com"
+    github = "https://github.com/ddsteed"
+    homepage = "https://www.ddsteed.space/"
+
   # 保留头像和基本信息
   [params.sidebar]
     emoji = ""
