@@ -183,7 +183,8 @@
       "Bash(sed -i '' '123,130d' /Users/fengh/Documents/RDS/BLOG/hugo.stack/docs/CLAUDE.md)",
       "Bash(sed -i '' '122r /tmp/new_layouts.txt' /Users/fengh/Documents/RDS/BLOG/hugo.stack/docs/CLAUDE.md)",
       "mcp__plugin_playwright_playwright__browser_console_messages",
-      "mcp__plugin_playwright_playwright__browser_type"
+      "mcp__plugin_playwright_playwright__browser_type",
+      "mcp__plugin_playwright_playwright__browser_close"
     ]
   }
 }
