@@ -6,7 +6,7 @@ tags:
   - about
 ---
 
-<img src="/img/me.png" alt="我" style="width: 400px; border-radius: 8px;">
+<img src="/img/me.png" alt="我" class="about-image">
 
 我曾经是一名高校教师，从事教学、科学研究和管理工作，教授过《普通物理》、《量子力学》、《计算方法》等课，发表过 150 余篇 SCI 论文，承担过一些国家级、省部级科研项目。
 

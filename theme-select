@@ -1,0 +1,190 @@
+#!/usr/bin/env bash
+# ==============================================================================
+# theme-select - Hugo 主题切换脚本
+# ==============================================================================
+# 用法: ./theme-select <theme-name>
+#
+# 支持的主题:
+#   normal  - 原始样式
+#   study   - 温暖的书房 (Warm Study) 样式
+# ==============================================================================
+
+set -euo pipefail
+
+# 项目根目录
+PROJECT_ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+PROFILES_DIR="${PROJECT_ROOT}/theme-profiles"
+ACTIVE_FILE="${PROJECT_ROOT}/.active-theme"
+CONFIG_FILE="${PROJECT_ROOT}/hugo.toml"
+LAYOUTS_DIR="${PROJECT_ROOT}/layouts"
+
+# 颜色输出
+RED='\033[0;31m'
+GREEN='\033[0;32m'
+YELLOW='\033[0;33m'
+NC='\033[0m' # No Color
+
+# ==============================================================================
+# 辅助函数
+# ==============================================================================
+
+info() {
+    echo -e "${GREEN}[INFO]${NC} $1"
+}
+
+error() {
+    echo -e "${RED}[ERROR]${NC} $1" >&2
+}
+
+warn() {
+    echo -e "${YELLOW}[WARN]${NC} $1"
+}
+
+# 检查主题是否存在
+theme_exists() {
+    local theme="$1"
+    [[ -d "${PROFILES_DIR}/${theme}" ]]
+}
+
+# 获取当前激活的主题
+get_active_theme() {
+    if [[ -f "${ACTIVE_FILE}" ]]; then
+        cat "${ACTIVE_FILE}"
+    else
+        echo "none"
+    fi
+}
+
+# 设置激活的主题
+set_active_theme() {
+    local theme="$1"
+    echo "${theme}" > "${ACTIVE_FILE}"
+}
+
+# ==============================================================================
+# 切换主题
+# ==============================================================================
+
+switch_theme() {
+    local target_theme="$1"
+
+    # 验证主题存在
+    if ! theme_exists "${target_theme}"; then
+        error "主题 '${target_theme}' 不存在"
+        echo ""
+        echo "可用的主题:"
+        for dir in "${PROFILES_DIR}"/*/; do
+            if [[ -d "${dir}" ]]; then
+                local name=$(basename "${dir}")
+                echo "  - ${name}"
+            fi
+        done
+        exit 1
+    fi
+
+    local current_theme=$(get_active_theme)
+
+    # 如果已经是该主题，无需切换
+    if [[ "${current_theme}" == "${target_theme}" ]]; then
+        info "当前已经是 '${target_theme}' 主题"
+        exit 0
+    fi
+
+    info "切换主题: ${current_theme} -> ${target_theme}"
+
+    # 检查主题配置文件
+    local theme_config="${PROFILES_DIR}/${target_theme}/config.toml"
+    if [[ ! -f "${theme_config}" ]]; then
+        error "主题配置文件不存在: ${theme_config}"
+        exit 1
+    fi
+
+    # 检查主题 layouts
+    local theme_layouts="${PROFILES_DIR}/${target_theme}/layouts"
+    if [[ ! -d "${theme_layouts}" ]]; then
+        warn "主题 layouts 目录不存在: ${theme_layouts}"
+    fi
+
+    # 备份当前配置
+    if [[ -f "${CONFIG_FILE}" ]]; then
+        cp "${CONFIG_FILE}" "${CONFIG_FILE}.backup"
+        info "已备份当前配置到 hugo.toml.backup"
+    fi
+
+    # 复制主题配置
+    cp "${theme_config}" "${CONFIG_FILE}"
+    info "已应用主题配置"
+
+    # 清理并复制 layouts
+    if [[ -d "${LAYOUTS_DIR}" ]]; then
+        rm -rf "${LAYOUTS_DIR}"
+        info "已清理旧 layouts"
+    fi
+
+    if [[ -d "${theme_layouts}" ]] && [[ -n "$(ls -A ${theme_layouts} 2>/dev/null)" ]]; then
+        cp -r "${theme_layouts}" "${LAYOUTS_DIR}"
+        info "已应用主题 layouts"
+    else
+        mkdir -p "${LAYOUTS_DIR}"
+        warn "主题无自定义 layouts，已创建空目录"
+    fi
+
+    # 更新激活主题标记
+    set_active_theme "${target_theme}"
+
+    echo ""
+    info "主题切换完成！"
+    info "当前主题: ${target_theme}"
+    echo ""
+    echo "如需预览，运行:"
+    echo "  hugo server -D"
+}
+
+# ==============================================================================
+# 主程序
+# ==============================================================================
+
+main() {
+    # 检查参数
+    if [[ $# -eq 0 ]]; then
+        echo "用法: $0 <theme-name>"
+        echo ""
+        echo "当前主题: $(get_active_theme)"
+        echo ""
+        echo "可用的主题:"
+        for dir in "${PROFILES_DIR}"/*/; do
+            if [[ -d "${dir}" ]]; then
+                local name=$(basename "${dir}")
+                local current=""
+                if [[ "$(get_active_theme)" == "${name}" ]]; then
+                    current=" [当前]"
+                fi
+                echo "  - ${name}${current}"
+            fi
+        done
+        exit 0
+    fi
+
+    local target_theme="$1"
+
+    # 处理帮助
+    if [[ "${target_theme}" == "-h" ]] || [[ "${target_theme}" == "--help" ]]; then
+        echo "用法: $0 <theme-name>"
+        echo ""
+        echo "主题切换脚本 - 在不同的 Hugo 主题配置之间切换"
+        echo ""
+        echo "命令:"
+        echo "  $0              显示当前主题和可用主题列表"
+        echo "  $0 <theme>      切换到指定主题"
+        echo ""
+        echo "示例:"
+        echo "  $0 normal       切换到 normal 样式"
+        echo "  $0 study        切换到温暖的书房样式"
+        exit 0
+    fi
+
+    # 执行切换
+    switch_theme "${target_theme}"
+}
+
+main "$@"
