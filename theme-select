@@ -2,18 +2,19 @@
 # ==============================================================================
 # theme-select - Hugo 主题切换脚本
 # ==============================================================================
-# 作者:      Hao Feng (F1)
+# 作者:      Hao Feng (F1) <ddsteed@gmail.com>
 # 版本:      1.0.0
 # 创建日期:  2026-05-03
 # 许可证:    MIT
+# 主页:      https://github.com/ddsteed/hugo-blog
 #
 # 简介:      一键切换 Hugo 静态博客的主题配置，包括 hugo.toml 配置
-#             文件和 layouts 布局文件，支持备份恢复机制。
+#            文件和 layouts 布局文件，支持备份恢复机制。
 #
-# 用法:        ./theme-select <theme-name>
-#              ./theme-select                # 显示当前主题和可用主题列表
-#              ./theme-select --help         # 显示帮助信息
-#              ./theme-select --version      # 显示版本信息
+# 用法:      ./theme-select <theme-name>
+#            ./theme-select                # 显示当前主题和可用主题列表
+#            ./theme-select --help         # 显示帮助信息
+#            ./theme-select --version      # 显示版本信息
 #
 # 支持的主题:
 #   dark-blue   - 深蓝极简样式
@@ -26,7 +27,7 @@
 #   hugo.toml.backup                       # 切换前的配置备份
 #
 # 版本历史:
-#   v1.0.0   2026-05-03  Hao Feng (F1)  初始版本
+#   v1.0.0    2026-05-03  Hao Feng (F1) <ddsteed@gmail.com>  初始版本
 #        - 实现主题切换核心功能
 #        - 支持 hugo.toml 配置文件的备份与恢复
 #        - 支持 layouts 布局文件的自动复制
@@ -79,8 +80,8 @@ warn() {
 # 输出版本信息
 show_version() {
     echo "theme-select ${THEME_SELECT_VERSION}"
-    echo "作者: Hao Feng (F1)"
-    echo "https://github.com/F1/hugo-stack"
+    echo "作者: Hao Feng (F1) <ddsteed@gmail.com>"
+    echo "主页: https://github.com/ddsteed/hugo-stack"
 }
 
 # 检查主题目录是否存在
