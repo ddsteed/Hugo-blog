@@ -153,7 +153,10 @@
       "Bash(curl -s \"http://localhost:1313/\")",
       "mcp__plugin_playwright_playwright__browser_snapshot",
       "Bash(curl -s \"http://localhost:1313/about/\")",
-      "mcp__plugin_playwright_playwright__browser_resize"
+      "mcp__plugin_playwright_playwright__browser_resize",
+      "Bash(./theme-select study *)",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\" http://127.0.0.1:1313/)",
+      "Bash(pkill -f \"hugo server\")"
     ]
   }
 }
