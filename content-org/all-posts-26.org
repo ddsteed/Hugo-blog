@@ -2,9 +2,9 @@
 #+hugo_section: /post/
 #+options: author:nil
 #+options: ^:nil
-#+options: tex:t
-#+startup: inlineimages
-#+attr_org: :width 500
+#+OPTIONS: tex:t
+#+STARTUP: inlineimages
+#+ATTR_ORG: :width 500
 
 * ✔ DONE 好老师心里，要有一座山                             :education:@教育:
 CLOSED: [2026-04-28 Tue 12:09]
@@ -306,10 +306,8 @@ CLOSED: [2026-04-08 Wed 21:08]
 再过一会儿，也就还是把书轻轻合上，把灯拧暗一点。纸页合拢时有极轻的一声响，响过之后，屋里更静了。东坡已经去了这样多年，江上的风、岭南的雨、雪堂前的荒地，也都不在眼前。可人到低处时，案头若有这样一册书，心里总还像留着一点可以挪步的地方。地方不大，却够把呼吸放慢一点。灯影落在桌角，夜色一点点沉下来，四下无声，只有那一点旧书气息还在，淡淡的，像很远处未尽的月色。
 
 ----
-
 #+attr_org: :width 500
-#+attr_html: :width 60% :align center
-
+#+attr_html: :width 80% :align center
 [[file:~/Documents/RDS/BLOG/hugo/static/img/zhao_yun_1.jpg]]
       
 ---- 
@@ -723,25 +721,24 @@ CLOSED: [2026-03-11 Wed 15:53]
 不响，也不动声色， \\
 可我知道，它不会消失。
 
-#+attr_org: :width 300
-#+attr_html: :width 50% :align center
-
+--- 
+#+ATTR_HTML: :width 50% :align center
 [[file:~/Documents/RDS/BLOG/hugo/static/img/c-bluesky.jpg]]
 
----
-
+--- 
+#+ATTR_HTML: :width 50% :align center
 [[file:~/Documents/RDS/BLOG/hugo/static/img/c-cloud.jpg]] 
 
 ---
-
+#+ATTR_HTML: :width 50% :align center
 [[file:~/Documents/RDS/BLOG/hugo/static/img/c-rain.jpg]]
 
 ---
-
+#+ATTR_HTML: :width 50% :align center
 [[file:~/Documents/RDS/BLOG/hugo/static/img/c-snow.jpg]] 
 
 ---
-
+#+ATTR_HTML: :width 30% :align center
 [[file:~/Documents/RDS/BLOG/hugo/static/img/c-siyecao.jpg]]  
 
 --- 
@@ -995,12 +992,11 @@ CLOSED: [2026-02-25 Wed 17:29]
 :END:
 
 #+attr_org: :width 500
-#+attr_html: :width 60% :align center
-
+#+attr_html: :width 80% :align center
 [[file:~/Documents/RDS/BLOG/hugo/static/img/dang_shi_zhi_dao_shi_xun_chang.jpg]]
 
 ----
-
+#+attr_html: :width 80% :align center
 [[file:~/Documents/RDS/BLOG/hugo/static/img/fengxianghu_xiyang.jpg]]
 
 * ✔ DONE 理解，是一场缓慢的重建                             :education:@教育:
@@ -1633,7 +1629,7 @@ Goodenough 获奖后，我特意去看采访视频。镜头扫过他身后的白
 ----
 
 #+attr_org: :width 300
-#+attr_html: :width 40% :align center
+#+attr_html: :width 80% :align center
 [[file:~/Documents/RDS/BLOG/hugo/static/img/de_shi_sui_yuan.jpg]]
 
 
@@ -2010,7 +2006,7 @@ CLOSED: [2026-01-07 Wed 20:54]
 
 ---
 #+attr_org: :width 300
-#+attr_html: :width 40% :align center
+#+attr_html: :width 60% :align center
 [[file:~/Documents/RDS/BLOG/hugo/static/img/little_girl_subway.jpg]]
 
 ---
@@ -2189,9 +2185,11 @@ CLOSED: [2026-01-07 Wed 20:54]
 
 ---
 #+attr_org: :width 45%
-#+attr_html: :width 45%
+#+attr_html: :width 50% :align center
 [[file:~/Documents/RDS/BLOG/hugo/static/img/2025_dedao_study_1.jpg]]
+
 --- 
+#+attr_html: :width 50% :align center
 [[file:~/Documents/RDS/BLOG/hugo/static/img/2025_dedao_study_2.jpg]] 
 
 ---

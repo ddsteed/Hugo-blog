@@ -17,15 +17,14 @@ CLOSED: [2025-12-28 Sun 18:35]
 
 等汽车落在绿化带上后，我推了推车门，嗯，打不开。已经闻到焦煳味了，不会起火吧？我得赶紧爬出去才行。幸好，副驾车门还打得开。出来后，我给那个肇事的小伙子第一句话就是：你还有点幸运呢，如果把我撞死了或者残废了，你就脱不了爪爪啦。
 
+--- 
 #+ATTR_ORG: :width 45%
-#+ATTR_HTML: :width 45%
-
+#+attr_html: :width 80% :align center
 [[file:~/Documents/RDS/BLOG/hugo/static/img/fei_lai_heng_huo_1.jpg]]
 
 ----
- 
+#+attr_html: :width 80% :align center
 [[file:~/Documents/RDS/BLOG/hugo/static/img/fei_lai_heng_huo_2.jpg]]     
-
 
 ----
 
@@ -58,12 +57,11 @@ CLOSED: [2025-12-27 Sat 17:05]
 我一个人坐着，看演职员表一行一行往上爬，看那些陌生的名字，想象他们在幕后——在我看不见的地方——凑出一个故事，点亮一段时间。然后灯亮了，故事结束，只剩下我还坐在原地，像迟到又像早退。
 
 #+ATTR_ORG: :width 45%
-#+ATTR_HTML: :width 45%
-
+#+attr_html: :width 80% :align center
 [[file:~/Documents/RDS/BLOG/hugo/static/img/one_person_movie_3.jpg]]
 
 ---- 
-
+#+attr_html: :width 80% :align center
 [[file:~/Documents/RDS/BLOG/hugo/static/img/one_person_movie_4.jpg]]    
 
 ---
@@ -446,7 +444,7 @@ CLOSED: [2025-11-15 Sat 17:39]
 我最喜欢的，是夕阳下那一幕：田野很空，路很窄，一个人慢慢往前走。镜头不煽情，却把“孤独”这两个字照得很清楚——不是热闹之后的落寞，而是一种长年累月的、习惯了的孤独。
 
 #+ATTR_ORG: :width 500
-#+ATTR_HTML: :width 60% :align center
+#+ATTR_HTML: :width 80% :align center
 [[file:~/Documents/RDS/BLOG/hugo/static/img/the_straight_story.jpg]]
 
 ----
@@ -488,7 +486,7 @@ CLOSED: [2025-11-15 Sat 17:39]
 我还喜欢他的白胡子。那胡子像一场安静的雪，不夸张，却把岁月都写在上面。我会忍不住想：如果我也能老到那一天，能不能也留一把这样的白胡子——不是为了显得有故事，而是为了证明：我确实走过，确实扛过，也确实没有在某个夜里把自己交出去。
 
 #+ATTR_ORG: :width 500
-#+ATTR_HTML: :width 60% :align center
+#+ATTR_HTML: :width 80% :align center
 [[file:~/Documents/RDS/BLOG/hugo/static/img/mr_straight.jpg]]
 
 ----
@@ -737,7 +735,7 @@ CLOSED: [2025-11-10 Mon 09:40]
 
 --- 
 #+ATTR_ORG: :width 300
-#+ATTR_HTML: :width 40% :align center
+#+ATTR_HTML: :width 50% :align center
 [[file:~/Documents/RDS/BLOG/hugo/static/img/diguozhengjiewangshi.jpg]]
 
 --- 
@@ -1540,7 +1538,7 @@ CLOSED: [2025-02-16 Sun 21:28]
 果然如自己所料：读到后面，沉重的地方更沉重；而那些多年前我以为“想明白了”的困惑，仍旧像一团没解开的线，绕在心里——只是绕法变了。
 
 #+ATTR_ORG: :width 300
-#+ATTR_HTML: :width 40% :align center
+#+ATTR_HTML: :width 60% :align center
 [[file:~/Documents/RDS/BLOG/hugo/static/img/china_in_village.jpg]]
 
 ----

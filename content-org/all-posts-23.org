@@ -2,6 +2,9 @@
 #+hugo_section: /post/
 #+options: author:nil
 #+options: ^:nil
+#+OPTIONS: tex:t
+#+STARTUP: inlineimages
+#+ATTR_ORG: :width 500
 
 * ✔ DONE 那一年以后                                              :misc:@感悟:
 CLOSED: [2023-12-20 Wed 11:11]
@@ -804,7 +807,7 @@ CLOSED: [2023-07-02 Sun 11:04]
 
 --- 
 #+ATTR_ORG: :width 400
-#+ATTR_HTML: :width 40% :align center
+#+ATTR_HTML: :width 80% :align center
 [[file:~/Documents/RDS/BLOG/hugo/static/img/luguhu.jpg]]
 
 ---
@@ -976,7 +979,7 @@ CLOSED: [2023-05-07 Sun 18:45]
 :END:
 
 ---
-#+ATTR_HTML: :width 50% :align center
+#+ATTR_HTML: :width 80% :align center
 [[file:~/Documents/RDS/BLOG/hugo/static/img/clock-desktop.jpg]]
 
 ---
@@ -1008,7 +1011,7 @@ CLOSED: [2023-05-07 Sun 18:45]
 现在回看那个桌面，实在简陋。
 
 ---
-#+ATTR_HTML: :width 50% :align center
+#+ATTR_HTML: :width 80% :align center
 [[file:~/Documents/RDS/BLOG/hugo/static/img/olwm.jpg]]
 
 ---

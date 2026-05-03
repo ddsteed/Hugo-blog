@@ -20,7 +20,7 @@ CLOSED: [2024-12-01 Sun 11:44]
 
 ---
 #+ATTR_ORG: :width 400
-#+ATTR_HTML: :width 40% :align center
+#+ATTR_HTML: :width 60% :align center
 [[file:~/Documents/RDS/BLOG/hugo/static/img/murongfu.jpg]]
 
 ---
@@ -1109,11 +1109,11 @@ CLOSED: [2024-07-07 Sun 19:33]
 
 ---
 #+ATTR_ORG: :width 400
-#+ATTR_HTML: :width 40% :align center
+#+ATTR_HTML: :width 60% :align center
 [[file:~/Documents/RDS/BLOG/hugo/static/img/adv_edu_t.jpg]]
 
 ---
-#+ATTR_HTML: :width 40% :align center
+#+ATTR_HTML: :width 60% :align center
 [[file:~/Documents/RDS/BLOG/hugo/static/img/adv_edu_2.jpg]]
 
 --- 
@@ -1165,7 +1165,7 @@ CLOSED: [2024-07-07 Sun 19:33]
 我想起那些职业院校学生求知的眼神，也想起自己年轻时在讲台上的自负。许多认识，确实要过很久才会慢慢变得稳一点。所谓教育，大概不只是学生被教育，教师也在被教育。学生用他们的沉默、困惑、努力和眼神，反过来教育我们：大学的逻辑，不能只从精英那里寻找，也要从多数人的命运里重新理解。
 
 --- 
-#+ATTR_HTML: :width 40% :align center
+#+ATTR_HTML: :width 60% :align center
 [[file:~/Documents/RDS/BLOG/hugo/static/img/adv_edu_3.jpg]]
 
 ---
