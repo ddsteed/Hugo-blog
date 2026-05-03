@@ -123,7 +123,7 @@ CLOSED: [2016-07-25 Mon 18:10]
 #+end_comment
 
 -----
-#+attr_html: :width 400px
+#+attr_html: :width 80% :align center
 [[../static/img/stanford.jpg]]
 
 -----

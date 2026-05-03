@@ -119,9 +119,9 @@ CLOSED: [2026-03-03 Tue 10:31]
 :EXPORT_FILE_NAME: 20260303-yuan-ye
 :END:
 
+--- 
 #+attr_org: :width 500
 #+attr_html: :width 60% :align center
-
 [[file:~/Documents/RDS/BLOG/hugo/static/img/sheng_cha_zi.jpg]]
 
 ----
@@ -364,13 +364,15 @@ CLOSED: [2026-02-13 Fri 19:01]
 
 只是我会不时地轻轻摸一摸那道裂纹，确认它还在。
 
+--- 
 #+attr_org: :width 300
 #+attr_html: :width 40% :align center
-
 [[file:~/Documents/RDS/BLOG/hugo/static/img/xinchuan_xiyang.jpg]]
 
 -----
+#+attr_html: :width 40% :align center
 [[file:~/Documents/RDS/BLOG/hugo/static/img/qinghuaci_cup.jpg]]
+--- 
 
 * ✔ DONE 怀旧                                                        :misc:@感悟:
 CLOSED: [2026-02-09 Mon 16:39]
@@ -378,10 +380,11 @@ CLOSED: [2026-02-09 Mon 16:39]
 :EXPORT_FILE_NAME: 20260209-huaijiu
 :END:
 
+--- 
 #+attr_org: :width 500
 #+attr_html: :width 60% :align center
-
 [[file:~/Documents/RDS/BLOG/hugo/static/img/huai_jiu_fan_zhong_yan.jpg]]
+--- 
    
 * ✔ DONE 固执                                                    :misc:@感悟:
 CLOSED: [2026-01-31 Sat 09:35]
@@ -389,18 +392,16 @@ CLOSED: [2026-01-31 Sat 09:35]
 :EXPORT_FILE_NAME: 20260131-guzhi
 :END:
 
+--- 
 #+attr_org: :width 500
 #+attr_html: :width 60% :align center
-
 [[file:~/Documents/RDS/BLOG/hugo/static/img/bai_ma_xiao_xi_feng.jpg]]
 
 ----
-
-
 #+attr_org: :width 500
 #+attr_html: :width 60% :align center
-
 [[file:~/Documents/RDS/BLOG/hugo/static/img/xing_ye_si_jun.jpg]]
+--- 
      
 * ✔ DONE 习惯                                            :misc:@感悟:
 CLOSED: [2026-01-29 Thu 08:03]
@@ -462,10 +463,11 @@ CLOSED: [2026-01-23 Fri 16:08]
 :EXPORT_FILE_NAME: 20260123-yan_shu_wuti
 :END:
 
+--- 
 #+attr_org: :width 500
 #+attr_html: :width 60% :align center
-
 [[file:~/Documents/RDS/BLOG/hugo/static/img/yan_shu_wanxisha.jpg]]
+--- 
 
 * ✔ DONE “该死的”记性                                            :misc:@感悟:
 CLOSED: [2026-01-18 Sun 11:13]
@@ -560,6 +562,7 @@ CLOSED: [2025-12-24 Wed 15:30]
 :EXPORT_FILE_NAME: 20251224-ye_lai_you_meng 
 :END:
 
+--- 
 #+ATTR_ORG: :width 500
 #+ATTR_HTML: :width 60% :align center
 [[file:~/Documents/RDS/BLOG/hugo/static/img/xiang_jian_shi_nan.jpg]]
@@ -579,6 +582,7 @@ CLOSED: [2024-12-06 Fri 14:53]
 
 然而，我辜负了父亲的期望。这四年来，商海里浮沉，成功的经验几乎没有，失败的教训数不胜数。直到最近，我才想明白了，我可以做什么。其实，不需要高大上的技术和产品，只要能真正解决一些人的需求就好。于是，我们努力地把以前的技术---“动态智能知识图谱”和大语言模型结合起来，用全语音的方式进行聊天。今天，我们正式地推出了一个心理咨询 AI 助手------“树洞聊天屋-echo”。
 
+--- 
 #+ATTR_ORG: :width 400
 #+ATTR_HTML: :width 40% :align center
 [[file:~/Documents/RDS/BLOG/hugo/static/img/hello_tree.jpg]]

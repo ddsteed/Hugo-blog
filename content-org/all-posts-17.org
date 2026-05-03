@@ -2,6 +2,9 @@
 #+hugo_section: /post/
 #+options: author:nil
 #+options: ^:nil
+#+OPTIONS: tex:t
+#+STARTUP: inlineimages
+#+ATTR_ORG: :width 500
 
 * ✔ DONE 学习的几条旧路                                         :study:@学习:
 CLOSED: [2017-07-22 Sat 10:01]

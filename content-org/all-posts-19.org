@@ -93,7 +93,7 @@ CLOSED: [2019-03-20 Wed 21:07]
 #+end_comment
 
 --- 
-#+attr_html: :width 400px
+#+attr_html: :width 80% :align center
 [[../static/img/CertificateU.jpg]]
 
 --- 

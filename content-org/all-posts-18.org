@@ -2,6 +2,9 @@
 #+hugo_section: /post/
 #+options: author:nil
 #+options: ^:nil
+#+OPTIONS: tex:t
+#+STARTUP: inlineimages
+#+ATTR_ORG: :width 500
 
 * ✔ DONE 有回音的人                                              :misc:@感悟:
 CLOSED: [2018-03-01 Thu 09:40]

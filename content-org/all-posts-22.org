@@ -2,6 +2,9 @@
 #+hugo_section: /post/
 #+options: author:nil
 #+options: ^:nil
+#+OPTIONS: tex:t
+#+STARTUP: inlineimages
+#+ATTR_ORG: :width 500
 
 * ✔ DONE 草地上的那一笑                                          :misc:@感悟:
 CLOSED: [2022-12-31 Wen 09:21]
@@ -274,7 +277,7 @@ IBM 如此，AT&T 如此，摩托罗拉如此，诺基亚也如此。
 
 --- 
 #+ATTR_ORG: :width 300
-#+ATTR_HTML: :width 40% :align center
+#+ATTR_HTML: :width 60% :align center
 [[file:~/Documents/RDS/BLOG/hugo/static/img/wave-peak.jpg]]
 
 --- 

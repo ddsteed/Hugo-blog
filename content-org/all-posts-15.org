@@ -2,8 +2,11 @@
 #+hugo_section: /post/
 #+options: author:nil
 #+options: ^:nil
+#+OPTIONS: tex:t
+#+STARTUP: inlineimages
+#+ATTR_ORG: :width 500
 
-* ✔ DONE 人生不如意事                           :misc:@感悟:
+* ✔ DONE 人生不如意事                                            :misc:@感悟:
 CLOSED: [2015-07-05 Sun 23:21]
 :PROPERTIES:
 :EXPORT_FILE_NAME: 20150705-bu-ru-yi-shi
@@ -81,7 +84,7 @@ CLOSED: [2015-07-05 Sun 23:21]
 #+end_comment
 
 --- 
-#+attr_html: :height 200px
+#+attr_html: :width 80% :align center
 [[../static/img/messi-2014.jpg]]
 
 ---

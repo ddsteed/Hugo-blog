@@ -2,8 +2,11 @@
 #+hugo_section: /post/
 #+options: author:nil
 #+options: ^:nil
+#+OPTIONS: tex:t
+#+STARTUP: inlineimages
+#+ATTR_ORG: :width 500
 
-* ✔ DONE 《民国那些人》         :reading:@读书:
+* ✔ DONE 《民国那些人》                                       :reading:@读书:
 CLOSED: [2012-11-05 Mon 23:34]
 :PROPERTIES:
 :EXPORT_FILE_NAME: 20121105-minguo-naxieren
