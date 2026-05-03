@@ -173,7 +173,10 @@
       "Bash(cp -r node_modules/@fontsource/crimson-pro/files/* crimson-pro/)",
       "Bash(cp -r node_modules/@fontsource/inter/files/* inter/)",
       "Bash(cp -r node_modules/@fontsource/jetbrains-mono/files/* jetbrains-mono/)",
-      "Bash(grep -E \"\\\\.woff2$\")"
+      "Bash(grep -E \"\\\\.woff2$\")",
+      "Bash(curl -s \"http://localhost:1313/page/search/index.json\")",
+      "Bash(curl -s \"http://127.0.0.1:1313/page/search/index.json\")",
+      "Bash(curl -s \"http://127.0.0.1:1313/page/search/\")"
     ]
   }
 }
