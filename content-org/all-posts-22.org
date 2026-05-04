@@ -156,7 +156,6 @@ What does not kill me, makes me stronger.
 #+ATTR_HTML: :width 60% :align center
 [[../static/img/messi2.jpg]]
 
---- 
 
 * ✔ DONE 《浪潮之巅》                                         :reading:@读书:
 CLOSED: [2022-11-03 Thu 15:31]
@@ -280,7 +279,6 @@ IBM 如此，AT&T 如此，摩托罗拉如此，诺基亚也如此。
 #+ATTR_HTML: :width 60% :align center
 [[file:~/Documents/RDS/BLOG/hugo/static/img/wave-peak.jpg]]
 
---- 
 
 * ✔ DONE 收音机里的《童年》                                      :misc:@感悟:
 CLOSED: [2022-05-28 Sat 10:12]
@@ -975,9 +973,6 @@ CLOSED: [2022-01-24 Mon 12:51]
 #+ATTR_HTML: :width 30% :align center
 [[file:~/Documents/RDS/BLOG/hugo/static/img/hua_math.jpg]]
 
-----
-
-#+ATTR_ORG: :width 300
 
 #+begin_comment
 陶哲轩大神继续给女儿他们上课，大家都非常激动。（当然，心里也是希望 Cladek 教授早日康复的。）

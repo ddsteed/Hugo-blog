@@ -8,8 +8,10 @@
 # :EXPORT_FILE_NAME: about
 :END:
 
+--- 
 #+attr_html: :width 200px :align center
 [[file:~/Documents/RDS/BLOG/hugo/static/img/avatar.jpg]]
+--- 
 
 我曾经是一名高校教师，从事教学、科学研究和管理工作，教授过《普通物理》、《量子力学》、《计算方法》等课，发表过 150 余篇 SCI 论文，承担过一些国家级、省部级科研项目。
 

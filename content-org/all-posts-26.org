@@ -466,12 +466,11 @@ CLOSED: [2026-04-08 Wed 21:08]
 
 再过一会儿，也就还是把书轻轻合上，把灯拧暗一点。纸页合拢时有极轻的一声响，响过之后，屋里更静了。东坡已经去了这样多年，江上的风、岭南的雨、雪堂前的荒地，也都不在眼前。可人到低处时，案头若有这样一册书，心里总还像留着一点可以挪步的地方。地方不大，却够把呼吸放慢一点。灯影落在桌角，夜色一点点沉下来，四下无声，只有那一点旧书气息还在，淡淡的，像很远处未尽的月色。
 
-----
+---
 #+attr_org: :width 500
 #+attr_html: :width 80% :align center
 [[file:~/Documents/RDS/BLOG/hugo/static/img/zhao_yun_1.jpg]]
       
----- 
 
 * ✔ DONE 会做，不等于真懂                                   :education:@教育:
 CLOSED: [2026-04-07 Tue 17:09]
@@ -830,6 +829,12 @@ CLOSED: [2026-03-11 Wed 15:53]
 
 湖上有白鹭，我记得很清楚。它贴着水面飞过去的时候很轻，轻得近乎不真实。春天草长起来以后，我会低头找四叶草。人总有一些旁人看来没什么道理的习惯，自己也知道未必有用，却舍不得改。像有人一直留着旧信封，有人搬了几次家还带着一只旧杯子。不是因为它们真能替你做什么，只是在某些时候，你得借着一点具体的东西，才能把那些说不出口的念头安放一下。
 
+---
+#+ATTR_HTML: :width 30% :align center
+[[file:~/Documents/RDS/BLOG/hugo/static/img/c-siyecao.jpg]]  
+
+--- 
+
 现在想来，我这些年留在这里的很多情绪，其实都沉在那片湖边了。
 
 有一些欢喜来得并不张扬。无非是风很好，天很低，一句话说得很轻，或者某个不经意的回想忽然照过来，心里便亮了一下。那一下很短，也不惊人，可它会让整整一个下午都跟着变得不一样。你照常工作，照常和人说话，照常把手边的事做完，可心里有个地方被轻轻碰过，日常也就因此带上了一点别的意思。
@@ -897,12 +902,6 @@ CLOSED: [2026-03-11 Wed 15:53]
 ---
 #+ATTR_HTML: :width 80% :align center
 [[file:~/Documents/RDS/BLOG/hugo/static/img/c-snow.jpg]] 
-
----
-#+ATTR_HTML: :width 50% :align center
-[[file:~/Documents/RDS/BLOG/hugo/static/img/c-siyecao.jpg]]  
-
---- 
 
 * ✔ DONE 好友的故事 ----- 旭真                                   :misc:@杂谈:
 CLOSED: [2026-03-07 Sat 20:35]
@@ -2167,7 +2166,7 @@ CLOSED: [2026-01-07 Wed 20:54]
 
 ---
 #+attr_org: :width 300
-#+attr_html: :width 60% :align center
+#+attr_html: :width 40% :align center
 [[file:~/Documents/RDS/BLOG/hugo/static/img/little_girl_subway.jpg]]
 
 ---
