@@ -162,6 +162,7 @@ CLOSED: [2026-05-04 Mon 08:16]
 下一步不必很大。 \\
 只要确实往前。
 
+--- 
 #+ATTR_ORG: :width 300
 #+ATTR_HTML: :width 40% :align center
 [[file:~/Documents/RDS/BLOG/hugo/static/img/world_I_see.jpg]]
