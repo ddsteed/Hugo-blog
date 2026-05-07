@@ -6,7 +6,7 @@
 #+STARTUP: inlineimages
 #+ATTR_ORG: :width 500
 
-* ✔ DONE 纸短情长 ----- 《给阿嬷的情书》                         :misc:@感悟:
+* ✔ DONE 纸短情长 ----- 《给阿嬷的情书》                         :misc:@杂谈:
 CLOSED: [2026-05-06 Wed 21:49]
 :PROPERTIES:
 :EXPORT_FILE_NAME: 20260506-letter

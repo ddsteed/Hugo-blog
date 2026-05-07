@@ -32,7 +32,7 @@ CLOSED: [2025-12-28 Sun 18:35]
 
 人生，是不是又多了一次体验？
 
-* ✔ DONE 一个人的电影场                                          :misc:@感悟:
+* ✔ DONE 一个人的电影场 ----- 《zootopia 2》                     :misc:@杂谈:
 CLOSED: [2025-12-27 Sat 17:05]
 :PROPERTIES:
 :EXPORT_FILE_NAME: 20251227-one_person_movie
