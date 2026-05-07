@@ -87,6 +87,11 @@ CLOSED: [2026-05-06 Wed 21:49]
 有的已经读旧，有的仍像封口未启。它们不说话，也不催人。只是安静地替某些日子、某些名字、某些再无回声的夜晚，留着一点纸上的温度。
 
 
+---
+#+attr_org: :width 500
+#+attr_html: :width 80% :align center
+[[file:~/Documents/RDS/BLOG/hugo/static/img/letter_to_ama.jpg]]
+      
 * ✔ DONE 当软件开始听懂人话，我们该怎样学习                 :education:@教育:
 CLOSED: [2026-05-05 Tue 09:33]
 :PROPERTIES:
