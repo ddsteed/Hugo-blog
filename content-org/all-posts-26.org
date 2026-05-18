@@ -6,6 +6,24 @@
 #+STARTUP: inlineimages
 #+ATTR_ORG: :width 500
 
+* ✔ DONE 你好，谢南枝                                            :misc:@杂谈:
+CLOSED: [2026-05-18 Mon 21:58]
+:PROPERTIES:
+:EXPORT_FILE_NAME: 20260518-hello-nanzhi
+:END:
+
+独立、自强、自由，无论对于男女，都是最重要的，也是我最看重的品质。我很喜欢这部电影，也很喜欢南枝和淑柔，她俩都是自强自立的女性，把隐忍、坚强、独立，诠释得入木三分。
+
+这首歌原是罗大佑作曲的，也是我的最爱之一。
+
+--- 
+#+begin_export HTML
+<video controls preload="metadata" playsinline style="width:100%; max-width:100%;aspect-ratio:16/9;">
+  <source src="/img/hello_xie_nanzhi.mp4" type="video/mp4">
+</video>
+#+end_export
+
+
 * ✔ DONE 与 AI 共学，把孩子带向问题深处                     :education:@教育:
 CLOSED: [2026-05-13 Wed 08:41]
 :PROPERTIES:
