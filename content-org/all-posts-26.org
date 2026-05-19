@@ -6,7 +6,7 @@
 #+STARTUP: inlineimages
 #+ATTR_ORG: :width 500
 
-* ✔ DONE 你好，谢南枝                                            :misc:@杂谈:
+* ✔ DONE 南枝替故人来                                            :misc:@杂谈:
 CLOSED: [2026-05-18 Mon 21:58]
 :PROPERTIES:
 :EXPORT_FILE_NAME: 20260518-hello-nanzhi
