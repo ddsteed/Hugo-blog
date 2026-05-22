@@ -190,8 +190,20 @@ CLOSED: [2026-05-18 Mon 21:58]
 #+attr_org: :width 500
 #+attr_html: :width 80% :align center
 [[file:~/Documents/RDS/BLOG/hugo/static/img/nan_zhi_ti_gu_ren_lai_1.jpeg]]
+
+---
+#+attr_org: :width 500
+#+attr_html: :width 80% :align center
 [[file:~/Documents/RDS/BLOG/hugo/static/img/nan_zhi_ti_gu_ren_lai_2.jpeg]]
+
+---
+#+attr_org: :width 500
+#+attr_html: :width 80% :align center
 [[file:~/Documents/RDS/BLOG/hugo/static/img/nan_zhi_ti_gu_ren_lai_3.jpeg]]
+
+---
+#+attr_org: :width 500
+#+attr_html: :width 80% :align center
 [[file:~/Documents/RDS/BLOG/hugo/static/img/nan_zhi_ti_gu_ren_lai_4.jpeg]]
 
 
