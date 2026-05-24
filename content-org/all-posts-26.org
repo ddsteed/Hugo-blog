@@ -205,6 +205,7 @@ CLOSED: [2026-05-18 Mon 21:58]
 </video>
 #+end_export
 
+#+begin_comment
 ---
 #+attr_org: :width 500
 #+attr_html: :width 80% :align center
@@ -225,6 +226,8 @@ CLOSED: [2026-05-18 Mon 21:58]
 #+attr_html: :width 80% :align center
 [[file:~/Documents/RDS/BLOG/hugo/static/img/nan_zhi_ti_gu_ren_lai_4.jpeg]]
 
+
+#+end_comment
 
 * ✔ DONE 公众号：与 AI 共学，把孩子带向问题深处             :education:@教育:
 CLOSED: [2026-05-13 Wed 08:41]
