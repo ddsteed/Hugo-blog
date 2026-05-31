@@ -419,7 +419,7 @@ CLOSED: [2025-12-04 Thu 17:19]
 
 开车，一轮明月挂在天边。
 
-* ✔ DONE An old man but firm and tenacious                       :misc:@感悟:
+* ✔ DONE An old man but firm and tenacious                       :misc:@杂谈:
 CLOSED: [2025-11-15 Sat 17:39]
 :PROPERTIES:
 :EXPORT_FILE_NAME: 20251115-straight_story
