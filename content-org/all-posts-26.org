@@ -6,6 +6,23 @@
 #+STARTUP: inlineimages
 #+ATTR_ORG: :width 500
 
+* ✔ DONE 公众号：重新回答教育是什么                         :education:@教育:
+CLOSED: [2026-05-31 Sun 18:09]
+:PROPERTIES:
+:EXPORT_FILE_NAME: 20260531-what-is-education
+:END:
+
+*公众号* ：F-Ai 工作室
+
+[[https://mp.weixin.qq.com/s/sG4PEcxd3DjVI-qjMd7Reg][AI时代，学校必须重新回答教育是什么]]
+
+---
+最近，一个朋友和我讨论，她的问题是：未来教育出口又在哪里呢？比如，可预见 AI 对软件产业形态改变是颠覆性的，程序员已经不需要手敲代码了，大量被取代。那未来生产方式会怎样转变？我们的孩子又该如何培养呢？
+
+正好，这段时间我看了 Sam Altman 关于教育的访谈和一些机构的文章。Sam 的观点很激进，也很振聋发聩：AI 可以一对一的定制化教育，效果更好，大学对很多人将变得没有价值。
+
+此，我们必须认真回答：AI 时代，教育是什么，学校是否会被重塑。结合这些年的思考，我写下这篇文章，希望能部分回答朋友的问题。
+
 * ✔ DONE 公众号：人不该只活成一份说明书                     :education:@教育:
 CLOSED: [2026-05-30 Sat 19:37]
 :PROPERTIES:
