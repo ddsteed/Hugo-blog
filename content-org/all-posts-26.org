@@ -642,7 +642,7 @@ CLOSED: [2026-04-28 Tue 12:09]
 
 教育最难的，不是把高深知识讲得高深，而是把基础知识讲得不低。好老师不一定马上把学生带到山顶，但至少会让他们知道：山在那里，路也在那里。
 
-* ✔ DONE 公众号：读书之前，先在心里点一盏灯                         :education:@教育:
+* ✔ DONE 公众号：先在心里点一盏灯                           :education:@教育:
 CLOSED: [2026-04-27 Mon 14:07]
 :PROPERTIES:
 :EXPORT_FILE_NAME: 20260427-how-to-read
@@ -928,7 +928,7 @@ CLOSED: [2026-04-08 Wed 21:08]
 [[file:~/Documents/RDS/BLOG/hugo/static/img/zhao_yun_1.jpg]]
       
 
-* ✔ DONE 公众号：会做，不等于真懂                                   :education:@教育:
+* ✔ DONE 公众号：会做不等于真懂                             :education:@教育:
 CLOSED: [2026-04-07 Tue 17:09]
 :PROPERTIES:
 :EXPORT_FILE_NAME: 20260407-speak-clearly
@@ -951,7 +951,7 @@ CLOSED: [2026-04-07 Tue 17:09]
 
 若你也有过那样的时刻——以为早已明白，后来才知不过是走得熟——也许可以读一读。
 
-* ✔ DONE 公众号：会问，AI 才会答                                    :education:@教育:
+* ✔ DONE 公众号：会问 AI 才会答                              :education:@教育:
 CLOSED: [2026-04-04 Sat 12:18]
 :PROPERTIES:
 :EXPORT_FILE_NAME: 20260404-how-to-ask-ai
@@ -1195,7 +1195,7 @@ AI 越聪明，我越觉得，教育这件事急不得。
 愿我们在更新迅疾的时代里，依然知道：什么可以追赶，什么值得等待。
 
 
-* ✔ DONE 公众号：为什么 AI 越帮忙，人反而越累         :education:@教育:
+* ✔ DONE 公众号：AI 越帮忙人反而越累                        :education:@教育:
 CLOSED: [2026-03-17 Tue 18:05]
 :PROPERTIES:
 :EXPORT_FILE_NAME: 20260317-brain-fry
