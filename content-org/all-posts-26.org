@@ -1652,7 +1652,7 @@ Wolfram 不是一般的社会学工作者，他是一名严肃的物理学家和
 
 因此，他的话，一定值得认真听。我反复读了他的文章很多遍，写下一点心得，供大家参考。
 
-* ✔ DONE 缝补破碎的日常                                       :reading:@读书:
+* ✔ DONE 缝补破碎的日常                                     :misc:@杂谈:
 CLOSED: [2026-02-19 Thu 14:29]
 :PROPERTIES:
 :EXPORT_FILE_NAME: 202619-the-newsroom
