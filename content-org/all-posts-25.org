@@ -32,7 +32,7 @@ CLOSED: [2025-12-28 Sun 18:35]
 
 人生，是不是又多了一次体验？
 
-* ✔ DONE 一个人的电影场 ----- 《zootopia 2》                     :misc:@杂谈:
+* ✔ DONE 一个人的电影场：《zootopia 2》                          :misc:@杂谈:
 CLOSED: [2025-12-27 Sat 17:05]
 :PROPERTIES:
 :EXPORT_FILE_NAME: 20251227-one_person_movie
@@ -115,7 +115,7 @@ CLOSED: [2025-12-27 Sat 17:05]
 “我也很羡慕一只叫柠檬的猫呢。”
 
 
-* ✔ DONE 好友的故事 ----- 竹子                                   :misc:@杂谈:
+* ✔ DONE 好友的故事：竹子                                        :misc:@杂谈:
 CLOSED: [2025-12-13 Sat 14:31]
 :PROPERTIES:
 :EXPORT_FILE_NAME: 20251213-li-shuai
@@ -913,7 +913,7 @@ CLOSED: [2025-11-10 Mon 09:40]
 
 #+end_comment
 
-* ✔ DONE 《深度学习革命》----- 那些不合时宜的人               :reading:@读书:
+* ✔ DONE 《深度学习革命》：那些不合时宜的人                   :reading:@读书:
 CLOSED: [2025-10-14 Tue 10:28]
 :PROPERTIES:
 :EXPORT_FILE_NAME: 20251014-deep_learning_hisitory
@@ -1527,7 +1527,7 @@ CLOSED: [2025-03-07 Fri 11:14]
 @@html:&nbsp;&nbsp;&nbsp;&nbsp;@@ 54595746674092743048895923198652644685232660662 \\
 @@html:&nbsp;&nbsp;&nbsp;&nbsp;@@ 62013475716
 
-* ✔ DONE 《一个村庄里的中国》----- 改革，改变了什么           :reading:@读书:
+* ✔ DONE 《一个村庄里的中国》：改革改变了什么                 :reading:@读书:
 CLOSED: [2025-02-16 Sun 21:28]
 :PROPERTIES:
 :EXPORT_FILE_NAME: 20250216-china_in_village

@@ -205,7 +205,7 @@ CLOSED: [2024-12-01 Sun 11:44]
 我经常想起，高考完的那个夏天，志刚、明华、卫东、......，我们几个在小酒馆里碰杯：为了中华强盛而努力。志刚说，后来大家都有些不堪了，在世俗的社会里沉沦，为了眼前的名利苟且着。我们追逐着利益，以为这才是成功。但是，我们很后悔。
 #+end_comment
 
-* ✔ DONE 好友的故事 ----- 小宋                                   :misc:@杂谈:
+* ✔ DONE 好友的故事：小宋                                        :misc:@杂谈:
 CLOSED: [2024-11-23 Sat 12:27]
 :PROPERTIES:
 :EXPORT_FILE_NAME: 20241123-song-xin-yan
@@ -329,7 +329,7 @@ CLOSED: [2024-11-23 Sat 12:27]
 # =附记=: 我曾答应一个美丽的姑娘，给她讲小宋的故事。没能实现，就写在这里吧。“空头支票”的清单，还有好多，大概也只能空头下去了。
 
 
-* ✔ DONE 好友的故事 ----- 陶                                     :misc:@杂谈:
+* ✔ DONE 好友的故事：陶                                          :misc:@杂谈:
 CLOSED: [2024-11-16 Sat 12:13]
 :PROPERTIES:
 :EXPORT_FILE_NAME: 20241116-chen-tao
@@ -478,7 +478,7 @@ CLOSED: [2024-11-16 Sat 12:13]
 
 车很快开走，混进路上的车流里。过了一会儿，连尾灯也分不清了。
 
-* ✔ DONE 《胡适文集》----- 温和的力量                         :reading:@读书:
+* ✔ DONE 《胡适文集》：温和的力量                             :reading:@读书:
 CLOSED: [2024-11-12 Tue 19:56]
 :PROPERTIES:
 :EXPORT_FILE_NAME: 20241112-hushi
@@ -683,7 +683,7 @@ CLOSED: [2024-11-12 Tue 19:56]
 
 #+end_comment
 
-* ✔ DONE 《理念的力量》 ----- 掩卷时的一声叹息                                :reading:@读书:
+* ✔ DONE 《理念的力量》：掩卷时的一声叹息                     :reading:@读书:
 CLOSED: [2024-09-15 Sun 17:55]
 :PROPERTIES:
 :EXPORT_FILE_NAME: 20240915-idea_power
@@ -860,7 +860,7 @@ CLOSED: [2024-09-15 Sun 17:55]
 #+end_comment
 
 
-* ✔ DONE 《中国历代政治得失》 ----- 书页里的制度与人心                          :reading:@读书:
+* ✔ DONE 《中国历代政治得失》：书页里的制度与人心             :reading:@读书:
 CLOSED: [2024-07-09 Tue 13:52]
 :PROPERTIES:
 :EXPORT_FILE_NAME: 20240709-politics_qs
