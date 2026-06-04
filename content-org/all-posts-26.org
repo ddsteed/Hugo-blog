@@ -6,6 +6,25 @@
 #+STARTUP: inlineimages
 #+ATTR_ORG: :width 500
 
+* ✔ DONE 公众号：重新理解认知、智能与学习                   :education:@教育:
+CLOSED: [2026-06-04 Thu 10:59]
+:PROPERTIES:
+:EXPORT_FILE_NAME: 20260604-cognize-study
+:END:
+
+*公众号* ：F-Ai 工作室
+
+[[https://mp.weixin.qq.com/s/q5sbmAAQh4LKLAp75zMe1w][重新理解认知、智能与学习]]
+
+---
+
+当 AI 可以很容易地把答案递到眼前之后，我们反而更需要重新理解“认知”和“学习”。
+
+认知不是把知识装进脑子，而是在一次次提问、出错、修正中，重新搭建自己看世界的方式。
+学习也不是让表现更好看，而是让理解慢慢在心里生根。
+
+屏幕可以很快亮起，答案可以几秒到来；但真正属于人的那段路，仍要由孩子、老师和父母一起走完。
+
 * ✔ DONE 《相约星期二》：习惯的救赎                              :misc:@杂谈:
 CLOSED: [2026-06-02 Tue 14:40]
 :PROPERTIES:
