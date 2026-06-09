@@ -6,7 +6,7 @@
 #+STARTUP: inlineimages
 #+ATTR_ORG: :width 500
 
-* ✔ DONE 公众号：答案来得太早，孩子就来不及思考             :education:@教育:
+* ✔ DONE 公众号：答案太早就来不及思考                       :education:@教育:
 CLOSED: [2026-06-09 Tue 13:37]
 :PROPERTIES:
 :EXPORT_FILE_NAME: 20260609-late-answer
