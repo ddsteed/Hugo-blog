@@ -6,6 +6,25 @@
 #+STARTUP: inlineimages
 #+ATTR_ORG: :width 500
 
+* ✔ DONE 公众号：答案来得太早，孩子就来不及思考             :education:@教育:
+CLOSED: [2026-06-09 Tue 13:37]
+:PROPERTIES:
+:EXPORT_FILE_NAME: 20260609-late-answer
+:END:
+
+*公众号* ：F-Ai 工作室
+
+[[https://mp.weixin.qq.com/s/SWp-_TBV8DTmztVxMcXXeg][答案来得太早，孩子就来不及思考]]
+
+---
+教育学习，不能只看答案来得快不快，更要看孩子有没有真正走过那几步路。
+
+数学最珍贵的地方，不在于把一道题迅速做对，而在于孩子愿意停下来读题、试探、犯错、修正，再慢慢看清结构。那些有一点阻力的学习，常常才是真正负责任的教育。
+
+AI 可以帮孩子解释概念、提供提示、生成变式，但不能替他完成最初的判断。答案太早抵达，思考就容易被省略。
+
+AI 可以把答案送到眼前。可是能力，要在答案到来之前慢慢形成。
+
 * ✔ DONE 雨                                                      :misc:@杂谈:
 CLOSED: [2026-06-07 Sun 19:02]
 :PROPERTIES:
