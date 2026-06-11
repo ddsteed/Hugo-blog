@@ -757,10 +757,14 @@ CLOSED: [2026-05-18 Mon 21:58]
 
 --- 
 #+begin_export HTML
+<iframe src="//player.bilibili.com/player.html?isOutside=true&aid=116613378480933&bvid=BV1FVLh6fErd&cid=38509610693&p=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" width="80%" height="300"></iframe>
+#+end_export
+
+#+begin_comment
 <video controls preload="metadata" playsinline style="width:100%; max-width:100%;aspect-ratio:16/9;">
   <source src="/img/hello_xie_nanzhi.mp4" type="video/mp4">
 </video>
-#+end_export
+#+end_comment
 
 #+begin_comment
 ---
