@@ -6,7 +6,8 @@
 #+STARTUP: inlineimages
 #+ATTR_ORG: :width 500
 
-* 十五岁的灯                                                     :misc:@杂谈:
+* ✔ DONE 十五岁的灯                                              :misc:@杂谈:
+CLOSED: [2026-06-12 Fri 20:58]
 :PROPERTIES:
 :EXPORT_FILE_NAME: 20260612-15years-song
 :END:
@@ -115,7 +116,7 @@
 
 ---
 #+begin_export HTML
-<iframe src="//player.bilibili.com/player.html?isOutside=true&aid=15304190&bvid=BV1Fx411g77y&cid=24910898&p=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" width="80%" height="300"></iframe>
+<iframe src="//player.bilibili.com/player.html?isOutside=true&aid=115338712718615&bvid=BV1aqxvzNEHz&cid=32923520727&p=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"  width="80%" height="300"></iframe>
 #+end_export
 
 
