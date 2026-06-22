@@ -6,7 +6,7 @@
 #+STARTUP: inlineimages
 #+ATTR_ORG: :width 500
 
-* ✔ DONE 公众号：AI 省掉的路                                :education:@教育:
+* ✔ DONE 公众号：AI 不能省掉的路                            :education:@教育:
 CLOSED: [2026-06-22 Mon 15:14]
 :PROPERTIES:
 :EXPORT_FILE_NAME: 20260622-ai-road
@@ -14,9 +14,10 @@ CLOSED: [2026-06-22 Mon 15:14]
 
 *公众号* ：F-Ai 工作室
 
-[[https://mp.weixin.qq.com/s/bKnpe3POiu_gW3Aq6iNzLw][AI 省掉的路]]
+[[https://mp.weixin.qq.com/s/bKnpe3POiu_gW3Aq6iNzLw][AI 不能省掉的路]]
 
 ---
+
 一项持续 30 个月、覆盖 26811 名中学生的研究，给出了一个让教育者不能沉默的结果：学生使用生成式 AI 后，作业成绩提高、完成时间缩短，可在不能使用 AI 的闭卷考试中，成绩却明显下降。
 
 这也是我写这篇文章的缘由。真正令人担忧的，不是 AI 来到了学习、生活和工作之中，而是我们还没有学会怎样与它相处。若只是把 AI 当成替人交差的工具，它会省掉时间，也可能省掉思考；它能给出答案，却未必让能力真正长出来。
