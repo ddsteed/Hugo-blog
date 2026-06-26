@@ -6,7 +6,7 @@
 #+STARTUP: inlineimages
 #+ATTR_ORG: :width 500
 
-* ✔ DONE 每一步，都算数                                          :misc:@杂谈:
+* ✔ DONE 人生的每一步，都算数                                    :misc:@杂谈:
 CLOSED: [2026-06-26 Fri 11:16]
 :PROPERTIES:
 :EXPORT_FILE_NAME: 20260626-life-road
