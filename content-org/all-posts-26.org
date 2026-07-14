@@ -6,7 +6,8 @@
 #+STARTUP: inlineimages
 #+ATTR_ORG: :width 500
 
-* 公众号：把好问题还给孩子                             :education:@教育:
+* ✔ DONE 公众号：把好问题还给孩子                           :education:@教育:
+CLOSED: [2026-07-14 Tue 17:31]
 :PROPERTIES:
 :EXPORT_FILE_NAME: 20260714-socrates-ask
 :END:
