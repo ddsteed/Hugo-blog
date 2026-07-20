@@ -6,11 +6,17 @@
 #+STARTUP: inlineimages
 #+ATTR_ORG: :width 500
 
-* ✔ DONE 一个时代的落幕                                          :misc:@杂谈:
+* ✔ DONE Last Dance                                              :misc:@杂谈:
 CLOSED: [2026-07-20 Mon 12:04]
 :PROPERTIES:
 :EXPORT_FILE_NAME: 20260720-messi-last-dance
 :END:
+
+#+attr_org: :width 500
+#+attr_html: :width 80% :align center
+[[file:~/Documents/RDS/BLOG/hugo/static/img/messi_last_dance.jpg]]
+      
+---
 
 凌晨两点，屋子里静得很。空调的风从书架上方缓慢地落下来，桌上的茶早已凉透，杯壁留着一道不甚清楚的水痕。我没有开大灯，只留了电视机旁的一盏小灯。屏幕上的草地亮得近乎不真实，纽约新泽西的夏日下午隔着半个地球，在我的窗前展开。
 
@@ -150,7 +156,6 @@ CLOSED: [2026-07-20 Mon 12:04]
 #+begin_export HTML
 <iframe src="//player.bilibili.com/player.html?isOutside=true&aid=116949442893749&bvid=BV1tbKy6XEuF&cid=40114520619&p=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"  width="80%" height="300"></iframe>
 #+end_export
-
 
 
 * ✔ DONE 公众号：把好问题还给孩子                           :education:@教育:
