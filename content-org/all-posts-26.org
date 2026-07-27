@@ -14,7 +14,7 @@ CLOSED: [2026-07-27 Mon 21:57]
 
 #+attr_org: :width 500
 #+attr_html: :width 80% :align center
-[[file:~/Documents/RDS/BLOG/hugo/static/img/desperate-resistant.jpg]]
+[[file:~/Documents/RDS/BLOG/hugo/static/img/desperate-resistant-1.jpg]]
       
 ---
 
@@ -99,6 +99,13 @@ CLOSED: [2026-07-27 Mon 21:57]
 《绝望的反抗》以及林贤治的这篇序言，值得慢读，也值得重读。它们不提供轻便的安慰。读完之后，世界未必更明亮，许多问题反而更难回避。但有些书的价值，本就不在使人舒服。它让人的目光略微变得坚实，让我们在希望薄弱的时候，仍能理解行动的理由；在众声喧哗的时候，仍愿意保留个人的判断；在纪念一个思想者的时候，不急着把他变成一个无害的名字。
 
 夜深时合上书，窗外并无特别的声响。书桌上的灯照着封面，也照着旁边几本已经翻开的鲁迅。它们彼此沉默，没有替我作结论。这样的沉默倒是合宜的。思想若仍然活着，便不会在一次阅读之后归于安静。
+
+---
+#+attr_org: :width 500
+#+attr_html: :width 80% :align center
+[[file:~/Documents/RDS/BLOG/hugo/static/img/desperate-resistant.jpg]]
+      
+---
 
 
 * ✔ DONE 公众号：孩子真正学会的那一刻                       :education:@教育:
