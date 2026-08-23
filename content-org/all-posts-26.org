@@ -6,7 +6,8 @@
 #+STARTUP: inlineimages
 #+ATTR_ORG: :width 500
 
-* 《智人性与加速问题》：加速与回路之间                        :reading:@读书:
+* ✔ DONE 《智人性与加速问题》：加速与回路之间                 :reading:@读书:
+CLOSED: [2026-08-23 Sun 10:30]
 :PROPERTIES:
 :EXPORT_FILE_NAME: 20260823-zhiren-speedup
 :END:
