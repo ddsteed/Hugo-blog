@@ -527,7 +527,8 @@ CLOSED: [2026-08-18 Tue 08:43]
 
 而我们做教育的人，原本就不该只为那些会发光的人点灯。
 
-* 公众号：教育究竟训练什么                                  :education:@教育:
+* ✔ DONE 公众号：教育究竟训练什么                           :education:@教育:
+CLOSED: [2026-08-10 Mon 21:08]
 :PROPERTIES:
 :EXPORT_FILE_NAME: 20260810-what-education-trains
 :END:
