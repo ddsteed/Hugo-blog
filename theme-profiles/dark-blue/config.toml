@@ -10,6 +10,10 @@ locale = "zh-cn"
 title = "点点马的逍遥港"
 theme = "stack"
 
+# 静态资源：static/ 是指向 ../source/static 的符号链接，
+# Hugo 不跟随 staticDir 符号链接，需显式指定真实路径
+staticDir = ["../source/static"]
+
 # 基础设置
 enableRobotsTXT = true
 enableEmoji = true
