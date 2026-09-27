@@ -22,7 +22,13 @@
         <section class="posts-list">
             <h2 class="section-title">{{ i18n "home.recentPosts" }}</h2>
             {{ $pages := where .Site.RegularPages "Type" "post" }}
-            {{ range first 10 $pages }}
+            {{ $recent := slice }}
+            {{ range $pages }}
+                {{ if not (hasPrefix .Title "公众号：") }}
+                    {{ $recent = $recent | append . }}
+                {{ end }}
+            {{ end }}
+            {{ range first 10 $recent }}
             <article class="post-preview">
                 <a href="{{ .RelPermalink }}" class="post-link">
                     <h3 class="post-title">{{ .Title }}</h3>

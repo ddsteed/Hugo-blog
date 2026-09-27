@@ -78,6 +78,15 @@ Content here...
 
 Posts are exported from `content-org/all-posts-*.org` files. Each Org file can contain multiple posts (as headings). The ox-hugo package in Emacs handles the export.
 
+### 公众号文章约定
+
+- 标题以「公众号：」开头（全角冒号）的文章，自动从**首页**（`layouts/home.html`）和**归档页**（`layouts/archives.html`）隐藏，并集中收录在 `/gzh/` 专门页面（`layouts/gzh.html`，按年时间线，菜单 weight 35）。
+- 判据只认标题前缀，不依赖 front matter 字段（文章由 ox-hugo 导出，禁止批量改 `content/post/` front matter）。
+- 新发文章只要标题带此前缀，即自动进入 `/gzh/`，无需改模板。
+- RSS 和分类/标签 term 页有意保留公众号文章，不过滤。
+- 误用半角冒号「公众号:」的文章会被漏收（仍出现在首页/归档），发文时注意用全角冒号。
+- 相关母本文件：`theme-profiles/study/layouts/{home,archives,gzh}.html`、`theme-profiles/study/config.toml`、`content/gzh/_index.md`。
+
 ---
 
 ## Configuration Structure

@@ -1,21 +1,21 @@
 {{ define "main" }}
 <div class="archive-page">
   <header class="archive-header">
-    <h1>{{ i18n "widget.archives.title" }}</h1>
+    <h1>公众号文章</h1>
   </header>
 
   {{ range $.Site.RegularPages.GroupByDate "2006" }}
-  {{ $yearPosts := slice }}
+  {{ $gzhPosts := slice }}
   {{ range .Pages }}
-    {{ if not (hasPrefix .Title "公众号：") }}
-      {{ $yearPosts = $yearPosts | append . }}
+    {{ if hasPrefix .Title "公众号：" }}
+      {{ $gzhPosts = $gzhPosts | append . }}
     {{ end }}
   {{ end }}
-  {{ if $yearPosts }}
+  {{ if $gzhPosts }}
   <section class="archive-year">
-    <h2 class="year-title">{{ .Key }} <span class="year-count">{{ len $yearPosts }} 篇</span></h2>
+    <h2 class="year-title">{{ .Key }} <span class="year-count">{{ len $gzhPosts }} 篇</span></h2>
     <div class="year-posts">
-      {{ range $yearPosts }}
+      {{ range $gzhPosts }}
       <article class="archive-post">
         <a href="{{ .RelPermalink }}" class="archive-link">
           <time class="archive-date" datetime="{{ .Date.Format "2006-01-02" }}">
