@@ -1076,11 +1076,6 @@ CLOSED: [2026-07-20 Mon 12:04]
 
 有些告白不必说得很响。天亮以前，灯还亮着，人还坐着，就已经足够。
 
----
-#+begin_export HTML
-<iframe src="//player.bilibili.com/player.html?isOutside=true&aid=116949124194100&bvid=BV1yeKy6JE9X&cid=40113082207&p=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"  width="80%" height="300"></iframe>
-#+end_export
-
 
 * ✔ DONE 公众号：把好问题还给孩子                           :education:@教育:
 CLOSED: [2026-07-14 Tue 17:31]
