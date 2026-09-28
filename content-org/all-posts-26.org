@@ -4236,7 +4236,7 @@ Wolfram 不是一般的社会学工作者，他是一名严肃的物理学家和
 * ✔ DONE 缝补破碎的日常                                     :misc:@杂谈:
 CLOSED: [2026-02-19 Thu 14:29]
 :PROPERTIES:
-:EXPORT_FILE_NAME: 202619-the-newsroom
+:EXPORT_FILE_NAME: 20260219-the-newsroom
 :END:
 
 # 哀而不伤
