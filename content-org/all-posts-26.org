@@ -12,6 +12,12 @@ CLOSED: [2026-09-27 Sun 22:45]
 :EXPORT_FILE_NAME: 20260927-white-horse
 :END:
 
+#+attr_org: :width 500
+#+attr_html: :width 80% :align center
+[[file:~/Documents/RDS/BLOG/hugo/static/img/white_horse.jpg]]
+
+---
+
 小时候，我常常觉得自己和周围的世界隔着一层薄薄的距离。
 
 那时候还没有今天这样多的选择。一个孩子放学回家，写完作业，剩下的时间很长，长得仿佛可以一直延伸到黄昏以后。家里没有太多可以消遣的东西，我便把能够找到的书一本一本翻出来看。那些书页有的已经发黄，有的边角卷起，有的甚至不知道在谁手里辗转过多少次。
