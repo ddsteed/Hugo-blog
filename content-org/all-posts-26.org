@@ -6,7 +6,7 @@
 #+STARTUP: inlineimages
 #+ATTR_ORG: :width 500
 
-* ✔ DONE 白马啸西风与我的人生之路                                :misc:@杂谈:
+* ✔ DONE 《白马啸西风》与我的人生之路                            :misc:@杂谈:
 CLOSED: [2026-09-27 Sun 22:45]
 :PROPERTIES:
 :EXPORT_FILE_NAME: 20260927-white-horse
@@ -186,7 +186,7 @@ CLOSED: [2026-09-27 Sun 22:45]
 现在，我仍然会想起那个白马西风里的姑娘。
 
 想起她说过的那句话： \\
-那都是很好很好的。
+那都是很好很好的，可是我偏不喜欢。
 
 而我终于知道，自己喜欢的是什么了。
 
