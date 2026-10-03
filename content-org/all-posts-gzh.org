@@ -6,7 +6,30 @@
 #+STARTUP: inlineimages
 #+hugo_custom_front_matter: :gzh true
 
-* ✔ DONE 公众号：AI 到底是工具，还是伙伴？                    :thinking:@感悟:
+* ✔ DONE 公众号：连 MIT 都在重问：AI 时代，教育究竟要教什么？ :education:@教育:
+CLOSED: [2026-10-03 Sat 21:06]
+:PROPERTIES:
+:EXPORT_FILE_NAME: 20261003-MIT-AI-report
+:END:
+
+*公众号* ：F-Ai 工作室
+
+[[https://mp.weixin.qq.com/s/i9wFhF54QUMpgkA8XProRg][连MIT都在重问：AI时代，教育究竟要教什么？]]
+
+--- 
+
+2026 年 8 月，MIT 专门发布了一份关于 AI 与教学、学习和科研训练的报告。让我印象很深的一点是：连站在人工智能研究前沿的 MIT，都没有把 AI 进入教育仅仅看成“多了一个好用的工具”，而是开始重新审视课程、作业、评价，甚至追问——AI 越来越会回答问题以后，教育究竟应该培养什么？
+
+这件事，我们也该认真对待。
+
+但认真，不等于惊慌。AI 不会因为我们担心就离开孩子的世界，把它简单挡在门外，也未必是好的教育。
+
+更值得做的，是把 AI 当成伙伴：让它帮助孩子理解、练习、获得反馈、探索更大的世界，同时把那些真正属于孩子的思考、判断和独立解决问题的能力，留给孩子自己慢慢长出来。
+
+AI 可以陪孩子走得更远，但教育要帮助孩子最终能够自己走。
+
+
+* ✔ DONE 公众号：AI 到底是工具，还是伙伴？            :education:@教育:
 CLOSED: [2026-09-23 Wed 21:00]
 :PROPERTIES:
 :EXPORT_FILE_NAME: 20260923-AI-tool-or-friend
