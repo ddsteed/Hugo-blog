@@ -6,7 +6,40 @@
 #+STARTUP: inlineimages
 #+hugo_custom_front_matter: :gzh true
 
-* ✔ DONE 公众号：连 MIT 都在重问：AI 时代，教育究竟要教什么？ :education:@教育:
+* ✔ DONE 当“提示工程”都开始过时时，我们究竟该让孩子学什么？ :education:@教育:
+CLOSED: [2026-10-06 Tue 09:15]
+:PROPERTIES:
+:EXPORT_FILE_NAME: 20261006-harvard-garber
+:END:
+
+*公众号* ：F-Ai 工作室
+
+[[https://mp.weixin.qq.com/s/GtwUr8xFMhoaJpvTQZAIxA][当“提示工程”都开始过时时，我们究竟该让孩子学什么？]]
+
+--- 
+哈佛校长 Garber 最近讲了一句话，我反复想了很久：
+在 AI 时代，押注任何一种“永远有用”的具体技能，都是危险的。
+
+一年多前，他还认为学生应该学习提示工程；今天，AI 已经可以帮我们写出更好的提示词。随着 Agentic AI 的发展，今天看起来重要的技能，明天也许就会成为机器最擅长的事情。
+
+那么，我们究竟应该让孩子学什么？
+
+Garber 给出的一个答案是：辨别真相的能力。
+
+我觉得这比“学会使用 AI”重要得多。
+
+未来的孩子，身边可能永远有一个无所不知、随叫随到、越来越懂他的 AI。真正重要的，也许不是他能从 AI 那里得到多少答案，而是面对这些看起来如此可信的答案，他仍然会问：
+
+为什么？ \\
+证据在哪里？ \\
+它有没有遗漏什么？ \\
+我应该相信吗？
+
+AI 可以帮助孩子获得答案。
+
+而教育更重要的责任，是让孩子成为一个有能力判断答案的人。
+
+* ✔ DONE 连 MIT 都在重问：AI 时代，教育究竟要教什么？ :education:@教育:
 CLOSED: [2026-10-03 Sat 21:06]
 :PROPERTIES:
 :EXPORT_FILE_NAME: 20261003-MIT-AI-report
@@ -29,7 +62,7 @@ CLOSED: [2026-10-03 Sat 21:06]
 AI 可以陪孩子走得更远，但教育要帮助孩子最终能够自己走。
 
 
-* ✔ DONE 公众号：AI 到底是工具，还是伙伴？            :education:@教育:
+* ✔ DONE AI 到底是工具，还是伙伴？            :education:@教育:
 CLOSED: [2026-09-23 Wed 21:00]
 :PROPERTIES:
 :EXPORT_FILE_NAME: 20260923-AI-tool-or-friend
@@ -57,7 +90,7 @@ AI 在技术上当然是工具，但在恰当的协作关系中，它也可能�
 
 这篇文章，是我对这个问题的一次认真思考。也很想听听大家的答案： *你现在把 AI 当作什么？*
 
-* ✔ DONE 公众号：为什么“五分钟后会了”，一周后却忘了？       :education:@教育:
+* ✔ DONE 为什么“五分钟后会了”，一周后却忘了？       :education:@教育:
 CLOSED: [2026-09-17 Thu 21:32]
 :PROPERTIES:
 :EXPORT_FILE_NAME: 20260917-search-study
@@ -81,7 +114,7 @@ CLOSED: [2026-09-17 Thu 21:32]
 真正的学习，不只是答案出现时觉得眼熟，而是答案不在眼前时，你还能把它找回来。
 
 
-* ✔ DONE 公众号：孩子学不好时，先找那个“零阶变量”           :education:@教育:
+* ✔ DONE 孩子学不好时，先找那个“零阶变量”           :education:@教育:
 CLOSED: [2026-09-04 Fri 19:28]
 :PROPERTIES:
 :EXPORT_FILE_NAME: 20260904-zero-variable
@@ -104,7 +137,7 @@ CLOSED: [2026-09-04 Fri 19:28]
 教育大概也是这样：该扶的时候扶一把，该松手的时候，安静地看着他往前走。
 
 
-* ✔ DONE 公众号：学习并不是简单地获得答案                   :education:@教育:
+* ✔ DONE 学习并不是简单地获得答案                   :education:@教育:
 CLOSED: [2026-08-26 Wed 20:01]
 :PROPERTIES:
 :EXPORT_FILE_NAME: 20260826-study-not-just-answer
@@ -124,7 +157,7 @@ CLOSED: [2026-08-26 Wed 20:01]
 
 教师也好，父母也好，我们能做的，也许只是陪他走一程：该提醒时提醒，该等待时等待，到了时候，再轻轻把手松开。
 
-* ✔ DONE 公众号：教育究竟训练什么                           :education:@教育:
+* ✔ DONE 教育究竟训练什么                           :education:@教育:
 CLOSED: [2026-08-10 Mon 21:08]
 :PROPERTIES:
 :EXPORT_FILE_NAME: 20260810-what-education-trains
@@ -151,7 +184,7 @@ CLOSED: [2026-08-10 Mon 21:08]
 时代已经变了。教育不能只是换工具，还得重新想一遍：我们究竟希望一个年轻人，最后成为怎样一个会思考的人。
 
 
-* ✔ DONE 公众号：科学为什么值得相信                         :education:@教育:
+* ✔ DONE 科学为什么值得相信                         :education:@教育:
 CLOSED: [2026-08-08 Sat 14:13]
 :PROPERTIES:
 :EXPORT_FILE_NAME: 20260808-why-is-science
@@ -182,7 +215,7 @@ CLOSED: [2026-08-08 Sat 14:13]
 它还意味着，我们面对这个世界时，少一点轻信，少一点武断，多一点诚实，也多一点耐心。
 
 
-* ✔ DONE 公众号：慢一点，想清楚                             :education:@教育:
+* ✔ DONE 慢一点，想清楚                             :education:@教育:
 CLOSED: [2026-08-02 Sun 11:01]
 :PROPERTIES:
 :EXPORT_FILE_NAME: 20260802-think-clearly
@@ -205,7 +238,7 @@ CLOSED: [2026-08-02 Sun 11:01]
 
 每个孩子都值得被耐心等待。愿我们少一点催促，多一点理解；少盯一次分数，多看见一次真实的思考。因为爱孩子，不只是希望他赢在今天，更是希望多年以后，面对没有标准答案的人生，他依然清醒、坚定，知道怎样继续向前。
 
-* ✔ DONE 公众号：窗外的导师：好的教育，终究把学生送到更远处 :education:@教育:
+* ✔ DONE 窗外的导师：好的教育，终究把学生送到更远处 :education:@教育:
 CLOSED: [2026-07-31 Fri 19:33]
 :PROPERTIES:
 :EXPORT_FILE_NAME: 20260731-advisor-outside
@@ -230,7 +263,7 @@ CLOSED: [2026-07-31 Fri 19:33]
 
 作为一名曾教书多年的老师，我仍然对教育怀有热情。因为每当学生开始用自己的眼睛看世界、用自己的判断面对未知，教师曾经付出的那些耐心，便有了最好的回声。
 
-* ✔ DONE 公众号：孩子真正学会的那一刻                       :education:@教育:
+* ✔ DONE 孩子真正学会的那一刻                       :education:@教育:
 CLOSED: [2026-07-21 Tue 18:32]
 :PROPERTIES:
 :EXPORT_FILE_NAME: 20260721-what-is-study
@@ -255,7 +288,7 @@ CLOSED: [2026-07-21 Tue 18:32]
 教育不是把孩子塑造成我们期待的样子，而是在陪伴中帮助他们逐渐认识自己、建立能力，最终能够独立面对自己的学习和人生。
 
 
-* ✔ DONE 公众号：把好问题还给孩子                           :education:@教育:
+* ✔ DONE 把好问题还给孩子                           :education:@教育:
 CLOSED: [2026-07-14 Tue 17:31]
 :PROPERTIES:
 :EXPORT_FILE_NAME: 20260714-socrates-ask
@@ -276,7 +309,7 @@ CLOSED: [2026-07-14 Tue 17:31]
 教育最终面对的不是一道题，而是一个正在长大的孩子。技术可以更快，但我们仍要把理解所需要的时间、尊严和耐心，留给他们。
 
 
-* ✔ DONE 公众号：别把好孩子困在掌声里                       :education:@教育:
+* ✔ DONE 别把好孩子困在掌声里                       :education:@教育:
 CLOSED: [2026-07-09 Thu 08:30]
 :PROPERTIES:
 :EXPORT_FILE_NAME: 20260709-good-child
@@ -293,7 +326,7 @@ CLOSED: [2026-07-09 Thu 08:30]
 
 AI 时代，我相信会有更好的办法。AI 可以成为孩子低羞耻的练习场：先陪他开口，帮他复盘，替他预演求助，再把他温和地送回真实的人和世界。技术若有温度，就不只是效率工具，也可以成为教育里的一盏小灯。
 
-* ✔ DONE 公众号：把坐不住的孩子接回来                       :education:@教育:
+* ✔ DONE 把坐不住的孩子接回来                       :education:@教育:
 CLOSED: [2026-07-08 Wed 14:01]
 :PROPERTIES:
 :EXPORT_FILE_NAME: 20260708-nauty-boy
@@ -317,7 +350,7 @@ AI 时代，我们一定会有更好的办法。AI 可以帮助家长记录规�
 
 愿每一个坐不住的孩子，都能被认真看见；愿每一份不够安静的生命力，都有机会长成光。
 
-* ✔ DONE 公众号：AI 写完了，孩子还会写吗                    :education:@教育:
+* ✔ DONE AI 写完了，孩子还会写吗                    :education:@教育:
 CLOSED: [2026-07-04 Sat 22:39]
 :PROPERTIES:
 :EXPORT_FILE_NAME: 20260704-ai-writing
@@ -336,7 +369,7 @@ AI 时代，孩子的写作不是失去了意义，而是到了需要重新理�
 
 我写这篇文章，是想温和地讨论一个现实问题：AI 已经来到作文课，我们不但不能关门拒绝，反而要拥抱新的变革；但门打开以后，更要守住孩子表达中那些必要的慢、真实的看见，以及还属于自己的那支笔。
 
-* ✔ DONE 公众号：10 年后，只会剩下两类工作者                :education:@教育:
+* ✔ DONE 10 年后，只会剩下两类工作者                :education:@教育:
 CLOSED: [2026-06-25 Thu 16:45]
 :PROPERTIES:
 :EXPORT_FILE_NAME: 20260625-feifei-talk
@@ -356,7 +389,7 @@ CLOSED: [2026-06-25 Thu 16:45]
 教育的范式正在改变。我们需要跟上，也需要慢一点想清楚：哪些路可以交给工具，哪些路必须由人自己走完。
 
 
-* ✔ DONE 公众号：AI 时代，重新学会费曼                      :education:@教育:
+* ✔ DONE AI 时代，重新学会费曼                      :education:@教育:
 CLOSED: [2026-06-24 Wed 16:35]
 :PROPERTIES:
 :EXPORT_FILE_NAME: 20260624-Feynman
@@ -381,7 +414,7 @@ AI 时代，这一点尤其重要。让 AI 生成一段漂亮解释，看似省�
 教育里有些慢，值得守住。愿技术照亮孩子的路，也把理解留给孩子自己生长。
 
 
-* ✔ DONE 公众号：AI 不能省掉的路                            :education:@教育:
+* ✔ DONE AI 不能省掉的路                            :education:@教育:
 CLOSED: [2026-06-22 Mon 15:14]
 :PROPERTIES:
 :EXPORT_FILE_NAME: 20260622-ai-road
@@ -403,7 +436,7 @@ CLOSED: [2026-06-22 Mon 15:14]
 
 AI 应成为认知伙伴，而不是答案机器。
 
-* ✔ DONE 公众号：别把孩子的未来，装进课表格子里             :education:@教育:
+* ✔ DONE 别把孩子的未来，装进课表格子里             :education:@教育:
 CLOSED: [2026-06-18 Thu 10:25]
 :PROPERTIES:
 :EXPORT_FILE_NAME: 20260618-no-subject
@@ -424,7 +457,7 @@ AI 若只是替孩子写出漂亮方案，教育便少了一段最珍贵的路�
 
 这篇文章，是我在人工智能时代关于学习与科技辅导新范式的一点探索。教育改革需要勇气，也需要爱心。愿我们既不把孩子交给工具，也不把工具挡在门外，而是陪他们一起，看见问题，走进问题，再从问题中长出自己的光。
 
-* ✔ DONE 公众号：先护住孩子眼里的光                         :education:@教育:
+* ✔ DONE 先护住孩子眼里的光                         :education:@教育:
 CLOSED: [2026-06-14 Sun 12:03]
 :PROPERTIES:
 :EXPORT_FILE_NAME: 20260614-childrens eye
@@ -443,7 +476,7 @@ CLOSED: [2026-06-14 Sun 12:03]
 
 愿每个孩子都能保有这样的心气：可以观察，可以试一试，可以错了再来，也可以对未知世界，仍然轻轻伸出手。
 
-* ✔ DONE 公众号：新地方的题                                 :education:@教育:
+* ✔ DONE 新地方的题                                 :education:@教育:
 CLOSED: [2026-06-12 Fri 17:52]
 :PROPERTIES:
 :EXPORT_FILE_NAME: 20260612-learning-transfer
@@ -464,7 +497,7 @@ CLOSED: [2026-06-12 Fri 17:52]
 
 
 
-* ✔ DONE 公众号：答案太早就来不及思考                       :education:@教育:
+* ✔ DONE 答案太早就来不及思考                       :education:@教育:
 CLOSED: [2026-06-09 Tue 13:37]
 :PROPERTIES:
 :EXPORT_FILE_NAME: 20260609-late-answer
@@ -483,7 +516,7 @@ AI 可以帮孩子解释概念、提供提示、生成变式，但不能替他�
 
 AI 可以把答案送到眼前。可是能力，要在答案到来之前慢慢形成。
 
-* ✔ DONE 公众号：学习为什么会被压垮                         :education:@教育:
+* ✔ DONE 学习为什么会被压垮                         :education:@教育:
 CLOSED: [2026-06-06 Sat 10:05]
 :PROPERTIES:
 :EXPORT_FILE_NAME: 20260606-cognitive-load 
@@ -503,7 +536,7 @@ CLOSED: [2026-06-06 Sat 10:05]
 
 一个朋友问我，为什么孩子数学还不错，物理总是学得很费力。我认真思考后，写下这篇文章，希望可以给出部分答案。
 
-* ✔ DONE 公众号：重新理解认知、智能与学习                   :education:@教育:
+* ✔ DONE 重新理解认知、智能与学习                   :education:@教育:
 CLOSED: [2026-06-04 Thu 10:59]
 :PROPERTIES:
 :EXPORT_FILE_NAME: 20260604-cognize-study
@@ -522,7 +555,7 @@ CLOSED: [2026-06-04 Thu 10:59]
 
 屏幕可以很快亮起，答案可以几秒到来；但真正属于人的那段路，仍要由孩子、老师和父母一起走完。
 
-* ✔ DONE 公众号：AI 省掉的路                                :education:@教育:
+* ✔ DONE AI 省掉的路                                :education:@教育:
 CLOSED: [2026-06-01 Mon 12:03]
 :PROPERTIES:
 :EXPORT_FILE_NAME: 20260601-shorten-road
@@ -541,7 +574,7 @@ CLOSED: [2026-06-01 Mon 12:03]
 
 谈教育，不能只有情绪。盲目地反对或者无脑地赞美 AI 都不可取。数据、边界和分寸，同样重要。
 
-* ✔ DONE 公众号：重新回答教育是什么                         :education:@教育:
+* ✔ DONE 重新回答教育是什么                         :education:@教育:
 CLOSED: [2026-05-31 Sun 18:09]
 :PROPERTIES:
 :EXPORT_FILE_NAME: 20260531-what-is-education
@@ -558,7 +591,7 @@ CLOSED: [2026-05-31 Sun 18:09]
 
 此，我们必须认真回答：AI 时代，教育是什么，学校是否会被重塑。结合这些年的思考，我写下这篇文章，希望能部分回答朋友的问题。
 
-* ✔ DONE 公众号：人不该只活成一份说明书                     :education:@教育:
+* ✔ DONE 人不该只活成一份说明书                     :education:@教育:
 CLOSED: [2026-05-30 Sat 19:37]
 :PROPERTIES:
 :EXPORT_FILE_NAME: 20260530-AI-replace-work
@@ -579,7 +612,7 @@ AI 真的能替代人的很多工作和能力，尤其是那些重复的、流�
 
 这篇文章，是我读完 Daniel Miessler 一篇 AI 与知识工作的文章后，写下的一点思考。希望它陪我们把未来看清楚一点。
 
-* ✔ DONE 公众号：不能只等一张考卷                           :education:@教育:
+* ✔ DONE 不能只等一张考卷                           :education:@教育:
 CLOSED: [2026-05-26 Tue 22:05]
 :PROPERTIES:
 :EXPORT_FILE_NAME: 20260526-how-to-judge-study
@@ -604,7 +637,7 @@ CLOSED: [2026-05-26 Tue 22:05]
 
 不知可还满意？
 
-* ✔ DONE 公众号：世界怎样运转                               :education:@教育:
+* ✔ DONE 世界怎样运转                               :education:@教育:
 CLOSED: [2026-05-24 Sun 11:50]
 :PROPERTIES:
 :EXPORT_FILE_NAME: 20260524-world-model
@@ -623,7 +656,7 @@ CLOSED: [2026-05-24 Sun 11:50]
 
 这篇文章，不是为了追一个新词，也不是替技术下结论。在 AI 越来越靠近真实生活的时候，我们需要多看一眼它将要学会的东西：不只是聪明，还要稳妥；不只是会回答，还要懂得避开那只快要掉下去的杯子。
 
-* ✔ DONE 公众号：把孩子带向问题深处                         :education:@教育:
+* ✔ DONE 把孩子带向问题深处                         :education:@教育:
 CLOSED: [2026-05-13 Wed 08:41]
 :PROPERTIES:
 :EXPORT_FILE_NAME: 20260513-how-to-teach-pupil
@@ -645,7 +678,7 @@ CLOSED: [2026-05-13 Wed 08:41]
 这束火光，叫好奇，叫判断，叫创造，叫责任。 \\
 也叫爱。
 
-* ✔ DONE 公众号：我们该怎样学习                             :education:@教育:
+* ✔ DONE 我们该怎样学习                             :education:@教育:
 CLOSED: [2026-05-05 Tue 09:33]
 :PROPERTIES:
 :EXPORT_FILE_NAME: 20260505-software-3
@@ -668,7 +701,7 @@ Andrej Karpathy 之所以重要，不只是因为他站在 OpenAI、Tesla、斯�
 
 工具会越来越聪明，人不能只做熟练的使用者。
 
-* ✔ DONE 公众号：好老师心里要有一座山                       :education:@教育:
+* ✔ DONE 好老师心里要有一座山                       :education:@教育:
 CLOSED: [2026-04-28 Tue 12:09]
 :PROPERTIES:
 :EXPORT_FILE_NAME: 20260428-good-teacher 
@@ -687,7 +720,7 @@ CLOSED: [2026-04-28 Tue 12:09]
 
 教育最难的，不是把高深知识讲得高深，而是把基础知识讲得不低。好老师不一定马上把学生带到山顶，但至少会让他们知道：山在那里，路也在那里。
 
-* ✔ DONE 公众号：先在心里点一盏灯                           :education:@教育:
+* ✔ DONE 先在心里点一盏灯                           :education:@教育:
 CLOSED: [2026-04-27 Mon 14:07]
 :PROPERTIES:
 :EXPORT_FILE_NAME: 20260427-how-to-read
@@ -704,7 +737,7 @@ CLOSED: [2026-04-27 Mon 14:07]
 
 这篇小文，写的正是这些年读书后慢慢明白的一点朴素经验。愿它不催促人，也不训诫人，只在你想重新翻开一本书时，轻轻递一盏灯。
 
-* ✔ DONE 公众号：如何给 AI“说明白”                                  :education:@教育:
+* ✔ DONE 如何给 AI“说明白”                                  :education:@教育:
 CLOSED: [2026-04-10 Fri 18:10]
 :PROPERTIES:
 :EXPORT_FILE_NAME: 20260410-how-to-speak-to-AI
@@ -727,7 +760,7 @@ AI 太快了，也太会接话了，于是我们反而更容易看见：一个�
 
 我不太相信几招就能解决所有问题，倒更相信，人与 AI 之间，最后比拼的还是一个人思考的清楚、表达的分寸，和心里的那点真诚。
 
-* ✔ DONE 公众号：如何真正“说明白”                                   :education:@教育:
+* ✔ DONE 如何真正“说明白”                                   :education:@教育:
 CLOSED: [2026-04-09 Thu 16:34]
 :PROPERTIES:
 :EXPORT_FILE_NAME: 20260409-how-to-speak-clearly
@@ -753,7 +786,7 @@ CLOSED: [2026-04-09 Thu 16:34]
 
 愿我们都能慢慢练成一种本事：把复杂的东西，真正变成自己能说清楚的话。
 
-* ✔ DONE 公众号：会做不等于真懂                             :education:@教育:
+* ✔ DONE 会做不等于真懂                             :education:@教育:
 CLOSED: [2026-04-07 Tue 17:09]
 :PROPERTIES:
 :EXPORT_FILE_NAME: 20260407-speak-clearly
@@ -776,7 +809,7 @@ CLOSED: [2026-04-07 Tue 17:09]
 
 若你也有过那样的时刻——以为早已明白，后来才知不过是走得熟——也许可以读一读。
 
-* ✔ DONE 公众号：会问 AI 才会答                              :education:@教育:
+* ✔ DONE 会问 AI 才会答                              :education:@教育:
 CLOSED: [2026-04-04 Sat 12:18]
 :PROPERTIES:
 :EXPORT_FILE_NAME: 20260404-how-to-ask-ai
@@ -801,7 +834,7 @@ AI 的出现，真正改变的并不只是效率，而是人和知识、人和�
 说到底，技术日益聪明之后，真正稀缺的，反而更可能是人的清醒、分寸与思辨能力。
 
 
-* ✔ DONE 公众号：学习如何真正发生                     :education:@教育:
+* ✔ DONE 学习如何真正发生                     :education:@教育:
 CLOSED: [2026-04-02 Thu 16:21]
 :PROPERTIES:
 :EXPORT_FILE_NAME: 20260402-howto-study-really
@@ -829,7 +862,7 @@ CLOSED: [2026-04-02 Thu 16:21]
 
 写给关心教育的人，写给陪伴孩子的人，也写给每一个希望孩子不只是“学过”，而是真正“学会”的人。
 
-* ✔ DONE 公众号：孩子该学什么                               :education:@教育:
+* ✔ DONE 孩子该学什么                               :education:@教育:
 CLOSED: [2026-03-21 Sat 19:34]
 :PROPERTIES:
 :EXPORT_FILE_NAME: 20260321-what-to-study
@@ -849,7 +882,7 @@ AI 越聪明，我越觉得，教育这件事急不得。
 愿我们在更新迅疾的时代里，依然知道：什么可以追赶，什么值得等待。
 
 
-* ✔ DONE 公众号：AI 越帮忙人反而越累                        :education:@教育:
+* ✔ DONE AI 越帮忙人反而越累                        :education:@教育:
 CLOSED: [2026-03-17 Tue 18:05]
 :PROPERTIES:
 :EXPORT_FILE_NAME: 20260317-brain-fry
@@ -869,7 +902,7 @@ AI 可以替我们做很多事，但有时也会把注意力切得更碎，把�
 ----
 今天又去了市科协，交流我想做的事。路过去年做报告的那个会场，一下就戳中了我内心的柔软。我背过身去，悄悄抹了眼睛，不让别人发现。我啊，实在是太软弱的一个人。
 
-* ✔ DONE 公众号：人还剩下什么？                             :education:@教育:
+* ✔ DONE 人还剩下什么？                             :education:@教育:
 CLOSED: [2026-03-14 Sat 22:56]
 :PROPERTIES:
 :EXPORT_FILE_NAME: 20260314-left-for-human
@@ -891,7 +924,7 @@ CLOSED: [2026-03-14 Sat 22:56]
 我一直在想：\\
 人这一生，终究不是拿来答题的。
 
-* ✔ DONE 公众号：从共享心智到共享行为                               :education:@教育:
+* ✔ DONE 从共享心智到共享行为                               :education:@教育:
 CLOSED: [2026-03-01 Sun 12:38]
 :PROPERTIES:
 :EXPORT_FILE_NAME: 20260301-gongxiang-xingwei
@@ -920,7 +953,7 @@ CLOSED: [2026-03-01 Sun 12:38]
 也许，未来的孩子，不需要跑得更快，
 而是学会如何带着一支“看不见的团队”前行。
 
-* ✔ DONE 公众号：理解是一场缓慢的重建                       :education:@教育:
+* ✔ DONE 理解是一场缓慢的重建                       :education:@教育:
 CLOSED: [2026-02-24 Tue 19:31]
 :PROPERTIES:
 :EXPORT_FILE_NAME: 20260224-study-procudures
@@ -938,7 +971,7 @@ CLOSED: [2026-02-24 Tue 19:31]
 
 这些年，我越来越觉得，输入和输出，交替激发，是学习最重要的步骤。我把对学习的粗浅理解，写成一篇公众号文章，与大家共勉。
 
-* ✔ DONE 公众号：AI 时代我们的位置                          :education:@教育:
+* ✔ DONE AI 时代我们的位置                          :education:@教育:
 CLOSED: [2026-02-22 Sun 09:58]
 :PROPERTIES:
 :EXPORT_FILE_NAME: 20260222-our-position
@@ -957,7 +990,7 @@ Wolfram 不是一般的社会学工作者，他是一名严肃的物理学家和
 
 因此，他的话，一定值得认真听。我反复读了他的文章很多遍，写下一点心得，供大家参考。
 
-* ✔ DONE 公众号：学会说话                             :education:@教育:
+* ✔ DONE 学会说话                             :education:@教育:
 CLOSED: [2026-02-16 Mon 10:27]
 :PROPERTIES:
 :EXPORT_FILE_NAME: 20260216-how-to-speak
@@ -977,7 +1010,7 @@ CLOSED: [2026-02-16 Mon 10:27]
 
 不催、不吼、不说教。只想和你共勉：别急着纠正，先把空间让出来——用心陪着孩子，把话说完、说清楚、说得自在。
 
-* ✔ DONE 公众号：把自己从旧的轨道里拽出来                   :education:@教育:
+* ✔ DONE 把自己从旧的轨道里拽出来                   :education:@教育:
 CLOSED: [2026-02-14 Sat 10:02]
 :PROPERTIES:
 :EXPORT_FILE_NAME: 20260214-jiuguidao
@@ -997,7 +1030,7 @@ Dan Koe 在最近写了一篇文章--《How to fix your entire life in 1 day》�
 如果你也觉得“答应自己太多、兑现太少”，也许可以认真读完它——给自己一天，做一次诚实的梳理，明天只做两三个小动作就好。
 
 
-* ✔ DONE 公众号：什么才是真正的专注                   :education:@教育:
+* ✔ DONE 什么才是真正的专注                   :education:@教育:
 CLOSED: [2026-02-08 Sun 11:25]
 :PROPERTIES:
 :EXPORT_FILE_NAME: 20260208-zhuanzhu
@@ -1021,7 +1054,7 @@ CLOSED: [2026-02-08 Sun 11:25]
 它的核心不是方法论，而是一句更温柔的理解：\\
 专注不是静止，是动态平衡；教育不是管教，是景观工程。
 
-* ✔ DONE 公众号：大学最该教的事                                  :education:@教育:
+* ✔ DONE 大学最该教的事                                  :education:@教育:
 CLOSED: [2026-02-01 Sun 10:24]
 :PROPERTIES:
 :EXPORT_FILE_NAME: 20260201-university-teaching
@@ -1035,7 +1068,7 @@ CLOSED: [2026-02-01 Sun 10:24]
 这大概是我近三十年来对大学教育的领悟，可惜公众号不能写太长。我其实有很多话想说，但是现在没有条件在大学里讲了，我就把文章写成普通人看的小文吧。
 
 
-* ✔ DONE 公众号：AI 是孩子的杠杆还是拐杖                    :education:@教育:
+* ✔ DONE AI 是孩子的杠杆还是拐杖                    :education:@教育:
 CLOSED: [2026-01-26 Mon 09:22]
 :PROPERTIES:
 :EXPORT_FILE_NAME: 20260126-ganggan_or_guaizhang
@@ -1055,7 +1088,7 @@ AI 不是洪水猛兽，也不是灵丹妙药。\\
 我是一名老师。在这个变化太快的时代里，我只想慢一点、认真一点，帮他们把刀握在手柄上。
 
 
-* ✔ DONE 公众号：拨琴弦的人                           :education:@教育:
+* ✔ DONE 拨琴弦的人                           :education:@教育:
 CLOSED: [2026-01-23 Fri 10:03]
 :PROPERTIES:
 :EXPORT_FILE_NAME: 20260123-bo_qin_xian
@@ -1073,7 +1106,7 @@ AI 时代的教育，到底要把孩子带向哪里？我越来越相信：不�
 写下这篇文章，我想谈的不是工具、不是捷径，而是：在复杂世界里，如何把孩子从“刷题的零件”带到“看懂系统的人”。慢慢来，但别停下。
 
 
-* ✔ DONE 公众号：在这个时代慢慢把 AI 用对                     :startup:@创业:
+* ✔ DONE 在这个时代慢慢把 AI 用对                     :startup:@创业:
 CLOSED: [2026-01-16 Fri 10:23]
 :PROPERTIES:
 :EXPORT_FILE_NAME: 20260116-F-Ai-studio
