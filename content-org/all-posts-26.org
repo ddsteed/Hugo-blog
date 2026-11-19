@@ -6,7 +6,7 @@
 #+STARTUP: inlineimages
 #+ATTR_ORG: :width 500
 
-* ✔ DONE 三句旧话                                                :misc:@杂谈:
+* ✔ DONE 金庸小说里我最喜欢的三句话                              :misc:@杂谈:
 CLOSED: [2026-11-19 Thu 16:02]
 :PROPERTIES:
 :EXPORT_FILE_NAME: 202611119-3-words
